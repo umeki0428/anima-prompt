@@ -15,6 +15,8 @@
 - CFG 10以上で彩度過剰・輪郭のキツさ・白飛び【未検証】(https://diffusiondoodles.substack.com/p/anima-light-fast-and-slightly-unruly)。
 - 最適画素数は1〜2MP、低めの方が安定。アスペクト比 1:1 / 3:4 / 4:5 / 16:9 が無難【未検証】(同上)。ComfyUI公式サンプルは 1152×896【公式】。
 
+- VRAM 6〜8GB のGPUで動作可能(モデル+テキストエンコーダ+VAE込み)【未検証】(https://techtactician.com/anima-comfyui-quick-local-setup-guide/)。
+
 ## サンプラーの使い分け【公式】
 
 | サンプラー | 特徴 |

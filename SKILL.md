@@ -3,17 +3,18 @@
 日本語の指示から ComfyUI + Anima 用のプロンプト(英語)を作る。説明は日本語で行う。
 
 ## 出力の型(3層)
-
 1. **固定ブロック** — 接頭辞とネガティブ。モデル(base / aesthetic)で切り替える。
 2. **タグ行** — Danbooru形式で主題・属性・画風を確定。
 3. **自然文** — 英語2文以上で構図・空間関係・雰囲気を補足。
 
 ## 場面別の参照先
+- 書式・タグ順・固定ブロック・変換手順・NG構文 → `references/anima-rules.md`(必読)
+- 画風・絵師タグ → `references/styles.md` / サンプラー・CFG等 → `references/settings.md`
+- 語彙のタグ化 → `references/vocab.md` / 失敗事例と対処 → `references/failures.md`
+- 形式の見本 → `examples/_templates/`、検証済み例と生成記録 → `examples/sfw/`
+- `captions/` は参考画像の逆キャプション置き場(examples/ の素材)。生成記録は examples/ に保存する。
 
-- 書式・タグ順・固定ブロック・タグと自然文の分担・NG構文 → `references/anima-rules.md`(必読)
-- 画風・絵師タグを指定するとき → `references/styles.md`
-- サンプラー・CFG・解像度を聞かれたとき → `references/settings.md`
-- 髪型・衣装・ポーズ等の語彙をタグ化するとき → `references/vocab.md`
-- 生成結果が外れたとき・修正相談 → `references/failures.md`(対処後は追記する)
-- 出力形式の見本 → `examples/sfw/`
-- 生成に使ったプロンプトの記録 → `captions/` に保存する
+## 運用ルール
+- 生成結果の報告を受けたら、外れた点を `references/failures.md` に追記する。
+- タグ置換で解決した語彙は `references/vocab.md` にも反映する。
+- 実生成で確認できた項目は【未検証】を外し、確認日を書く。
