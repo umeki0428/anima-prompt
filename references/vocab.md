@@ -37,4 +37,14 @@
 
 | 日本語 | 使うタグ | メモ | 確認日 |
 |---|---|---|---|
-| (未記入) | | | |
+| 下から見上げ | from below | 【未検証】 | |
+| 上から見下ろし | from above | 【未検証】 | |
+| 斜め構図 | dutch angle | 【未検証】 | |
+| 顔アップ | close-up | 【未検証】 | |
+| バストアップ | upper body | 【未検証】 | |
+| 太ももまで | cowboy shot | 【未検証】 | |
+| 全身 | full body | 【未検証】 | |
+| 横顔 | profile | 【未検証】 | |
+| 後ろ姿 | from behind | 【未検証】 | |
+| こっち目線 | looking at viewer | 【未検証】 | |
+| 視線外し | looking away | 【未検証】 | |
