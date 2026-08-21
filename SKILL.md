@@ -14,6 +14,7 @@
 - 漫画ページ(複数コマ) → `references/manga-page.md`。品質タグ → 容姿タグ → 配置タグ → コマ毎の状況説明の4段。通常の3層は使わない
 - キャラ名を指定されたとき → `characters/<名前>.md` を読み、固定タグ・既定衣装をそのまま使う。ユーザーの指示はポーズ・表情・構図・カメラ・背景など差分だけなので、差分をタグ行と自然文に変換して組み合わせる
 - 画風・絵師タグ → `references/styles.md` / サンプラー・CFG等 → `references/settings.md`
+- 色・光・表情・湯気でエロさを出す → `references/atmosphere.md`
 - 語彙のタグ化 → `references/vocab.md` / 失敗事例と対処 → `references/failures.md`
 - 形式の見本 → `examples/_templates/`、検証済み例と生成記録 → `examples/sfw/`
 - `captions/` は参考画像の逆キャプション置き場(examples/ の素材)。生成記録は examples/ に保存する。
