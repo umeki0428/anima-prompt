@@ -43,6 +43,7 @@
 | 顔アップ | close-up | 【未検証】 | |
 | バストアップ | upper body | 【未検証】 | |
 | 太ももまで | cowboy shot | 【未検証】 | |
+| 太ももから下は切る | cowboy shot | 靴・足元タグは外す。ネガに `shoes, high heels, feet`。【未検証】 | |
 | 全身 | full body | 【未検証】 | |
 | 横顔 | profile | 【未検証】 | |
 | 後ろ姿 | from behind | 【未検証】 | |
