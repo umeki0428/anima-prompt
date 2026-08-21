@@ -19,13 +19,18 @@
 
 | 日本語 | 使うタグ | メモ | 確認日 |
 |---|---|---|---|
-| (未記入) | | | |
+| ボタン付き白シャツ(Tシャツではない) | collared shirt, white shirt | `white shirt` 単体はTシャツ化しやすい。ネガに `t-shirt`。自然文は button-up collared shirt | 【未検証】 |
+| 途中のボタンが外れている | partially unbuttoned | `unbuttoned` や `open shirt` は全開になりやすい。中央だけ外れていることは自然文で書く | 【未検証】 |
+| 黒いブラが少し見える | black bra | チラ見えは自然文で slightly visible。`open shirt` は付けない | 【未検証】 |
 
 ## ポーズ・視線
 
 | 日本語 | 使うタグ | メモ | 確認日 |
 |---|---|---|---|
-| (未記入) | | | |
+| ぎこちない笑顔 | awkward smile | `forced smile` だと強要感が出る。はぁはぁと併用するなら `open mouth, panting` も付ける | 【未検証】 |
+| はぁはぁしている | panting, open mouth | `panting` だけだと口が閉じることがある | 【未検証】 |
+| 赤面 | blush | | 【未検証】 |
+| すこし汗 | sweat | 強い発汗にしない。量は自然文で lightly | 【未検証】 |
 
 ## 小物・持ち物
 
