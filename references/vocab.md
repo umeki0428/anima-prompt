@@ -53,3 +53,5 @@
 | 後ろ姿 | from behind | 【未検証】 | |
 | こっち目線 | looking at viewer | 【未検証】 | |
 | 視線外し | looking away | 【未検証】 | |
+| 扉の隙間から見るPOV | pov, doorway, open door | 縦の扉とドア枠で切り取ることは自然文。`peeking` は目だけになりやすいので使わない | 【未検証】 |
+| 左下でインターホンを押す手 | (タグにしない) | `hands` を付けるとキャラ側に付く。自然文で bottom-left foreground, the viewer's hand presses a wall-mounted intercom | 【未検証】 |
