@@ -20,12 +20,15 @@
 | 日本語 | 使うタグ | メモ | 確認日 |
 |---|---|---|---|
 | 上着を脱いでいる途中 | `undressing, removing jacket` | 脱ぎ終わりは `unworn jacket`。肩に残るだけなら `jacket on shoulders`。【未検証】 | |
+| スカートを残す(下アングル) | `(black skirt:1.8), (pleated skirt:1.8), miniskirt` | 下アングル+undressing だとスカートが消える。自然文でも hem is visible / not removed と書く。重みは SDXLより高め(公式) | 2026-08-21 |
 
 ## ポーズ・視線
 
 | 日本語 | 使うタグ | メモ | 確認日 |
 |---|---|---|---|
 | 軽い赤面 | blush | 自然文で faint blush。照れなら `embarrassed` も足す。【未検証】 | |
+| 半目 | half-closed eyes | 自然文は half-lidded eyes。最終稿で使用 | 2026-08-21 |
+| 汗・湯気 | `sweat, steam, haze` | 顔の汗と空気中の湯気。最終稿で使用 | 2026-08-21 |
 
 ## 小物・持ち物
 
@@ -52,4 +55,6 @@
 | 不揃いの漫画ページ | `comic page, multiple panels, panel layout` | `4koma` は均等な縦積みになる(2026-08-21)。サイズ差は配置タグで位置を書く。書式は [manga-page.md](manga-page.md)。ネガに `4koma, 2koma, 3koma` | 2026-08-21 |
 | 均等4コマ | `4koma` | 同じ大きさのコマが上から下(または2×2)。動的なページには使わない | 2026-08-21 |
 | フルカラー漫画 | `colored` | `shoujo manga style` / `shounen manga style` / `monochrome` / `greyscale` はモノクロ化するのでフルカラーではネガへ | 【未検証】 |
-| 紫のグラデーション背景 | `simple background, gradient background, purple background` | 屋外・空と混ざるのでネガに `outdoors, scenery, cloudy sky`。【未検証】 | |
+| 紫のグラデーション背景 | (使わない) | シーン全体が紫に染まる。暗い背景は下の行 | 2026-08-21 |
+| 暗いチャコールグラデ | `simple background, gradient background, dark background` | 自然文で dark charcoal gradient, not purple。ネガに `purple background, outdoors, scenery, cloudy sky` | 2026-08-21 |
+| 暖色リム | `dim lighting, warm lighting, rim light, volumetric lighting` | 下と後ろからの薄いリム。紫と混ぜない | 2026-08-21 |
