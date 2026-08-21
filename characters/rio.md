@@ -15,8 +15,33 @@ white turtleneck sweater, black jacket, id card, black skirt, pleated skirt, bla
 ## 任意タグ(指示があれば付ける)
 
 - 小物: tablet pc(よく持つ。指示があれば)
-- 公式衣装差分: `rio (armed) (blue archive)` / `rio (winter) (blue archive)` / `rio (christmas dress) (blue archive)`(付けたら既定衣装は全部削除)
 - 画風: anime coloring(既定ON。別画風の指示があれば外す)
+
+## 公式衣装差分(指示されたら既定衣装を全部削除して、下の行に置き換える)
+
+キャラタグ `rio (blue archive)` は残す。差分タグは追加する。identity の髪・目・ヘイローはそのまま(武装とドレスだけ髪型タグを足す)。
+
+### 既定(セミナー制服)
+
+white turtleneck sweater, black jacket, id card, black skirt, pleated skirt, black pantyhose, thigh holster, black high heels
+
+### 武装 / 臨戦 (`rio (armed) (blue archive)`)
+
+エイリアス: `rio (battle) (blue archive)` / `rio (bodysuit) (blue archive)`。6th PV・鋼鉄大陸の潜入スーツ。
+
+official alternate costume, official alternate hairstyle, ponytail, black bodysuit, skin tight, headgear, black gloves, thigh holster
+
+### 冬服 (`rio (winter) (blue archive)`)
+
+ゲーム内 NPC 立ち絵。投稿が少なく、コート＋タートルが中心。
+
+official alternate costume, black coat, coat, white turtleneck sweater, turtleneck, black gloves
+
+### クリスマスドレス (`rio (christmas dress) (blue archive)`)
+
+エイリアス: `rio (dress) (blue archive)`。5周年キービジュアル。
+
+official alternate costume, official alternate hairstyle, hair bun, black dress, dress, jewelry, necklace, bare shoulders
 
 ## 既定の自然文(容姿の補足。タグと併用)
 
