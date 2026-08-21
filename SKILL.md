@@ -7,8 +7,11 @@
 2. **タグ行** — Danbooru形式で主題・属性・画風を確定。
 3. **自然文** — 英語2文以上で構図・空間関係・雰囲気を補足。
 
+漫画ページだけ例外。`references/manga-page.md` の4段(品質・容姿・配置・コマ説明)を使う。
+
 ## 場面別の参照先
 - 書式・タグ順・固定ブロック・変換手順・NG構文 → `references/anima-rules.md`(必読)
+- 漫画ページ(複数コマ) → `references/manga-page.md`。品質タグ → 容姿タグ → 配置タグ → コマ毎の状況説明の4段。通常の3層は使わない
 - キャラ名を指定されたとき → `characters/<名前>.md` を読み、固定タグ・既定衣装をそのまま使う。ユーザーの指示はポーズ・表情・構図・カメラ・背景など差分だけなので、差分をタグ行と自然文に変換して組み合わせる
 - 画風・絵師タグ → `references/styles.md` / サンプラー・CFG等 → `references/settings.md`
 - 語彙のタグ化 → `references/vocab.md` / 失敗事例と対処 → `references/failures.md`

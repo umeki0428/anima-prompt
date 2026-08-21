@@ -84,11 +84,15 @@ year 2025, newest, normal quality, score_5, highres, safe, 1girl, oomuro sakurak
 - **文字描画は1〜2単語まで**。複雑なタイポグラフィ不可【公式】(https://docs.comfy.org/tutorials/image/anima/anima)。入れる場合は自然文中で引用符で囲む(例: `a sign that says "OPEN"`)【未検証】。
 - 異なる概念は**互いにブレンドされやすい**(服の色がキャラ間で入れ替わる等)。要素を絞る【未検証】(https://techtactician.com/anima-comfyui-quick-local-setup-guide/)。
 
+## 漫画ページ(コマ割り)
+
+詳細と見本は [manga-page.md](manga-page.md)。通常の3層ではなく、品質 → 容姿 → 配置 → コマ説明の4段にする。`4koma` は均等な縦積みになるので、不揃いのページでは使わない。
+
 ## 日本語指示 → プロンプト変換の手順
 
 1. **主題を確定**: 人数(`1girl`/`2girls`/`1boy`/`1other`)、キャラ名・作品名(既存キャラなら小文字タグで)
 2. **外見・服装・表情・ポーズ**を Danbooru タグに変換([vocab.md](vocab.md) を参照)
-3. **背景・構図・ライティング**は自然文で補足(空間関係はタグより自然文が得意)
+3. **背景・構図・ライティング**は自然文で補足(空間関係はタグより自然文が得意)。漫画ページは [manga-page.md](manga-page.md) の4段構成にする
 4. **画風指定**があれば前方に配置(`Studio Ghibli style` 等、または `@絵師名`。[styles.md](styles.md) 参照)
 5. 接頭辞と年代タグ(新しい絵柄なら `newest`)を付与。aesthetic ならクオリティ/score タグなし
 6. ネガティブは基本形+目的別追加
