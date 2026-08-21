@@ -52,3 +52,4 @@
 | 不揃いの漫画ページ | `comic page, multiple panels, panel layout` | `4koma` は均等な縦積みになる(2026-08-21)。サイズ差は配置タグで位置を書く。書式は [manga-page.md](manga-page.md)。ネガに `4koma, 2koma, 3koma` | 2026-08-21 |
 | 均等4コマ | `4koma` | 同じ大きさのコマが上から下(または2×2)。動的なページには使わない | 2026-08-21 |
 | フルカラー漫画 | `colored` | `shoujo manga style` / `shounen manga style` / `monochrome` / `greyscale` はモノクロ化するのでフルカラーではネガへ | 【未検証】 |
+| 紫のグラデーション背景 | `simple background, gradient background, purple background` | 屋外・空と混ざるのでネガに `outdoors, scenery, cloudy sky`。【未検証】 | |
