@@ -72,3 +72,4 @@
 | 肌から湯気 | steaming body | 白服が透けやすい。透け禁止なら使わない | 2026-08-20 |
 | 暗い無彩色背景 | dark background | `purple background` の代わり | 2026-08-21 |
 | パンツライン抑制 | (ネガ) panty lines, cameltoe, panties | ローアングル＋タイツで出やすい | 2026-08-21 |
+| 服の中の手 | タグにしない | `groping` / `breast grab` / `hands in clothes` は服の上になる。自然文で生地の膨らみと「指は見えない」。カメラは `from side` | 2026-08-21 |

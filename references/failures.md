@@ -55,3 +55,17 @@
 - **外れた出力**: スカート／タイツ越しにパンツラインが見える
 - **原因(推定)**: 下からの光とタイツが輪郭を強調する
 - **直し方**: ネガに `panty lines, cameltoe, panties`。自然文で `no panty lines`。[vocab.md](vocab.md) の照明節
+
+## 服の中の手が生地の外に出る (2026-08-21)
+
+- **指示(日本語)**: 背後の男性がタンクトップの中に手を入れて胸を揉む。手は生地の下
+- **使ったプロンプト**: タグに `1boy, groping, breast grab, hands in clothes, oversized clothes`。自然文に `massaging her breasts` / `palms on her breasts` / `wrists show at the side openings`。カメラ `three-quarter view, cowboy shot`
+- **外れた出力**: 男性の手がタンクトップの外側に乗り、服の上から揉む構図になる
+- **原因(推定)**:
+  1. `groping` / `breast grab` / 「胸を揉む」は学習上ほぼ服の上。`hands in clothes` も外手データが多い
+  2. `1boy` + 背後 + 腕は「後ろから服の上で抱える」定番に寄る
+  3. 胸の正面(`three-quarter` + `cowboy shot`)だと手が胸の手前レイヤーに合成される
+  4. `oversized` とアームホール強調は、隙間から指が見えて外側に見える
+  5. 手・胸・服を別物として書くとブレンドで手が一番前に来る
+- **直し方**: それらのタグを使わない。自然文は「指は見えない・生地が手の形に膨らむ・腕はアームホールに消える」だけ。カメラは `from side`。ネガに `groping, breast grab, hands on breasts`。[vocab.md](vocab.md)
+
