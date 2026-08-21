@@ -67,5 +67,14 @@
   3. 胸の正面(`three-quarter` + `cowboy shot`)だと手が胸の手前レイヤーに合成される
   4. `oversized` とアームホール強調は、隙間から指が見えて外側に見える
   5. 手・胸・服を別物として書くとブレンドで手が一番前に来る
-- **直し方**: それらのタグを使わない。自然文は「指は見えない・生地が手の形に膨らむ・腕はアームホールに消える」だけ。カメラは `from side`。ネガに `groping, breast grab, hands on breasts`。[vocab.md](vocab.md)
+- **直し方**: 見えない手＋生地の膨らみ＋横顔は破綻する。先に `hug from behind` で2人を読める構図にし、手の位置は自然文1文だけにする。`groping` / `breast grab` / `hands in clothes` は使わない
+
+## 服の中の手を縛りすぎて構図が崩壊する (2026-08-21)
+
+- **指示(日本語)**: 同上。手が外に出るのを止める
+- **使ったプロンプト**: `from side`、自然文で no fingers / vanish into armholes / hand-shaped bulges。ネガに `groping, breast grab, hands on breasts`
+- **外れた出力**: 人物も服も読めない、わけのわからない画像
+- **原因(推定)**: 手を描くなと胸を揉んでいるを同時に要求し、男性を隠した。Animaは矛盾する空間指示で破綻しやすい
+- **直し方**: `hug from behind` で背後の男性を明示。男性は短い茶髪など、リオと混ぜない外見。カメラは正面寄り。手の指示は1文
+
 
