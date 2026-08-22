@@ -42,6 +42,8 @@ manga style,
 dynamic panel layout,
 ```
 
+フルカラーを指示されたときは、冒頭に `anime coloring, colored` を足す。`monochrome` / `greyscale` / `black and white` はネガへ。
+
 **使わない**(今後付けない):
 
 ```
@@ -64,7 +66,16 @@ rio \(blue archive\),
 white turtleneck sweater, black jacket, id card, black skirt, pleated skirt, black pantyhose, thigh holster, black high heels,
 ```
 
-各 Panel では同じ名前 `Rio` を使う。
+複数人の既存キャラも同じ。先生は `sensei \(blue archive\)`。顔アップがあるページでは `faceless male` を付けない。
+
+```
+Character two:
+blue archive,
+sensei \(blue archive\),
+grey suit, white shirt, black necktie, id card,
+```
+
+各 Panel では同じ名前 `Rio` / `Sensei` を使う。
 
 ```
 Panel 1:
@@ -244,7 +255,7 @@ the dark office interior and city lights fill the background,
 
 ベッドのキス3コマは [rio-bed-kiss-manga.md](../examples/adult/rio-bed-kiss-manga.md)。  
 顔アップ縦2段は [rio-face-closeup-manga.md](../examples/adult/rio-face-closeup-manga.md)。  
-上大ゴマ+下左右は [rio-door-walkin-manga.md](../examples/adult/rio-door-walkin-manga.md)。
+上大ゴマ+下左右は [rio-door-walkin-manga.md](../examples/adult/rio-door-walkin-manga.md)(先生は `sensei \(blue archive\)`、フルカラー、飛沫なし)。
 
 ## 設定
 
@@ -265,3 +276,4 @@ the dark office interior and city lights fill the background,
 - `4koma` や `four stacked panels` → 同じ大きさの縦積み。[failures.md](failures.md)
 - `black and white manga page` / `professional Japanese manga` / `clean detailed line art` / `high quality screentones` を付ける
 - セリフ・吹き出し・♡・擬音を入れる → 文字が崩れる。コマには表情と動作だけ書く
+- フルカラー指定なのに `black and white manga page` を残す / `colored` を付けない
