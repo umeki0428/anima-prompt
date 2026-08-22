@@ -85,4 +85,10 @@
 - **原因(推定)**: 「不透明な服の内側の手」と「乳首愛撫が見える」は同時に描きにくい。`hug from behind` は2人の配置には効くが、手を生地の下へは送らない
 - **直し方**: 単発プロンプトでは扱わない。記録のみ。[vocab.md](vocab.md) の「服の中の手」
 
+## 紫グラデがシーン全体を染める (2026-08-21)
 
+- **指示(日本語)**: リオの下アングル。背景は紫のグラデーション
+- **使ったプロンプト**: ポジに `simple background, gradient background, purple background`
+- **外れた出力**: 背景だけでなく照明・肌まで紫に寄る
+- **原因(推定)**: `purple background` がライティングとブレンドされる。Anima は異なる概念を混ぜやすい
+- **直し方**: `purple background` を外し `dark background` + 自然文で `dark charcoal gradient, not purple`。ライティングは `warm lighting, rim light`。ネガに `purple background`。語彙は [vocab.md](vocab.md) の構図節。最終稿は [rio-jacket-from-below.md](../examples/_templates/rio-jacket-from-below.md)
