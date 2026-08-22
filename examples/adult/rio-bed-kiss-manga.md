@@ -2,7 +2,7 @@
 
 **指示(日本語):** 添付画像のコマ割りとシーンを再現。キャラは `blue archive, rio \(blue archive\)`。服装は制服。
 
-**組み立てメモ:** 漫画ページは [manga-page.md](../../references/manga-page.md)。画風は `manga style, dynamic panel layout` のみ。`black and white manga page` 等は付けない。Character one は作品名+キャラタグと制服。白Tシャツとジムショーツにはしない。手はスカートの中。男は顔出しが必要なのでユウジ(顔なし)は使わない。長い台詞は後入れ。
+**組み立てメモ:** 漫画ページは [manga-page.md](../../references/manga-page.md)。画風は `manga style, dynamic panel layout` のみ。`black and white manga page` 等は付けない。Character one は作品名+キャラタグと制服。白Tシャツとジムショーツにはしない。手はスカートの中。男は顔出しが必要なのでユウジ(顔なし)は使わない。セリフ・吹き出し・♡・擬音は入れない。
 
 **ポジティブ:**
 
@@ -29,7 +29,6 @@ his right hand is tucked under the front of her black pleated skirt,
 Rio's head is tilted back with wide surprised eyes and a heavy blush,
 her jacket and turtleneck are slightly bunched where he is touching her,
 a thin string of saliva connects their lips,
-a small jagged speech bubble near Rio reads "キス...!?",
 
 Panel 2:
 equal-width vertical panel in the top right,
@@ -40,7 +39,6 @@ Rio's expression melts from surprise into a dazed look,
 her eyes are half-closed and looking downward,
 her face is even more flushed with sweat on her skin,
 small spark effects around her head,
-cloth-rustle sound effects near her waist,
 
 Panel 3:
 bottom large full-width cinematic panel,
@@ -48,11 +46,9 @@ close-up of their faces and upper torsos in side profile,
 Rio looks up at the man with wide watery trembling eyes as their lips pull slightly apart,
 her mouth is slightly open,
 a clear string of saliva still connects their lips,
-the man stays very close and whispers to her,
+the man stays very close to her lips,
 intimate dark bedroom atmosphere with white sheets and a black background.
 ```
-
-**後入れ台詞:** 「こうすると気持ちいいんだよ 理央」
 
 **推奨設定:** 1024×1536 または 768×1152、`er_sde`、CFG 4〜5、30〜50ステップ。
 

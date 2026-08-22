@@ -158,7 +158,7 @@ bottom full-width cinematic panel,
 
 使ってはいけない表現: `four stacked panels`、`two panels` だけの指定、`2-panel manga layout`(上下均等の帯になる)。
 
-吹き出し文字は1〜2単語まで。長い台詞は後入れ。
+セリフ・吹き出し・♡・ハートマーク・擬音は入れない。文字は後入れ。
 
 ## 見本: 駅の夜(シンプルな2人・オリジナル)
 
@@ -192,7 +192,7 @@ dramatic shading,
 
 Panel 3:
 middle right vertical panel,
-the man gently speaks to her,
+the man looks at her from the side,
 side profile composition,
 
 Panel 4:
@@ -226,7 +226,8 @@ her expression is calm and distant,
 the dark office interior and city lights fill the background,
 ```
 
-ベッドのキス3コマは [rio-bed-kiss-manga.md](../examples/adult/rio-bed-kiss-manga.md)。
+ベッドのキス3コマは [rio-bed-kiss-manga.md](../examples/adult/rio-bed-kiss-manga.md)。  
+顔アップ縦2段は [rio-face-closeup-manga.md](../examples/adult/rio-face-closeup-manga.md)。
 
 ## 設定
 
@@ -246,3 +247,4 @@ the dark office interior and city lights fill the background,
 - 各 Panel で名前を変える → 人物がコマ間で入れ替わる。同じ名前を使う
 - `4koma` や `four stacked panels` → 同じ大きさの縦積み。[failures.md](failures.md)
 - `black and white manga page` / `professional Japanese manga` / `clean detailed line art` / `high quality screentones` を付ける
+- セリフ・吹き出し・♡・擬音を入れる → 文字が崩れる。コマには表情と動作だけ書く
