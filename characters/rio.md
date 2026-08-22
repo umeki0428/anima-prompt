@@ -47,11 +47,25 @@ official alternate costume, official alternate hairstyle, hair bun, black dress,
 
 Rio has thigh-length straight black hair with blunt bangs, one side tucked behind her ear and a Millennium logo hairclip. Her red eyes are ringed with white pupils, and a black metallic halo floats above her head.
 
+## 例(プロンプト全文)
+
+| 内容 | ファイル | 状態 |
+|---|---|---|
+| 下アングル・上着を脱ぎかけ・太もも切り | [rio-jacket-from-below.md](../examples/_templates/rio-jacket-from-below.md) | ユーザー最終稿(2026-08-21)。`sensitive` |
+| 武装 / 臨戦 | [rio-armed.md](../examples/_templates/rio-armed.md) | 【未検証】立ち絵 |
+| 冬服 | [rio-winter.md](../examples/_templates/rio-winter.md) | 【未検証】立ち絵 |
+| クリスマスドレス | [rio-christmas-dress.md](../examples/_templates/rio-christmas-dress.md) | 【未検証】立ち絵 |
+
 ## 注意
 
 - identity はキャラ名+作品名+髪・目・ヘイロー・髪飾り。服装は既定衣装側。別衣装を指示されたら既定衣装だけ差し替える
+- 公式衣装差分ではキャラタグ `rio (blue archive)` に差分タグを足し、使わない衣装はネガへ(制服とボディスーツ等が混ざる)
 - `long hair` と `very long hair` は同義積み増しになるので、太腿丈の `very long hair` のみ使う
 - `bright pupils` は `white pupils` と近いので固定には入れない。効きが弱いときだけ足す
 - `hair ornament` は `hairclip` の親タグ相当。固定は `hairclip` + `millennium science school logo`
 - 既定衣装と別衣装を混在させない(概念ブレンドで崩れる)
+- レーティング既定は `safe`。下アングル最終稿だけ `sensitive`(そのときネガに `sensitive` を入れない)
+- 太ももから下が見えない指示なら `black high heels` を外し `cowboy shot`。ネガに `shoes, high heels, feet`
+- 下アングル+undressing でスカートが消えるときは `(black skirt:1.8), (pleated skirt:1.8), miniskirt`
+- `purple background` はシーン全体を染める。暗い背景は `dark background` + 自然文で charcoal。語彙は [vocab.md](../references/vocab.md)、失敗は [failures.md](../references/failures.md)
 - タグ順は 固定タグ → 衣装 → ポーズ/表情 → カメラ → 画風

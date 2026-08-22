@@ -21,6 +21,9 @@
 |---|---|---|---|
 | 上着を脱いでいる途中 | `undressing, removing jacket` | 脱ぎ終わりは `unworn jacket`。肩に残るだけなら `jacket on shoulders`。【未検証】 | |
 | スカートを残す(下アングル) | `(black skirt:1.8), (pleated skirt:1.8), miniskirt` | 下アングル+undressing だとスカートが消える。自然文でも hem is visible / not removed と書く。重みは SDXLより高め(公式) | 2026-08-21 |
+| リオ武装/臨戦 | `rio (armed) (blue archive), official alternate costume, official alternate hairstyle, ponytail, black bodysuit, skin tight, headgear, black gloves, thigh holster` | エイリアス `battle` / `bodysuit`。既定制服は削除。例は [rio-armed.md](../examples/_templates/rio-armed.md) | 2026-08-21 |
+| リオ冬服 | `rio (winter) (blue archive), official alternate costume, black coat, coat, white turtleneck sweater, turtleneck, black gloves` | NPC立ち絵。投稿が少ない。例は [rio-winter.md](../examples/_templates/rio-winter.md) | 2026-08-21 |
+| リオクリスマスドレス | `rio (christmas dress) (blue archive), official alternate costume, official alternate hairstyle, hair bun, black dress, dress, jewelry, necklace, bare shoulders` | エイリアス `rio (dress)`。例は [rio-christmas-dress.md](../examples/_templates/rio-christmas-dress.md) | 2026-08-21 |
 
 ## ポーズ・視線
 
