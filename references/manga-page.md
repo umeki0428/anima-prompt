@@ -138,6 +138,22 @@ bottom large full-width cinematic panel,
 ...
 ```
 
+上の大ゴマ + 下左右の同じ大きさのコマ:
+
+```
+Panel 1:
+large full-width panel occupying the top two-thirds of the page,
+...
+
+Panel 2:
+equal-size square panel in the bottom left,
+...
+
+Panel 3:
+equal-size square panel in the bottom right,
+...
+```
+
 左上の小コマ + 右の縦長大ゴマ + 下の横長:
 
 ```
@@ -227,7 +243,8 @@ the dark office interior and city lights fill the background,
 ```
 
 ベッドのキス3コマは [rio-bed-kiss-manga.md](../examples/adult/rio-bed-kiss-manga.md)。  
-顔アップ縦2段は [rio-face-closeup-manga.md](../examples/adult/rio-face-closeup-manga.md)。
+顔アップ縦2段は [rio-face-closeup-manga.md](../examples/adult/rio-face-closeup-manga.md)。  
+上大ゴマ+下左右は [rio-door-walkin-manga.md](../examples/adult/rio-door-walkin-manga.md)。
 
 ## 設定
 
