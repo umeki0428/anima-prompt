@@ -56,3 +56,5 @@ monochrome, greyscale, black and white, faceless male, text, speech bubble, hear
 **推奨設定:** 1024×1536 または 768×1152、`er_sde`、CFG 4〜5、30〜50ステップ。
 
 **状態:** 【未検証】(机上の変換例。実生成での確認後、結果と設定を追記する)
+
+上コマだけを1枚絵にする版は [rio-sensei-door-single.md](rio-sensei-door-single.md)。
