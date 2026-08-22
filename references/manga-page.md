@@ -3,22 +3,18 @@
 通常の1枚絵は [anima-rules.md](anima-rules.md) の3層(固定ブロック・タグ行・自然文)を使う。  
 **漫画ページ**はこのファイルの書式にする。`<think>` は付けない。
 
-この書式は、**コマ位置を文章で指定する**タイプのLoRA向け。タグを羅列するより、人物と各コマを文章で書く。
+この書式は、**コマ位置を文章で指定する**タイプのLoRA向け。各コマの中身はタグ羅列より文章で書く。
 
 ## 構成
 
 1. **冒頭の画風**
-2. **Character one / Character two**(容姿を詳しく。名前を付ける)
+2. **Character one / Character two**(既存キャラは作品名+キャラタグ。服装は制服)
 3. **Panel 1 / Panel 2 / ...**(位置 + 状況を文章で)
 
 段のあいだは空行で分ける。
 
 ```
 manga style,
-black and white manga page,
-professional Japanese manga,
-clean detailed line art,
-high quality screentones,
 dynamic panel layout,
 
 Character one:
@@ -35,9 +31,6 @@ Panel 2:
 
 Panel 3:
 ...
-
-Panel 4:
-...
 ```
 
 ## 1. 冒頭の画風
@@ -46,19 +39,42 @@ Panel 4:
 
 ```
 manga style,
+dynamic panel layout,
+```
+
+**使わない**(今後付けない):
+
+```
 black and white manga page,
 professional Japanese manga,
 clean detailed line art,
 high quality screentones,
-dynamic panel layout,
 ```
 
 `4koma` / `2koma` / `3koma` は均等な縦積みになるので、不揃いのページでは使わない。[failures.md](failures.md)
 
 ## 2. 人物設定(Character)
 
-このLoRAだけでは、複数コマで完全に同じ人物を維持する能力に限界がある。  
-最初に容姿をかなり詳しく定義し、各 Panel では同じ名前を使う。
+既存キャラは容姿の長文に展開しない。作品名とキャラタグを書き、服装は制服(既定衣装)にする。ComfyUI では括弧を `\(` `\)` でエスケープする。
+
+```
+Character one:
+blue archive,
+rio \(blue archive\),
+white turtleneck sweater, black jacket, id card, black skirt, pleated skirt, black pantyhose, thigh holster, black high heels,
+```
+
+各 Panel では同じ名前 `Rio` を使う。
+
+```
+Panel 1:
+Rio is standing...
+
+Panel 2:
+close-up of Rio...
+```
+
+オリジナルキャラだけ、名前と容姿を文章で定義する。
 
 ```
 Character one:
@@ -70,20 +86,7 @@ small nose,
 wearing a white blouse and black skirt,
 ```
 
-既存キャラなら `characters/<名前>.md` の固定タグ・既定衣装・既定自然文を、この Character ブロックの文章に展開する。タグ行のまま貼らない。
-
-複数人は `Character two:` を続ける。各 Panel では `(Yuki)` ではなく `Yuki` と呼ぶ。
-
-```
-Panel 1:
-Yuki is standing...
-
-Panel 2:
-close-up of Yuki...
-
-Panel 3:
-Yuki turns her face...
-```
+複数人は `Character two:` を続ける。このLoRAだけでは複数コマの同一人物維持に限界があるので、既存キャラはタグ、オリジナルは冒頭の容姿定義を厚くする。
 
 ## 3. コマ(Panel)
 
@@ -119,6 +122,22 @@ bottom large full-width panel,
 ...
 ```
 
+上段左右の縦コマ + 下の横長:
+
+```
+Panel 1:
+equal-width vertical panel in the top left,
+...
+
+Panel 2:
+equal-width vertical panel in the top right,
+...
+
+Panel 3:
+bottom large full-width cinematic panel,
+...
+```
+
 左上の小コマ + 右の縦長大ゴマ + 下の横長:
 
 ```
@@ -141,15 +160,11 @@ bottom full-width cinematic panel,
 
 吹き出し文字は1〜2単語まで。長い台詞は後入れ。
 
-## 見本: 駅の夜(シンプルな2人)
+## 見本: 駅の夜(シンプルな2人・オリジナル)
 
 ```
 manga style,
-black and white manga page,
-professional Japanese manga line art,
-clean ink lines,
-detailed screentones,
-dramatic manga composition,
+dynamic panel layout,
 
 Character one:
 (Yuki), a 22-year-old Japanese woman,
@@ -173,7 +188,7 @@ Panel 2:
 middle left vertical panel,
 close-up of the woman's face,
 she looks away with a slight blush,
-dramatic manga screentones,
+dramatic shading,
 
 Panel 3:
 middle right vertical panel,
@@ -189,33 +204,18 @@ dramatic night atmosphere.
 
 名前を付けた版では、Panel 内を `Yuki is standing at a train station at night` のようにする。
 
-## 見本: リオ・深夜のオフィス(キャラ固定)
+## 見本: リオ・深夜のオフィス(キャラタグ+制服)
 
-リオの固定容姿を Character one に展開し、各 Panel で `Rio` を使う。`characters/rio.md` があるときはそこから展開する。テンプレ全文は [rio-night-office-manga.md](../examples/_templates/rio-night-office-manga.md)。
+Character one は作品名+キャラタグと制服のみ。容姿の長文は書かない。テンプレ全文は [rio-night-office-manga.md](../examples/_templates/rio-night-office-manga.md)。
 
 ```
 manga style,
-black and white manga page,
-professional Japanese manga,
-clean detailed line art,
-high quality screentones,
 dynamic panel layout,
 
 Character one:
-(Rio), a young Japanese woman,
-thigh-length straight black hair,
-blunt bangs,
-one side of her hair tucked behind her ear,
-a Millennium science school logo hairclip,
-large almond-shaped red eyes with ringed irises and white pupils,
-a black metallic halo floating above her head,
-large breasts,
-wearing a white turtleneck sweater,
-a black jacket with an ID card,
-a black pleated skirt,
-black pantyhose,
-a thigh holster,
-and black high heels,
+blue archive,
+rio \(blue archive\),
+white turtleneck sweater, black jacket, id card, black skirt, pleated skirt, black pantyhose, thigh holster, black high heels,
 
 Panel 1:
 top full-width panel,
@@ -225,6 +225,8 @@ wide cinematic shot from slightly behind and to the side,
 her expression is calm and distant,
 the dark office interior and city lights fill the background,
 ```
+
+ベッドのキス3コマは [rio-bed-kiss-manga.md](../examples/adult/rio-bed-kiss-manga.md)。
 
 ## 設定
 
@@ -239,6 +241,8 @@ the dark office interior and city lights fill the background,
 
 ## 失敗
 
-- 容姿や動作をタグだけ羅列する → コマの中身が薄くなる。Character と Panel は文章で書く
-- 各 Panel で名前を変える / 容姿を省略する → 人物がコマ間で入れ替わる。冒頭で詳しく定義し、同じ名前を使う
+- 既存キャラの髪・目・ヘイローを長文で書き直す → キャラタグと食い違う。`blue archive, rio \(blue archive\)` を使い、容姿はタグに任せる
+- コマの動作・場所・カメラをタグだけ羅列する → 中身が薄くなる。Panel は文章で書く
+- 各 Panel で名前を変える → 人物がコマ間で入れ替わる。同じ名前を使う
 - `4koma` や `four stacked panels` → 同じ大きさの縦積み。[failures.md](failures.md)
+- `black and white manga page` / `professional Japanese manga` / `clean detailed line art` / `high quality screentones` を付ける

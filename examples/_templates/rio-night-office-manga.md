@@ -2,33 +2,18 @@
 
 **指示(日本語):** リオのプロンプトで、何か1ページの漫画ページを作る。
 
-**組み立てメモ:** 漫画ページは [manga-page.md](../../references/manga-page.md) の画風 → Character → Panel 文章。`characters/rio.md` があるときは固定タグ・既定衣装・既定自然文を Character one に展開する。各 Panel では同じ名前 `Rio` を使う。コマは上ワイド → 中段左右の縦割り → 下の大ゴマ。
+**組み立てメモ:** 漫画ページは [manga-page.md](../../references/manga-page.md)。画風は `manga style, dynamic panel layout` のみ。Character one は `blue archive, rio \(blue archive\)` と制服。容姿の長文は書かない。各 Panel では同じ名前 `Rio` を使う。コマは上ワイド → 中段左右の縦割り → 下の大ゴマ。
 
 **ポジティブ:**
 
 ```
 manga style,
-black and white manga page,
-professional Japanese manga,
-clean detailed line art,
-high quality screentones,
 dynamic panel layout,
 
 Character one:
-(Rio), a young Japanese woman,
-thigh-length straight black hair,
-blunt bangs,
-one side of her hair tucked behind her ear,
-a Millennium science school logo hairclip,
-large almond-shaped red eyes with ringed irises and white pupils,
-a black metallic halo floating above her head,
-large breasts,
-wearing a white turtleneck sweater,
-a black jacket with an ID card,
-a black pleated skirt,
-black pantyhose,
-a thigh holster,
-and black high heels,
+blue archive,
+rio \(blue archive\),
+white turtleneck sweater, black jacket, id card, black skirt, pleated skirt, black pantyhose, thigh holster, black high heels,
 
 Panel 1:
 top full-width panel,
@@ -42,8 +27,8 @@ Panel 2:
 middle left vertical panel,
 close-up of Rio's face,
 she looks down at a tablet in her hands with a slight frown,
-her ringed red eyes catch a faint screen glow,
-dramatic manga screentones around her cheeks and halo,
+her eyes catch a faint screen glow,
+dramatic shading around her cheeks,
 
 Panel 3:
 middle right vertical panel,
@@ -57,7 +42,7 @@ bottom large full-width panel,
 Rio walks away down a long empty corridor while looking back over her shoulder,
 full-body shot from a low three-quarter angle,
 her expression is lonely and unreadable,
-dramatic night atmosphere with long shadows and detailed screentones.
+dramatic night atmosphere with long shadows.
 ```
 
 **推奨設定:** 1024×1536 または 768×1152、`er_sde`、CFG 4〜5、30〜50ステップ。
