@@ -24,6 +24,9 @@
 | リオ武装/臨戦 | `rio (armed) (blue archive), official alternate costume, official alternate hairstyle, ponytail, black bodysuit, skin tight, headgear, black gloves, thigh holster` | エイリアス `battle` / `bodysuit`。既定制服は削除。例は [rio-armed.md](../examples/_templates/rio-armed.md) | 2026-08-21 |
 | リオ冬服 | `rio (winter) (blue archive), official alternate costume, black coat, coat, white turtleneck sweater, turtleneck, black gloves` | NPC立ち絵。投稿が少ない。例は [rio-winter.md](../examples/_templates/rio-winter.md) | 2026-08-21 |
 | リオクリスマスドレス | `rio (christmas dress) (blue archive), official alternate costume, official alternate hairstyle, hair bun, black dress, dress, jewelry, necklace, bare shoulders` | エイリアス `rio (dress)`。例は [rio-christmas-dress.md](../examples/_templates/rio-christmas-dress.md) | 2026-08-21 |
+| ボタン付き白シャツ(Tシャツではない) | collared shirt, white shirt | `white shirt` 単体はTシャツ化しやすい。ネガに `t-shirt`。自然文は button-up collared shirt | 【未検証】 |
+| 途中のボタンが外れている | partially unbuttoned | `unbuttoned` や `open shirt` は全開になりやすい。中央だけ外れていることは自然文で書く | 【未検証】 |
+| 黒いブラが少し見える | black bra | チラ見えは自然文で slightly visible。`open shirt` は付けない | 【未検証】 |
 
 ## ポーズ・視線
 
@@ -44,6 +47,10 @@
 | 軽い赤面 | blush | 自然文で faint blush。照れなら `embarrassed` も足す。【未検証】 | |
 | 半目 | half-closed eyes | 自然文は half-lidded eyes。最終稿で使用 | 2026-08-21 |
 | 汗・湯気 | `sweat, steam, haze` | 顔の汗と空気中の湯気。最終稿で使用 | 2026-08-21 |
+| ぎこちない笑顔 | awkward smile | `forced smile` だと強要感が出る。はぁはぁと併用するなら `open mouth, panting` も付ける | 【未検証】 |
+| はぁはぁしている | panting, open mouth | `panting` だけだと口が閉じることがある | 【未検証】 |
+| 赤面 | blush | | 【未検証】 |
+| すこし汗 | sweat | 強い発汗にしない。量は自然文で lightly | 【未検証】 |
 
 ## 小物・持ち物
 
@@ -70,6 +77,9 @@
 | 不揃いの漫画ページ | 各 Panel 先頭で位置を文章指定(`top full-width panel` 等) | `4koma` は均等な縦積みになる(2026-08-21)。書式は [manga-page.md](manga-page.md)。タグ羅列より Panel 文章 | 2026-08-22 |
 | 均等4コマ | `4koma` | 同じ大きさのコマが上から下(または2×2)。動的なページには使わない | 2026-08-21 |
 | フルカラー漫画 | `colored` | `shoujo manga style` / `shounen manga style` / `monochrome` / `greyscale` はモノクロ化するのでフルカラーではネガへ | 【未検証】 |
+| 扉の隙間から見るPOV | pov, doorway, open door | 縦の扉とドア枠で切り取ることは自然文。`peeking` は目だけになりやすいので使わない | 【未検証】 |
+| 左下でインターホンを押す手 | (タグにしない) | `hands` を付けるとキャラ側に付く。自然文で bottom-left foreground, the viewer's hand presses a wall-mounted intercom | 【未検証】 |
+
 
 ## 照明・雰囲気
 

@@ -92,3 +92,11 @@
 - **外れた出力**: 背景だけでなく照明・肌まで紫に寄る
 - **原因(推定)**: `purple background` がライティングとブレンドされる。Anima は異なる概念を混ぜやすい
 - **直し方**: `purple background` を外し `dark background` + 自然文で `dark charcoal gradient, not purple`。ライティングは `warm lighting, rim light`。ネガに `purple background`。語彙は [vocab.md](vocab.md) の構図節。最終稿は [rio-jacket-from-below.md](../examples/_templates/rio-jacket-from-below.md)
+
+## white shirt がTシャツになる (2026-08-21)
+
+- **指示(日本語)**: 山田が白いシャツ(ボタン付き)を着て、マンション玄関の扉隙間から見える
+- **使ったプロンプト**: ポジに `white shirt`。ネガに `t-shirt` なし
+- **外れた出力**: 白シャツがTシャツになった
+- **原因(推定)**: `white shirt` 単体はTシャツにもブレンドされやすい
+- **直し方**: ポジに `collared shirt` を併記し、ネガに `t-shirt` を入れる。自然文は `button-up collared shirt` と書く。`open shirt` は全開になりやすいので使わない。語彙は [vocab.md](vocab.md) の衣装節
