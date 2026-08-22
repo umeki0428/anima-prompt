@@ -1,0 +1,4 @@
+{
+  "name": "anima-prompt",
+  "install": "npm ci"
+}

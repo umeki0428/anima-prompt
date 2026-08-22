@@ -1,0 +1,14 @@
+{
+  "name": "anima-prompt",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ComfyUI + Anima 用プロンプト作成ナレッジベース。Markdown の整合性検証ツールチェーンを同梱。",
+  "scripts": {
+    "lint": "markdownlint-cli2",
+    "check-links": "node tools/check-links.mjs",
+    "validate": "npm run lint && npm run check-links"
+  },
+  "devDependencies": {
+    "markdownlint-cli2": "^0.18.1"
+  }
+}
