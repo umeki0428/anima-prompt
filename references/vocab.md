@@ -29,6 +29,14 @@
 | 息が荒い | heavy breathing | | 【未検証】 |
 | 汗 | sweat | 肌の汗。服を濡らす指定は透けに繋がる | 【未検証】 |
 | 下を見る(ローアングル) | looking down | `looking at viewer` と併用しがち | 【未検証】 |
+| 女の子座り | wariza, sitting, on floor | `seiza` や `hugging own knees` に寄る。ネガに `seiza` | 【未検証】 |
+| 耳にかける | tucking hair, hair behind ear | ポーズを変えても指示がある限り残す。四つん這いと両立しにくい | 【未検証】 |
+| 四つん這い | all fours | 膝立ちに戻るなら `(all fours:2)`。ネガに `sitting, standing` | 【未検証】 |
+| 前かがみ | leaning forward | | 【未検証】 |
+| 前かがみで胸が垂れる | hanging breasts | `leaning forward` / `all fours` とセット。白タートルでは透け注意 | 【未検証】 |
+| 後ろから抱える | hug from behind | 2人の位置関係の固定用。服の中の手までは保証しない | 2026-08-21 |
+| 舌を出す(あへがおなし) | tongue out, open mouth | ネガに `ahegao, rolling eyes` | 【未検証】 |
+| 疑似フェラ | penis / fellatio は使わない | `open mouth, tongue out` + `pov` で画面下に口。ネガに `penis, fellatio` | 【未検証】 |
 
 ## 小物・持ち物
 
@@ -72,4 +80,5 @@
 | 肌から湯気 | steaming body | 白服が透けやすい。透け禁止なら使わない | 2026-08-20 |
 | 暗い無彩色背景 | dark background | `purple background` の代わり | 2026-08-21 |
 | パンツライン抑制 | (ネガ) panty lines, cameltoe, panties | ローアングル＋タイツで出やすい | 2026-08-21 |
-| 服の中の手 | タグにしない。`hug from behind` で2人を先に固定 | `groping` / `breast grab` / `hands in clothes` は服の上。見えない手＋膨らみは構図崩壊。自然文は1文 | 2026-08-21 |
+| 服の中の手 | **Anima単発では扱わない**(2026-08-22打ち切り) | `groping` / `breast grab` / `hands in clothes` は服の上。見えない手＋膨らみは構図崩壊。裾から入れる単発も失敗。inpaintのみ | 2026-08-22 |
+| 2人の外見が混ざる | 男性は短い茶髪など、相手と違う外見を自然文で先に書く | 長髪ハロ持ちと `1boy` を並べると顔が混ざる | 2026-08-21 |

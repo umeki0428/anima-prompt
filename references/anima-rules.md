@@ -83,6 +83,9 @@ year 2025, newest, normal quality, score_5, highres, safe, 1girl, oomuro sakurak
 - **JSON/YAML形式は非推奨**。複雑になると破綻し、品質面の利点なし【未検証】(同上)。
 - **文字描画は1〜2単語まで**。複雑なタイポグラフィ不可【公式】(https://docs.comfy.org/tutorials/image/anima/anima)。入れる場合は自然文中で引用符で囲む(例: `a sign that says "OPEN"`)【未検証】。
 - 異なる概念は**互いにブレンドされやすい**(服の色がキャラ間で入れ替わる等)。要素を絞る【未検証】(https://techtactician.com/anima-comfyui-quick-local-setup-guide/)。
+- **2人は外見を混ぜない。** 片方に長髪・ハロがあるなら、もう片方は短い別色の髪を自然文で先に書く【実生成・2026-08-21】。
+- **服の内側の手**(タンクトップの脇・裾から入れて胸を触る等)は Anima 単発では再現できない。言い回しを変えて再挑戦しない。記録は [failures.md](failures.md)【実生成・2026-08-22】。
+- Danbooru由来のタグは**アンダースコアをスペースに直し**、同義の積み増し(`skirt` + `black skirt` + `pleated skirt` など)は畳む。
 
 ## 漫画ページ(コマ割り)
 

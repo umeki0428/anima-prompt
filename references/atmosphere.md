@@ -154,5 +154,6 @@ A single warm lamp beside the bed lights her from the side. The rest of the room
 - **ローアングルでスカートが消える:** スカートタグに重み(`(black skirt:1.8), (pleated skirt:1.8)`)、自然文で裾が見えると書く。ネガに `skirt removed, no skirt`。`from below` の重みを上げすぎない【実生成・2026-08-21】。
 - **パンツライン:** ネガに `panty lines, cameltoe, panties`。自然文で `no panty lines`【実生成・2026-08-21】。
 - **下からのライトアップ:** `from below` 構図と `light from below` は相性が良いが、スカートとパンツラインも強調される。
+- **服の中の手:** タンクトップの脇・裾から手を入れて胸や乳首を触る構図は、言い回しを変えても Anima 単発では再現できず打ち切り(2026-08-22)。詳細は [failures.md](failures.md)。
 
 失敗の詳細は [failures.md](failures.md)。
