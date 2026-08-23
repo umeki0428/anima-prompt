@@ -1,21 +1,21 @@
-# 例: やまだ・両手を肩の高さで手のひら上(じゃーん)
+# 例: やまだ・胸の前で手のひらをこちら向け
 
-**指示(日本語):** やまだで添付ポーズを再現。服装は `tayama-altoutfit1`(青ジャケット・黒シャツイン・短パン)。髪は下ろしたストレート。正面向きで太ももから上。肘は胴に近づけ、両前腕を外向きに上げ、手のひらを肩の高さで上向きに開く。タバコは口にくわえる。笑顔はやめて普通の顔。背景は真っ白。
+**指示(日本語):** 添付ポーズに変更。体は斜め左向きのスリークォーター、頭だけこっちを見る。両肘を曲げ、両手を胸の前で上げ、手のひらは視聴者に向ける。指は軽く曲げて揃える。服装は `tayama-altoutfit1`(青ジャケット・黒シャツイン・短パン)。髪は下ろしたストレート。タバコは口にくわえる。笑顔はやめて普通の顔。背景は真っ白。太ももから上。
 
-**組み立てメモ:** 既定の白シャツ／ドレス／`folded ponytail` は全部削除し、別衣装・別髪型に置き換える。両手は開いているのでタバコは `cigarette, smoking` + 自然文で口にくわえる。`holding cigarette` は手持ちになるので使わずネガへ。表情は `closed eyes, open mouth, :d` を外し `looking at viewer`。笑顔タグはネガへ。`open clothes` はシャツまで開くので `open jacket` のみ。`long hair` と `medium hair` は重ねず `medium hair`。背景は `simple background, white background`。1枚ソロなので外見はタグだけ。自然文はジャケットが開いていること、シャツがインであること、タバコの位置、肘と手の高さ。タグ順は 品質/レーティング → 1girl, solo → トリガー → 髪/目 → 衣装 → 小物 → ポーズ/表情 → 背景 → カメラ → 画風。
+**組み立てメモ:** ポーズだけ差し替え。参考の犬耳・尻尾・オレンジ背景・驚き顔・赤面・効果線・文字は使わない。`paw pose` はケモ耳が付きやすいので使わない。`palms up` / `open hands` はじゃーん(手のひら上・指を開く)になるので外し、ネガへ。手は `hands up` + 自然文で胸の前・手のひらをこちら・指は軽く曲げて揃える。体の向きは自然文の three-quarter。タバコは口にくわえたまま(`holding cigarette` はネガ)。表情は真顔で `looking at viewer`。背景は白。1枚ソロなので外見はタグだけ。
 
 **ポジティブ:**
 
 ```
-masterpiece, best quality, score_7, safe, 1girl, solo, yamada, bangs, sidelocks, medium hair, straight hair, red hair, red eyes, earrings, black choker, black shirt, shirt tucked in, shorts, belt, blue jacket, open jacket, alternate costume, cigarette, smoking, standing, palms up, open hands, looking at viewer, cowboy shot, simple background, white background, anime coloring
+masterpiece, best quality, score_7, safe, 1girl, solo, yamada, bangs, sidelocks, medium hair, straight hair, red hair, red eyes, earrings, black choker, black shirt, shirt tucked in, shorts, belt, blue jacket, open jacket, alternate costume, cigarette, smoking, standing, hands up, head tilt, looking at viewer, cowboy shot, simple background, white background, anime coloring
 
-She stands facing the viewer in a cowboy shot from the upper thighs up. The blue jacket hangs open, and the black shirt stays tucked into the shorts. A cigarette is held between her lips, not in her hands. Her expression is neutral, with her eyes open. Her elbows stay tucked close to her torso while both forearms lift slightly outward, holding her open palms up at shoulder height with fingers splayed. The background is a flat white void, with no feet or shoes in frame.
+She stands in a cowboy shot from the upper thighs up, body turned slightly to the left in a three-quarter view, with her head turned to look at the viewer. The blue jacket hangs open, and the black shirt stays tucked into the shorts. A cigarette is held between her lips, not in her hands. Her expression is neutral, with her eyes open. Both elbows are bent, and her hands are raised in front of her chest with the palms facing the viewer; the fingers are slightly curled and held together, not splayed. The background is a flat white void, with no feet or shoes in frame.
 ```
 
 **ネガティブ:**
 
 ```
-worst quality, low quality, score_1, score_2, score_3, artist name, blurry, jpeg artifacts, chromatic aberration, bad anatomy, extra limbs, bad hands, waving, v, peace sign, arms above head, hand in pocket, holding cigarette, smile, grin, :d, closed eyes, folded ponytail, brown hair, white shirt, dress, white skirt, pantyhose, leather jacket, black jacket, black background, shoes, boots, feet, close-up face only, portrait crop, nsfw, explicit, sensitive
+worst quality, low quality, score_1, score_2, score_3, artist name, blurry, jpeg artifacts, chromatic aberration, bad anatomy, extra limbs, bad hands, waving, v, peace sign, arms above head, palms up, open hands, spread fingers, hand in pocket, holding cigarette, smile, grin, :d, closed eyes, animal ears, dog ears, tail, folded ponytail, brown hair, white shirt, dress, white skirt, pantyhose, leather jacket, black jacket, black background, shoes, boots, feet, close-up face only, portrait crop, nsfw, explicit, sensitive, text
 ```
 
 **推奨設定:** 3:4、`er_sde`、CFG 4〜5、30〜50ステップ。
