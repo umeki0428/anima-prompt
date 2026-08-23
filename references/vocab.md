@@ -54,6 +54,7 @@
 | すこし汗 | sweat | 強い発汗にしない。量は自然文で lightly | 【未検証】 |
 | 両手を肩の高さで手のひら上(じゃーん) | palms up, open hands | 肘は胴に近い。`arms up` / `hands up` は頭上や降参に寄る。高さは自然文で elbows tucked, hands at shoulder height | 【未検証】 |
 | 胸の前で手のひらをこちら向け | hands up | 手は顔の横や頭上ではなく胸の前。手のひらは視聴者向き、指は軽く曲げて揃える。`palms up` / `open hands` / `paw pose` は使わない(じゃーん化・ケモ耳) | 【未検証】 |
+| 手を下ろして体を少し斜め | arms at sides, looking at viewer | 上げていた手を下ろす。`from side` は横顔になるので使わず、自然文で only slightly turned | 【未検証】 |
 | 閉じた笑顔の目+大口 | closed eyes, open mouth, :d | `:d` は目を閉じた開口笑顔。smile / grin は同義積み増しになるので重ねない | 【未検証】 |
 
 ## 小物・持ち物

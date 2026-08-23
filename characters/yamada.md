@@ -47,4 +47,4 @@ medium hair, straight hair, sidelocks, earrings
 
 | 内容 | ファイル | 状態 |
 |---|---|---|
-| 胸の前で手のひらこちら・口タバコ・真顔・白背景 | [yamada-tada-pose.md](../examples/_templates/yamada-tada-pose.md) | 【未検証】 |
+| 手下ろし・少し斜め・口タバコ・真顔・白背景 | [yamada-tada-pose.md](../examples/_templates/yamada-tada-pose.md) | 【未検証】 |
