@@ -13,7 +13,7 @@
 
 | 日本語 | 使うタグ | メモ | 確認日 |
 |---|---|---|---|
-| (未記入) | | | |
+| やまだ髪を下ろす | medium hair, straight hair, bangs, sidelocks | `folded ponytail` は外す。`long hair` と `medium hair` は重ねない。赤単色なら `brown hair` も外す | 【未検証】 |
 
 ## 衣装
 
@@ -27,6 +27,7 @@
 | ボタン付き白シャツ(Tシャツではない) | collared shirt, white shirt | `white shirt` 単体はTシャツ化しやすい。ネガに `t-shirt`。自然文は button-up collared shirt | 【未検証】 |
 | 途中のボタンが外れている | partially unbuttoned | `unbuttoned` や `open shirt` は全開になりやすい。中央だけ外れていることは自然文で書く | 【未検証】 |
 | 黒いブラが少し見える | black bra | チラ見えは自然文で slightly visible。`open shirt` は付けない | 【未検証】 |
+| やまだ田山アルト(青ジャケット) | alternate costume, black choker, black shirt, shirt tucked in, shorts, belt, blue jacket, open jacket | LoRA側の `tayama-altoutfit1`。既定の白シャツ/ドレスは削除。`open clothes` は使わない。例は [yamada-tada-pose.md](../examples/_templates/yamada-tada-pose.md) | 【未検証】 |
 
 ## ポーズ・視線
 
