@@ -51,6 +51,8 @@
 | はぁはぁしている | panting, open mouth | `panting` だけだと口が閉じることがある | 【未検証】 |
 | 赤面 | blush | | 【未検証】 |
 | すこし汗 | sweat | 強い発汗にしない。量は自然文で lightly | 【未検証】 |
+| 両手を肩の高さで手のひら上(じゃーん) | palms up, open hands | 肘は胴に近い。`arms up` / `hands up` は頭上や降参に寄る。高さは自然文で elbows tucked, hands at shoulder height | 【未検証】 |
+| 閉じた笑顔の目+大口 | closed eyes, open mouth, :d | `:d` は目を閉じた開口笑顔。smile / grin は同義積み増しになるので重ねない | 【未検証】 |
 
 ## 小物・持ち物
 

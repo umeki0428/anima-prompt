@@ -25,3 +25,10 @@ choker, black choker, white shirt, dress, white skirt, belt, leather, pantyhose,
 - `leather` は素材タグで部位が曖昧。崩れたら `leather belt` や `leather boots` など部位を限定する
 - 既定衣装と別衣装を混在させない(概念ブレンドで崩れる)
 - タグ順は トリガー/キャラ名 → 固定タグ → 衣装 → ポーズ/表情 → カメラ → 画風 の順
+- 太ももから下が見えない指示なら `boots` を外し `cowboy shot`。ネガに `shoes, boots, feet`
+
+## 例(プロンプト全文)
+
+| 内容 | ファイル | 状態 |
+|---|---|---|
+| 両手を肩の高さで手のひら上(じゃーん) | [yamada-tada-pose.md](../examples/_templates/yamada-tada-pose.md) | 【未検証】 |
