@@ -59,7 +59,7 @@
 
 | 日本語 | 使うタグ | メモ | 確認日 |
 |---|---|---|---|
-| (未記入) | | | |
+| タバコを口にくわえる | cigarette, smoking | 手は空けておく。`holding cigarette` は手持ちになるので使わずネガへ。位置は自然文で between her lips | 【未検証】 |
 
 ## 構図・カメラ
 
@@ -75,7 +75,8 @@
 | 全身 | full body | 【未検証】 | |
 | 横顔 | profile | 【未検証】 | |
 | 後ろ姿 | from behind | 【未検証】 | |
-| こっち目線 | looking at viewer | 【未検証】 | |
+| こっち目線 | looking at viewer | 【未検証】 |
+| 真っ白背景 | simple background, white background | 黒背景と混ぜない。ネガに `black background` | 【未検証】 | |
 | 視線外し | looking away | 【未検証】 | |
 | 不揃いの漫画ページ | 各 Panel 先頭で位置を文章指定(`top full-width panel` 等) | `4koma` は均等な縦積みになる(2026-08-21)。書式は [manga-page.md](manga-page.md)。タグ羅列より Panel 文章 | 2026-08-22 |
 | 均等4コマ | `4koma` | 同じ大きさのコマが上から下(または2×2)。動的なページには使わない | 2026-08-21 |

@@ -47,4 +47,4 @@ medium hair, straight hair, sidelocks, earrings
 
 | 内容 | ファイル | 状態 |
 |---|---|---|
-| 両手を肩の高さで手のひら上(じゃーん)・田山アルト | [yamada-tada-pose.md](../examples/_templates/yamada-tada-pose.md) | 【未検証】 |
+| 両手を肩の高さで手のひら上・口タバコ・真顔・白背景 | [yamada-tada-pose.md](../examples/_templates/yamada-tada-pose.md) | 【未検証】 |
