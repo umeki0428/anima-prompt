@@ -72,7 +72,7 @@
 | 全身 | full body | 【未検証】 | |
 | 横顔 | profile | 【未検証】 | |
 | 後ろ姿 | from behind | 【未検証】 | |
-| キャラクターシート | character sheet, multiple views, turnaround, full body, simple background, white background | 同一人物の正面・側面・背面。人数は `1girl, solo`。配置は自然文で left/center/right。`3girls` は使わない。文字ラベルは入れない。例は [reisalin-character-sheet.md](../examples/_templates/reisalin-character-sheet.md) | 【未検証】 |
+| キャラクターシート | character sheet, multiple views, turnaround, full body, simple background, white background | 同一人物の正面・側面・背面。人数は `1girl, solo`。配置は自然文で left/center/right。`3girls` は使わない。文字ラベルは入れない | 【未検証】 |
 | こっち目線 | looking at viewer | 【未検証】 | |
 | 視線外し | looking away | 【未検証】 | |
 | 不揃いの漫画ページ | 各 Panel 先頭で位置を文章指定(`top full-width panel` 等) | `4koma` は均等な縦積みになる(2026-08-21)。書式は [manga-page.md](manga-page.md)。タグ羅列より Panel 文章 | 2026-08-22 |

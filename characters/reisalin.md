@@ -24,7 +24,7 @@ Reisalin Stout has short brown hair with a hairclip and brown eyes. She wears a 
 
 | 内容 | ファイル | 状態 |
 |---|---|---|
-| 正面・側面・背面のキャラクターシート | [reisalin-character-sheet.md](../examples/_templates/reisalin-character-sheet.md) | 【未検証】 |
+| 地面から見上げ・既定衣装のまま | [reisalin-from-below.md](../examples/_templates/reisalin-from-below.md) | 【未検証】 |
 
 ## 注意
 
@@ -32,7 +32,7 @@ Reisalin Stout has short brown hair with a hairclip and brown eyes. She wears a 
 - `thighs` と `thick thighs` は同義積み増しになるので、体型は `thick thighs` のみ使う
 - `white headwear` と `beret` は色と種類の併用。崩れたら `white beret` に畳む
 - `short shorts` と `red shorts` は形状と色の併用。既定衣装と別ボトムを混在させない
+- ローアングルでは短パンが消えやすい。`(red shorts:1.8), (short shorts:1.8)` と自然文で裾が見えると書く
 - 既定衣装と別衣装を混在させない(概念ブレンドで崩れる)
 - レーティング既定は `safe`
-- キャラクターシートでは人数は `1girl, solo` のまま。3ビューでも `3girls` は付けない
 - タグ順は 固定タグ → 衣装 → ポーズ/表情 → カメラ → 画風
