@@ -226,6 +226,10 @@ her expression is calm and distant,
 the dark office interior and city lights fill the background,
 ```
 
+## 見本: ちいかわ風・ラーメン屋(カラー複数コマ)
+
+2人のマスコットが空腹からラーメン屋へ入るページ。原画がフルカラーなので `black and white manga page` は付けない。全文は [chiikawa-ramen-manga-page.md](../examples/sfw/chiikawa-ramen-manga-page.md)。
+
 ## 設定
 
 | 項目 | 値 |
