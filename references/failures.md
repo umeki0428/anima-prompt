@@ -30,7 +30,7 @@
 - **使ったプロンプト**: ポジに `purple lighting, purple background, dim lighting, rim light, steam`
 - **外れた出力**: 肌・服・背景まで全体が紫に寄る
 - **原因(推定)**: `purple lighting` と `purple background` が重なり、主光まで紫になる
-- **直し方**: 両方外す。背景は `dark background` の無彩色。光は `warm lighting, rim light`。ネガに `purple, purple lighting, purple background`。手順は [atmosphere.md](atmosphere.md)
+- **直し方**: `purple lighting` と `purple background` を同時に使わない。背景色は場面で選ぶ。無彩色でよいなら `dark background` + 暖色光。紫グラデが欲しいなら色は自然文、人物光は `warm lighting`、ネガに `purple lighting`。手順は [atmosphere.md](atmosphere.md)
 
 ## steaming body で服が透ける (2026-08-20)
 
@@ -91,7 +91,7 @@
 - **使ったプロンプト**: ポジに `simple background, gradient background, purple background`
 - **外れた出力**: 背景だけでなく照明・肌まで紫に寄る
 - **原因(推定)**: `purple background` がライティングとブレンドされる。Anima は異なる概念を混ぜやすい
-- **直し方**: `purple background` を外し `dark background` + 自然文で `dark charcoal gradient, not purple`。ライティングは `warm lighting, rim light`。ネガに `purple background`。語彙は [vocab.md](vocab.md) の構図節。最終稿は [rio-jacket-from-below.md](../examples/_templates/rio-jacket-from-below.md)
+- **直し方**: 肌まで染めたくないなら `purple background` を照明と同時に使わない。背景色は場面で選ぶ。チャコールが欲しいなら `dark background` + 自然文で charcoal。黒紫グラデが欲しいならタグは `simple background, gradient background, dark background`、色は自然文、人物光は `warm lighting`、ネガに `purple lighting`。色が弱いときだけ `purple background` を足す。[atmosphere.md](atmosphere.md) / [vocab.md](vocab.md)
 
 ## white shirt がTシャツになる (2026-08-21)
 
@@ -100,3 +100,26 @@
 - **外れた出力**: 白シャツがTシャツになった
 - **原因(推定)**: `white shirt` 単体はTシャツにもブレンドされやすい
 - **直し方**: ポジに `collared shirt` を併記し、ネガに `t-shirt` を入れる。自然文は `button-up collared shirt` と書く。`open shirt` は全開になりやすいので使わない。語彙は [vocab.md](vocab.md) の衣装節
+
+## 舌キスなのに顔が出ない (2026-09-04)
+
+- **指示(日本語)**: リオとユウジの舌キス。顔が見える
+- **使ったプロンプト**: ユウジ側に既定の `faceless male` が残っている
+- **外れた出力**: 男性の顔が潰れる、または舌キスにならない
+- **原因(推定)**: `faceless male` は顔を描かない指定。舌キスと矛盾する
+- **直し方**: 顔が必要な指示では `faceless male` を外し、ネガへ入れる。[yuji.md](../characters/yuji.md)
+
+## 指のはずがディルド／両手とも胸 (2026-09-04)
+
+- **指示(日本語)**: 膝の上で舌キス。片手は胸、もう片手の指先でタイツ越しにクリトリス。ディルドなし
+- **使ったプロンプト**: 玩具や挿入を書かないつもりでも、股間の膨らみや両手胸に寄る
+- **外れた出力**: ディルド、双方の胸を両手で掴む、挿入に読まれる
+- **原因(推定)**: 股間の接触は玩具・挿入の定番に寄る。両手は両方とも胸にブレンドされやすい
+- **直し方**: 自然文で left / right を固定し `index fingertip` と書く。ネガに `dildo, sex toy, vibrator, strap-on, object insertion, penis, two hands on breasts`。破れたタイツの上から触るのは可(服の中の手とは別)。見本は [rio-yuji-bed-kiss.md](../examples/adult/rio-yuji-bed-kiss.md)
+
+## グリーンバックとエロ雰囲気を同時に取る (2026-09-04)
+
+- **指示(日本語)**: 切り抜き用のグリーンバックのまま、暗い部屋の色気も出す
+- **外れた出力**: クロマキーになって雰囲気が出ない、または色面が消える
+- **原因(推定)**: `green background` は切り抜き用。dim / 湯気 / 色グラデとは目的が違う
+- **直し方**: 切り抜きが目的ならグリーンバックだけ。雰囲気が目的なら場面に合った色面グラデにする。部屋が不要ならベッド面だけ残す。[atmosphere.md](atmosphere.md)

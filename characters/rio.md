@@ -54,6 +54,7 @@ Rio has thigh-length straight black hair with blunt bangs, one side tucked behin
 | 内容 | ファイル | 状態 |
 |---|---|---|
 | 下アングル・上着を脱ぎかけ・太もも切り | [rio-jacket-from-below.md](../examples/_templates/rio-jacket-from-below.md) | ユーザー最終稿(2026-08-21)。`sensitive` |
+| ベッドで舌キス(ユウジ) | [rio-yuji-bed-kiss.md](../examples/adult/rio-yuji-bed-kiss.md) | ユーザー最終稿(2026-09-04)。`explicit`。別衣装 |
 | 武装 / 臨戦 | [rio-armed.md](../examples/_templates/rio-armed.md) | 【未検証】立ち絵 |
 | 冬服 | [rio-winter.md](../examples/_templates/rio-winter.md) | 【未検証】立ち絵 |
 | クリスマスドレス | [rio-christmas-dress.md](../examples/_templates/rio-christmas-dress.md) | 【未検証】立ち絵 |

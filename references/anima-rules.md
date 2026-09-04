@@ -96,7 +96,7 @@ year 2025, newest, normal quality, score_5, highres, safe, 1girl, oomuro sakurak
 
 1. **主題を確定**: 人数(`1girl`/`2girls`/`1boy`/`1other`)、キャラ名・作品名(既存キャラなら小文字タグで)
 2. **外見・服装・表情・ポーズ**を Danbooru タグに変換([vocab.md](vocab.md) を参照)
-3. **背景・構図・ライティング**は自然文で補足(空間関係はタグより自然文が得意)。容姿はタグに既にあれば自然文に書かない。エロさだけ足す光・色・表情・湯気は [atmosphere.md](atmosphere.md)。漫画ページは [manga-page.md](manga-page.md) の Character / Panel 文章にする(容姿は Character のみ)
+3. **背景・構図・ライティング**は自然文で補足(空間関係はタグより自然文が得意)。容姿はタグに既にあれば自然文に書かない。背景色は場面に合わせる(固定パレットにしない)。エロさだけ足す光・色・表情・湯気は [atmosphere.md](atmosphere.md)。漫画ページは [manga-page.md](manga-page.md) の Character / Panel 文章にする(容姿は Character のみ)
 4. **画風指定**があれば前方に配置(`Studio Ghibli style` 等、または `@絵師名`。[styles.md](styles.md) 参照)
 5. 接頭辞と年代タグ(新しい絵柄なら `newest`)を付与。aesthetic ならクオリティ/score タグなし
 6. ネガティブは基本形+目的別追加

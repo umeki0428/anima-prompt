@@ -43,6 +43,10 @@
 | 前かがみで胸が垂れる | hanging breasts | `leaning forward` / `all fours` とセット。白タートルでは透け注意 | 【未検証】 |
 | 後ろから抱える | hug from behind | 2人の位置関係の固定用。服の中の手までは保証しない | 2026-08-21 |
 | 舌を出す(あへがおなし) | tongue out, open mouth | ネガに `ahegao, rolling eyes` | 【未検証】 |
+| 舌キス | kissing, tongue out | 顔が必要。`faceless male` は外してネガへ。よだれは下の行 | 2026-09-04 |
+| よだれ | drooling, saliva, saliva trail | 舌キスとセット。量は自然文 | 2026-09-04 |
+| 破れたタイツ越しの指 | torn pantyhose, white panties, wet panties | 自然文で index fingertip over the wet panties。服の中の手とは別(こちらは可)。ネガに `dildo, sex toy, intact pantyhose` | 2026-09-04 |
+| 左右の手が別動作 | (タグにしない) | 自然文で left / right。ネガに `two hands on breasts` | 2026-09-04 |
 | 疑似フェラ | penis / fellatio は使わない | `open mouth, tongue out` + `pov` で画面下に口。ネガに `penis, fellatio` | 【未検証】 |
 | 軽い赤面 | blush | 自然文で faint blush。照れなら `embarrassed` も足す。【未検証】 | |
 | 半目 | half-closed eyes | 自然文は half-lidded eyes。最終稿で使用 | 2026-08-21 |
@@ -92,14 +96,15 @@
 | 逆光 | backlight | `rim light` とセットしやすい | 【未検証】 |
 | 紫の光 | purple lighting | 画面全体が紫に染まりやすい。強すぎるときは外して `warm lighting` + ネガ `purple` | 2026-08-21 |
 | ピンク／マゼンタの光 | pink lighting, magenta lighting | ホテル寄り | 【未検証】 |
-| 暖色の光 | warm lighting | 紫の代替 | 2026-08-21 |
+| 暖色の光 | warm lighting | 人物側。色付き背景と分けるときにも使う | 2026-08-21 |
 | ボリューム光 | volumetric lighting | 湯気・霧とセット | 【未検証】 |
 | 部屋の湯気 | steam, haze | `steaming body` より透けにくい | 2026-08-20 |
 | 肌から湯気 | steaming body | 白服が透けやすい。透け禁止なら使わない | 2026-08-20 |
-| 暗い無彩色背景 | dark background | `purple background` の代わり | 2026-08-21 |
+| 暗い無彩色背景 | dark background | 無彩色の場面用。色付きグラデが欲しい場面では下の「色付きグラデ」 | 2026-08-21 |
 | パンツライン抑制 | (ネガ) panty lines, cameltoe, panties | ローアングル＋タイツで出やすい | 2026-08-21 |
 | 服の中の手 | **Anima単発では扱わない**(2026-08-22打ち切り) | `groping` / `breast grab` / `hands in clothes` は服の上。見えない手＋膨らみは構図崩壊。裾から入れる単発も失敗。inpaintのみ | 2026-08-22 |
 | 2人の外見が混ざる | 男性は短い茶髪など、相手と違う外見を**タグで先に書く** | 長髪ハロ持ちと `1boy` を並べると顔が混ざる。自然文で容姿を再掲しない | 2026-08-21 |
-| 紫のグラデーション背景 | (使わない) | シーン全体が紫に染まる。暗い背景は下の行 | 2026-08-21 |
-| 暗いチャコールグラデ | `simple background, gradient background, dark background` | 自然文で dark charcoal gradient, not purple。ネガに `purple background, outdoors, scenery, cloudy sky` | 2026-08-21 |
-| 暖色リム | `dim lighting, warm lighting, rim light, volumetric lighting` | 下と後ろからの薄いリム。紫と混ぜない | 2026-08-21 |
+| 色付きグラデ背景 | `simple background, gradient background, dark background` | **色は場面で変える。** 色名は自然文。`purple background` タグは肌まで染めやすいので、弱いときだけ足す。人物光は背景色と分ける(紫グラデなら光は `warm lighting`、ネガ `purple lighting`) | 2026-09-04 |
+| 暗いチャコールグラデ | `simple background, gradient background, dark background` | 無彩色の場面。自然文で dark charcoal gradient。ネガに `purple background` は、その場面で紫が不要なときだけ | 2026-08-21 |
+| ベッド面だけ(部屋なし) | on bed | 自然文で rumpled bed surface。ネガに `scenery, indoor, furniture, bedroom, headboard`。グリーンバックは切り抜き用で雰囲気とは別 | 2026-09-04 |
+| 暖色リム | `dim lighting, warm lighting, rim light, volumetric lighting` | 人物側の光。色付き背景と重ねるときは照明色タグを背景色と同じにしない | 2026-08-21 |

@@ -23,9 +23,9 @@
 - 漫画ページ(複数コマ) → `references/manga-page.md`。画風行 → Character one/two → Panel毎に位置と状況を文章で書く。通常の3層は使わない
 - キャラ名を指定されたとき → `characters/<名前>.md` を読む。1枚絵では固定タグ・既定衣装をそのまま使い、差分だけタグ行と自然文に足す(自然文に容姿は足さない)。漫画ページでは固定タグ・既定衣装・既定自然文を Character ブロックの文章に一度だけ展開し、各 Panel では同じ名前と動作だけ使う
 - 画風・絵師タグ → `references/styles.md` / サンプラー・CFG等 → `references/settings.md`
-- 色・光・表情・湯気でエロさを出す → `references/atmosphere.md`
+- 色・光・表情・湯気でエロさを出す → `references/atmosphere.md`。**背景の配色は場面ごとに変える**(チャコール固定・紫回避固定にしない)
 - 語彙のタグ化 → `references/vocab.md` / 失敗事例と対処 → `references/failures.md`
-- 形式の見本 → `examples/_templates/`、検証済み例と生成記録 → `examples/sfw/`
+- 形式の見本 → `examples/_templates/`、検証済み例と生成記録 → `examples/sfw/` / `examples/adult/`
 - `captions/` は参考画像の逆キャプション置き場(examples/ の素材)。生成記録は examples/ に保存する。
 
 ## 運用ルール
