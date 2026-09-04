@@ -2,7 +2,7 @@
 
 **指示(日本語):** ゆいとユウジでエロい漫画ページ。右が大ゴマ、左上がゆいの顔アップのL字。ゆいは既定衣装のまま、ユウジに股間を触られて乱れている。
 
-**組み立てメモ:** 漫画ページなので通常の3層ではなく4段。`characters/yui.md` / `characters/yuji.md` の固定タグ・既定衣装はそのまま。ページ全体の状態(赤面・汗)とコマ動作だけ差分。配置はL字の定型句を維持。`4koma` は使わない。
+**組み立てメモ:** 漫画ページなので通常の3層ではなく4段。`characters/yui.md` / `characters/yuji.md` の固定タグ・既定衣装はそのまま。容姿はタグ行だけにし、各コマの文章では髪・瞳を繰り返さない。ページ全体の状態(赤面・汗)とコマ動作だけ差分。配置はL字の定型句を維持。`4koma` は使わない。
 
 **ポジティブ:**
 
@@ -15,9 +15,9 @@ masterpiece, best quality, score_7, explicit, newest,
 comic page, multiple panels, panel layout, anime coloring, irregular manga layout, L-shaped page, thick black gutters, border,
 large vertical panel occupying the entire right side of the page, smaller rectangular panel in the upper left corner, the large panel wrapping under the small panel,
 
-right large panel: full body of Yui, brown ponytail and brown eyes, medium-large breasts, sitting on Yuji's lap on a rumpled bed, legs spread, tank top slipping off one shoulder, black camisole strap visible through the wide armhole, Yuji a faceless young Japanese man with short black hair and bangs over his eyes in a black t-shirt, his hand inside her blue denim short pants fingering her, vigorous fingering, pussy juice, arched back, trembling, heavy blush, from slightly in front,
+right large panel: full body of Yui sitting on Yuji's lap on a rumpled bed, legs spread, tank top slipping off one shoulder, black camisole strap visible through the wide armhole, Yuji in a black t-shirt, his hand inside her blue denim short pants fingering her, vigorous fingering, pussy juice, arched back, trembling, heavy blush, from slightly in front,
 
-upper left panel: close-up of Yui's face only, brown eyes, ponytail, moaning, open mouth, teary eyes, heavy blush, sweaty, ahegao, looking up, from slightly above
+upper left panel: close-up of Yui's face only, moaning, open mouth, teary eyes, heavy blush, sweaty, ahegao, looking up, from slightly above
 ```
 
 **ネガティブ:**

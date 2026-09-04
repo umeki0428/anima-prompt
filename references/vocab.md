@@ -99,7 +99,7 @@
 | 暗い無彩色背景 | dark background | `purple background` の代わり | 2026-08-21 |
 | パンツライン抑制 | (ネガ) panty lines, cameltoe, panties | ローアングル＋タイツで出やすい | 2026-08-21 |
 | 服の中の手 | **Anima単発では扱わない**(2026-08-22打ち切り) | `groping` / `breast grab` / `hands in clothes` は服の上。見えない手＋膨らみは構図崩壊。裾から入れる単発も失敗。inpaintのみ | 2026-08-22 |
-| 2人の外見が混ざる | 男性は短い茶髪など、相手と違う外見を自然文で先に書く | 長髪ハロ持ちと `1boy` を並べると顔が混ざる | 2026-08-21 |
+| 2人の外見が混ざる | 男性は短い茶髪など、相手と違う外見を**タグで先に書く** | 長髪ハロ持ちと `1boy` を並べると顔が混ざる。自然文で容姿を再掲しない | 2026-08-21 |
 | 紫のグラデーション背景 | (使わない) | シーン全体が紫に染まる。暗い背景は下の行 | 2026-08-21 |
 | 暗いチャコールグラデ | `simple background, gradient background, dark background` | 自然文で dark charcoal gradient, not purple。ネガに `purple background, outdoors, scenery, cloudy sky` | 2026-08-21 |
 | 暖色リム | `dim lighting, warm lighting, rim light, volumetric lighting` | 下と後ろからの薄いリム。紫と混ぜない | 2026-08-21 |

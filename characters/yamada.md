@@ -18,6 +18,7 @@ choker, black choker, white shirt, dress, white skirt, belt, leather, pantyhose,
 
 ## 注意
 
+- 1枚絵の自然文に固定タグの容姿を再掲しない。漫画なら Character ブロックに一度だけ展開し、各 Panel では名前と動作だけ使う
 - 元タグの `masterpiece, best quality` はキャラ固定ではなく、プロンプト接頭辞(anima-base)へ置く。aesthetic では付けない
 - `brown hair` と `red hair` の併記は二色髪(茶×赤)として扱う。単色にしたい指示があれば片方だけ残す
 - `dress` と `white shirt` / `white skirt` の併記は概念ブレンドしやすい。別衣装指定時は既定衣装を全部削除する

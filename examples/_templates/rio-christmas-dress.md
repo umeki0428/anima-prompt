@@ -2,14 +2,14 @@
 
 **指示(日本語):** クリスマスドレスを着ているプロンプト。
 
-**組み立てメモ:** `characters/rio.md` の固定タグを維持。既定制服は全部削除し、`rio (christmas dress) (blue archive)` 行に置き換える。お団子髪は公式の別髪型。ポーズ指定がないので立ち絵・正面向き。制服・コート・ボディスーツと混ぜない。タグ順は 固定タグ → 衣装 → ポーズ/表情 → カメラ → 画風。
+**組み立てメモ:** `characters/rio.md` の固定タグを維持。既定制服は全部削除し、`rio (christmas dress) (blue archive)` 行に置き換える。お団子髪は公式の別髪型。容姿はタグ行だけにし、自然文は構図(既定自然文は貼らない)。ポーズ指定がないので立ち絵・正面向き。制服・コート・ボディスーツと混ぜない。タグ順は 固定タグ → 衣装 → ポーズ/表情 → カメラ → 画風。
 
 **ポジティブ:**
 
 ```
 masterpiece, best quality, score_7, safe, 1girl, solo, rio (blue archive), rio (christmas dress) (blue archive), blue archive, very long hair, black hair, blunt bangs, hair behind ear, red eyes, ringed eyes, white pupils, hairclip, millennium science school logo, halo, black halo, large breasts, official alternate costume, official alternate hairstyle, hair bun, black dress, dress, jewelry, necklace, bare shoulders, standing, looking at viewer, full body, simple background, anime coloring
 
-Rio has thigh-length black hair gathered into a bun with blunt bangs, a Millennium logo hairclip, ringed red eyes with white pupils, and a black metallic halo. She wears a black Christmas dress with a necklace and bare shoulders, standing and looking at the viewer against a simple background.
+Rio stands and looks at the viewer against a simple background. She wears a black Christmas dress with a necklace and bare shoulders.
 ```
 
 **ネガティブ:**
