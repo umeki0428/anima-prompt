@@ -43,7 +43,9 @@ official alternate costume, black coat, coat, white turtleneck sweater, turtlene
 
 official alternate costume, official alternate hairstyle, hair bun, black dress, dress, jewelry, necklace, bare shoulders
 
-## 既定の自然文(容姿の補足。タグと併用)
+## 既定の自然文(漫画の Character ブロック専用)
+
+漫画ページの Character ブロックに**一度だけ**展開する。1枚絵の自然文には貼らない(容姿は固定タグだけで足りる)。
 
 Rio has thigh-length straight black hair with blunt bangs, one side tucked behind her ear and a Millennium logo hairclip. Her red eyes are ringed with white pupils, and a black metallic halo floats above her head.
 
@@ -52,6 +54,7 @@ Rio has thigh-length straight black hair with blunt bangs, one side tucked behin
 | 内容 | ファイル | 状態 |
 |---|---|---|
 | 下アングル・上着を脱ぎかけ・太もも切り | [rio-jacket-from-below.md](../examples/_templates/rio-jacket-from-below.md) | ユーザー最終稿(2026-08-21)。`sensitive` |
+| ベッドで舌キス(ユウジ) | [rio-yuji-bed-kiss.md](../examples/adult/rio-yuji-bed-kiss.md) | ユーザー最終稿(2026-09-04)。`explicit`。別衣装 |
 | 武装 / 臨戦 | [rio-armed.md](../examples/_templates/rio-armed.md) | 【未検証】立ち絵 |
 | 冬服 | [rio-winter.md](../examples/_templates/rio-winter.md) | 【未検証】立ち絵 |
 | クリスマスドレス | [rio-christmas-dress.md](../examples/_templates/rio-christmas-dress.md) | 【未検証】立ち絵 |
@@ -59,6 +62,7 @@ Rio has thigh-length straight black hair with blunt bangs, one side tucked behin
 ## 注意
 
 - identity はキャラ名+作品名+髪・目・ヘイロー・髪飾り。服装は既定衣装側。別衣装を指示されたら既定衣装だけ差し替える
+- 1枚絵の自然文に固定タグの容姿や既定自然文を再掲しない。漫画なら Character ブロックに一度だけ展開し、各 Panel では名前と動作だけ使う
 - 公式衣装差分ではキャラタグ `rio (blue archive)` に差分タグを足し、使わない衣装はネガへ(制服とボディスーツ等が混ざる)
 - `long hair` と `very long hair` は同義積み増しになるので、太腿丈の `very long hair` のみ使う
 - `bright pupils` は `white pupils` と近いので固定には入れない。効きが弱いときだけ足す

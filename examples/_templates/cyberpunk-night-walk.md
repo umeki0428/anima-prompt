@@ -2,12 +2,14 @@
 
 **指示(日本語):** 銀髪ロングの女の子が夜の街をひとりで歩いている。サイバーパンクっぽい雰囲気で。
 
+**組み立てメモ:** 容姿はタグ行だけ。自然文は構図・空間・雰囲気。髪を自然文で繰り返さない。
+
 **ポジティブ:**
 
 ```
 masterpiece, best quality, score_7, safe, newest, cyberpunk, 1girl, solo, long hair, silver hair, walking, night, city, neon lights, from behind
 
-A girl with long silver hair walks alone through a neon-lit city street at night. Glowing signs reflect on the wet pavement around her, and tall buildings tower into the dark sky.
+A girl walks alone through a neon-lit city street at night. Glowing signs reflect on the wet pavement around her, and tall buildings tower into the dark sky.
 ```
 
 **ネガティブ:**

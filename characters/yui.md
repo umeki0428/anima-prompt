@@ -17,6 +17,7 @@ loose oversized tank top, wide armholes, black camisole longer than the tank, he
 ## 注意
 
 - 既定衣装は「服装タグ1」。別衣装を指示されたらこの行は使わない
+- 1枚絵の自然文に固定タグの容姿を再掲しない。漫画なら Character ブロックに一度だけ展開し、各 Panel では名前と動作だけ使う
 - `medium-large breasts` はユーザー指定のまま。Danbooru正式は `medium breasts` / `large breasts` なので、効きが弱いときはそちらに置き換える
 - 既定衣装と別衣装を混在させない(概念ブレンドで崩れる)
 - タグ順は 固定タグ → 衣装 → ポーズ/表情 → カメラ → 画風

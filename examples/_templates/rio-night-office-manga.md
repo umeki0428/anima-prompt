@@ -2,7 +2,7 @@
 
 **指示(日本語):** リオのプロンプトで、何か1ページの漫画ページを作る。
 
-**組み立てメモ:** 漫画ページは [manga-page.md](../../references/manga-page.md) の画風 → Character → Panel 文章。`characters/rio.md` があるときは固定タグ・既定衣装・既定自然文を Character one に展開する。各 Panel では同じ名前 `Rio` を使う。コマは上ワイド → 中段左右の縦割り → 下の大ゴマ。
+**組み立てメモ:** 漫画ページは [manga-page.md](../../references/manga-page.md) の画風 → Character → Panel 文章。`characters/rio.md` があるときは固定タグ・既定衣装・既定自然文を Character one に**一度だけ**展開する。各 Panel では同じ名前 `Rio` と動作／カメラ／表情／背景だけ書き、髪・瞳・ヘイローは繰り返さない。コマは上ワイド → 中段左右の縦割り → 下の大ゴマ。
 
 **ポジティブ:**
 
@@ -42,8 +42,8 @@ Panel 2:
 middle left vertical panel,
 close-up of Rio's face,
 she looks down at a tablet in her hands with a slight frown,
-her ringed red eyes catch a faint screen glow,
-dramatic manga screentones around her cheeks and halo,
+a faint screen glow catches on her face,
+dramatic manga screentones around her cheeks,
 
 Panel 3:
 middle right vertical panel,

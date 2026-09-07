@@ -58,7 +58,7 @@ dynamic panel layout,
 ## 2. 人物設定(Character)
 
 このLoRAだけでは、複数コマで完全に同じ人物を維持する能力に限界がある。  
-最初に容姿をかなり詳しく定義し、各 Panel では同じ名前を使う。
+最初の Character ブロックで容姿をかなり詳しく**一度だけ**定義し、各 Panel では同じ名前を使う。髪・瞳・ヘイロー・髪飾りは Panel に繰り返さない。人物がコマ間で入れ替わるときは Character を厚くする。
 
 ```
 Character one:
@@ -70,7 +70,7 @@ small nose,
 wearing a white blouse and black skirt,
 ```
 
-既存キャラなら `characters/<名前>.md` の固定タグ・既定衣装・既定自然文を、この Character ブロックの文章に展開する。タグ行のまま貼らない。
+既存キャラなら `characters/<名前>.md` の固定タグ・既定衣装・既定自然文を、この Character ブロックの文章に**一度だけ**展開する。タグ行のまま貼らない。既定自然文は1枚絵の自然文には使わない。
 
 複数人は `Character two:` を続ける。各 Panel では `(Yuki)` ではなく `Yuki` と呼ぶ。
 
@@ -87,7 +87,7 @@ Yuki turns her face...
 
 ## 3. コマ(Panel)
 
-タグ列挙ではなく、次を文章で書く。
+タグ列挙ではなく、次を文章で書く。容姿(髪・瞳・ヘイロー・クリップ)は書かない。
 
 - 人物が何をしている
 - どこにいる
@@ -191,7 +191,7 @@ dramatic night atmosphere.
 
 ## 見本: リオ・深夜のオフィス(キャラ固定)
 
-リオの固定容姿を Character one に展開し、各 Panel で `Rio` を使う。`characters/rio.md` があるときはそこから展開する。テンプレ全文は [rio-night-office-manga.md](../examples/_templates/rio-night-office-manga.md)。
+リオの固定容姿を Character one に**一度だけ**展開し、各 Panel で `Rio` を使う。髪・瞳・ヘイローは Panel に繰り返さない。`characters/rio.md` があるときはそこから展開する。テンプレ全文は [rio-night-office-manga.md](../examples/_templates/rio-night-office-manga.md)。
 
 ```
 manga style,
@@ -240,5 +240,6 @@ the dark office interior and city lights fill the background,
 ## 失敗
 
 - 容姿や動作をタグだけ羅列する → コマの中身が薄くなる。Character と Panel は文章で書く
-- 各 Panel で名前を変える / 容姿を省略する → 人物がコマ間で入れ替わる。冒頭で詳しく定義し、同じ名前を使う
+- 各 Panel で名前を変える → 人物がコマ間で入れ替わる。冒頭 Character で詳しく定義し、同じ名前を使う
+- 各 Panel で髪・瞳・ヘイローなど容姿を再掲する → 冗長。Panel は名前＋動作／カメラ／表情／背景だけ。入れ替わるときは Character を厚くする
 - `4koma` や `four stacked panels` → 同じ大きさの縦積み。[failures.md](failures.md)
