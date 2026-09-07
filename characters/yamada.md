@@ -18,7 +18,7 @@ choker, black choker, white shirt, dress, white skirt, belt, leather, pantyhose,
 
 ## 注意
 
-- 元タグの `masterpiece, best quality` はキャラ固定ではなく、プロンプト接頭辞(anima-base)へ置く。aesthetic では付けない
+- 元タグの `masterpiece, best quality` はキャラ固定ではなく、プロンプト接頭辞(Anima-Base)へ置く。Aesthetic では省略可能で、使う場合も `score_*` は付けない
 - `brown hair` と `red hair` の併記は二色髪(茶×赤)として扱う。単色にしたい指示があれば片方だけ残す
 - `dress` と `white shirt` / `white skirt` の併記は概念ブレンドしやすい。別衣装指定時は既定衣装を全部削除する
 - `choker` と `black choker` は一般タグ+色指定の併用。不要なら `black choker` のみでも可

@@ -2,15 +2,17 @@
 
 出典の凡例: 【公式】= Hugging Face 公式README / docs.comfy.org 由来。【未検証】= 第三者記事由来で、このプロジェクトの実生成では未確認。
 
-## 出力の3層構造(このプロジェクトの標準形)
+## 出力の基本形(このプロジェクトの標準形)
 
-プロンプトは常に次の3層で組み立てる:
+Anima は Danbooru 形式のタグ、自然言語キャプション、その混合で学習されている【公式】。このプロジェクトでは、単純な1枚絵は次の簡潔なハイブリッド形式を標準とする。
 
-1. **固定ブロック** — 接頭辞とネガティブ(下記「固定ブロック」節)。毎回ほぼ同じ。
-2. **タグ行** — Danbooru形式で主題・属性を確定(人数、キャラ、外見、服装、表情、画風)。
-3. **自然文** — 英語2文以上で構図・空間関係・雰囲気を補足。
+1. **固定ブロック** — 接頭辞とネガティブ(下記「固定ブロック」節)。
+2. **タグ行** — 人数、キャラ、外見、服装、表情、構図、画風などの離散的な要素。
+3. **短い自然文(必要な場合だけ)** — 服の重なり、人物間の位置関係、画面のどこまで写すかなど、タグだけでは曖昧な内容。
 
-タグと自然文の分担: **タグ=「何を描くか」、自然文=「どこに・どう配置するか」**。ハイブリッドが最良バランスという報告【未検証】(https://diffusiondoodles.substack.com/p/anima-light-fast-and-slightly-unruly)。自然文だと表記が揺れる語彙は [vocab.md](vocab.md) を参照してタグで書く。
+自然文が不要なら固定ブロック＋タグ行だけでよい。**タグで確定した内容を自然文で言い直さない。** たとえば `black hair, low twintails, blue eyes` と書いた後に、同じ髪と目を文章で再説明しない。公式はタグのランダムドロップアウト学習を明記しており、画像に関係するタグをすべて列挙する必要はない【公式】。
+
+タグと自然文の分担は、**タグ=「何を描くか」、自然文=「タグでは表しにくい関係や状態」**。自然文だと表記が揺れる語彙は [vocab.md](vocab.md) を参照してタグにする。
 
 ## 固定ブロック
 
@@ -20,7 +22,9 @@
 masterpiece, best quality, score_7, safe,
 ```
 
-**anima-aesthetic v1.1 用【公式】:** クオリティタグ・`score_*` は**付けない**(品質最適化済みのため)。`safe, ` 等のレーティングタグのみ。
+**Anima-Aesthetic 用【公式】:** 品質タグは不要。`masterpiece, best quality` は残してもよいが、`score_*` はポジティブ・ネガティブとも使わないことが公式推奨。`safe, ` 等のレーティングタグは目的に合わせる。
+
+**Anima-Turbo 用【公式】:** プロンプト形式は同じ。CFG 1、8〜12ステップを基本にする。
 
 **ネガティブ基本形【公式】:**
 
@@ -41,6 +45,8 @@ worst quality, low quality, score_1, score_2, score_3, artist name, blurry, jpeg
 
 出典: https://huggingface.co/circlestone-labs/Anima
 
+ネガティブは基本形に、**今回起きやすい失敗だけ**を追加する。画面に出る理由がない服、身体部位、構図を網羅的に禁止しない。意図的な腰上構図で `cropped`、意図的な上半身構図で `out of frame` のような包括的な否定を入れると、ポジティブと競合するため避ける。必要なら `cropped head` のように失敗を限定する。
+
 ## タグの書式【公式】
 
 - **小文字**、アンダースコアではなく**スペース**(例: `long hair`)。例外: `score_*` のみアンダースコア。
@@ -52,6 +58,13 @@ worst quality, low quality, score_1, score_2, score_3, artist name, blurry, jpeg
 ```
 
 各セクション内の順序は自由。
+
+## タグの量【公式】
+
+- Anima はランダムなタグドロップアウトを使って学習されているため、関連タグをすべて入れる必要はない。
+- 親子・同義タグを重ねない。例: `long hair` と `very long hair`、`skirt` と `pleated skirt` を必要なく併記しない。
+- 1つの特徴は原則1回だけ指定する。タグ、自然文、ネガティブをまたいで同じ意味を反復しない。
+- 強調したい特徴でも、まず通常タグで生成する。効かなかった場合だけ重み付けを試す。
 
 ## タグカテゴリ【公式】
 
@@ -71,15 +84,21 @@ year 2025, newest, normal quality, score_5, highres, safe, 1girl, oomuro sakurak
 ## 自然文のルール
 
 - 英語の標準的な大文字化に従う(キャラ名・作品名は大文字始まり。タグとは逆)【公式】。
-- 純自然文なら**最低2文**、描写は多めが良い【公式】。
+- **純自然文だけで作る場合**は最低2文を目安に、十分具体的に書く【公式】。
+- タグとのハイブリッドでは最低文数を設けない。補足が1文で済むなら1文、不要なら自然文なしでよい。
+- タグで指定済みの外見・衣装・表情・構図を文章で繰り返さない。
+- 出したくない概念をポジティブ自然文へ書かない。`not gigantic`、`not elderly` のような否定は対象語を呼び込む可能性があるため、必要なら短いネガティブタグへ移す。
 - **キャラ名を出したら続けて外見を描写する**。複数キャラでは必須(名前だけだと特徴が混ざる)【公式】。
 - 複数キャラは「キャラごとに名前→外見」をまとめ、位置関係(left/right/behind等)を自然文で明示する【未検証】。
 
 ## 長さ・NG構文
 
-- 全体で**2〜3段落・15行未満**が最適。長すぎると追従性・品質が低下【未検証】(https://diffusiondoodles.substack.com/p/anima-light-fast-and-slightly-unruly)。
+- 単純な1人絵は**タグ1行＋自然文0〜2文**から始める。情報が不足した場合だけ追加する。
+- 複雑な場面でも全体で**2〜3段落・15行未満**を上限の目安にする【未検証】(https://diffusiondoodles.substack.com/p/anima-light-fast-and-slightly-unruly)。
 - **縛りすぎるプロンプトには反発する**傾向。自由度を残す【未検証】(同上)。
 - 同義タグの積み増し(tag overloading)は避ける【未検証】(同上)。
+- ポジティブで「Aではない」「Bほど大きくない」と否定形を重ねない。望む状態を直接書き、不要概念は必要最小限のネガティブへ置く。
+- ネガティブへ思いつく失敗を網羅しない。ポジティブと競合する包括語や、今回の画面に無関係な衣装・身体部位は削る。
 - **JSON/YAML形式は非推奨**。複雑になると破綻し、品質面の利点なし【未検証】(同上)。
 - **文字描画は1〜2単語まで**。複雑なタイポグラフィ不可【公式】(https://docs.comfy.org/tutorials/image/anima/anima)。入れる場合は自然文中で引用符で囲む(例: `a sign that says "OPEN"`)【未検証】。
 - 異なる概念は**互いにブレンドされやすい**(服の色がキャラ間で入れ替わる等)。要素を絞る【未検証】(https://techtactician.com/anima-comfyui-quick-local-setup-guide/)。
@@ -89,17 +108,18 @@ year 2025, newest, normal quality, score_5, highres, safe, 1girl, oomuro sakurak
 
 ## 漫画ページ(コマ割り)
 
-詳細と見本は [manga-page.md](manga-page.md)。通常の3層ではなく、画風行 → Character → Panel文章にする。コマ位置はタグ列挙ではなく文章で指定する。`4koma` は均等な縦積みになるので、不揃いのページでは使わない。
+詳細と見本は [manga-page.md](manga-page.md)。通常の簡潔なハイブリッド形式ではなく、画風行 → Character → Panel文章にする。コマ位置はタグ列挙ではなく文章で指定する。`4koma` は均等な縦積みになるので、不揃いのページでは使わない。
 
 ## 日本語指示 → プロンプト変換の手順
 
 1. **主題を確定**: 人数(`1girl`/`2girls`/`1boy`/`1other`)、キャラ名・作品名(既存キャラなら小文字タグで)
-2. **外見・服装・表情・ポーズ**を Danbooru タグに変換([vocab.md](vocab.md) を参照)
-3. **背景・構図・ライティング**は自然文で補足(空間関係はタグより自然文が得意)。エロさだけ足す光・色・表情・湯気は [atmosphere.md](atmosphere.md)。漫画ページは [manga-page.md](manga-page.md) の Character / Panel 文章にする
+2. **外見・服装・表情・ポーズ・基本構図**を、重複しない最小限の Danbooru タグに変換([vocab.md](vocab.md) を参照)
+3. **服の重なり、空間関係、厳密なフレーミング**など、タグだけでは曖昧な点だけを短い自然文で補足する。単純な1枚絵では自然文を省略してよい。エロさだけ足す光・色・表情・湯気は [atmosphere.md](atmosphere.md)。漫画ページは [manga-page.md](manga-page.md) の Character / Panel 文章にする
 4. **画風指定**があれば前方に配置(`Studio Ghibli style` 等、または `@絵師名`。[styles.md](styles.md) 参照)
-5. 接頭辞と年代タグ(新しい絵柄なら `newest`)を付与。aesthetic ならクオリティ/score タグなし
-6. ネガティブは基本形+目的別追加
-7. 1枚絵は全体を**15行未満・2〜3段落以内**に収める。漫画ページは [manga-page.md](manga-page.md) の Character / Panel 文章を優先し、この行数制限は適用しない
+5. 接頭辞と年代タグ(新しい絵柄なら `newest`)を付与。Aesthetic では `score_*` を外し、品質タグは省略または `masterpiece, best quality` だけにする
+6. ネガティブは基本形に、今回起きやすい失敗だけを追加する。ポジティブと競合しないか確認する
+7. 最後に重複監査を行う。同じ特徴がタグと自然文に二重指定されていたら、原則として自然文側を削る
+8. 1枚絵はタグ1行＋自然文0〜2文から始める。漫画ページは [manga-page.md](manga-page.md) の Character / Panel 文章を優先する
 
 ## 重み付け【公式】
 
@@ -117,6 +137,7 @@ year 2025, newest, normal quality, score_5, highres, safe, 1girl, oomuro sakurak
 ## 主な出典
 
 - https://huggingface.co/circlestone-labs/Anima 【公式】
+- https://huggingface.co/circlestone-labs/Anima/raw/main/README.md 【公式・プロンプト仕様とタグドロップアウト】
 - https://docs.comfy.org/tutorials/image/anima/anima 【公式】
 - https://diffusiondoodles.substack.com/p/anima-light-fast-and-slightly-unruly
 - https://techtactician.com/anima-comfyui-quick-local-setup-guide/

@@ -74,6 +74,7 @@
 | 後ろ姿 | from behind | 【未検証】 | |
 | こっち目線 | looking at viewer | 【未検証】 | |
 | 視線外し | looking away | 【未検証】 | |
+| 水平な真正面カメラ | `front view, upright posture` + 自然文でカメラに上下の傾きがないと指定 | `front view` 単独は身体の向きだけで、見下ろし防止にならない。ネガに `from above, high-angle view, overhead view, bird's-eye view, looking up, leaning forward, foreshortening`。修正効果は未検証 | 2026-09-03 |
 | 不揃いの漫画ページ | 各 Panel 先頭で位置を文章指定(`top full-width panel` 等) | `4koma` は均等な縦積みになる(2026-08-21)。書式は [manga-page.md](manga-page.md)。タグ羅列より Panel 文章 | 2026-08-22 |
 | 均等4コマ | `4koma` | 同じ大きさのコマが上から下(または2×2)。動的なページには使わない | 2026-08-21 |
 | フルカラー漫画 | `colored` | `shoujo manga style` / `shounen manga style` / `monochrome` / `greyscale` はモノクロ化するのでフルカラーではネガへ | 【未検証】 |
@@ -103,3 +104,11 @@
 | 紫のグラデーション背景 | (使わない) | シーン全体が紫に染まる。暗い背景は下の行 | 2026-08-21 |
 | 暗いチャコールグラデ | `simple background, gradient background, dark background` | 自然文で dark charcoal gradient, not purple。ネガに `purple background, outdoors, scenery, cloudy sky` | 2026-08-21 |
 | 暖色リム | `dim lighting, warm lighting, rim light, volumetric lighting` | 下と後ろからの薄いリム。紫と混ぜない | 2026-08-21 |
+
+## 追記(2026-09-01)
+
+| 日本語 | 使うタグ | メモ | 確認日 |
+|---|---|---|---|
+| 羽織りを肩から落とす | `(off shoulder:1.6), jacket on shoulders, bare shoulders` | 素の `off shoulder` では普通に着てしまう。肩見せが目的なら服自体を `off-shoulder shirt` にする方が確実。片肩だけの方が通る。[failures.md](failures.md) | 2026-09-01 |
+| 半目＋笑顔 | `half-closed eyes` + ネガ `closed eyes` | `grin, fang` と併用すると閉眼笑いになる。自然文で eyes stay open と書く | 2026-09-01 |
+| Vtuber立ち絵 | `standing, arms at sides, full body, symmetrical, simple background, white background` | ネガに `cropped, out of frame, drop shadow, shadow, gradient background` | 2026-09-01 |

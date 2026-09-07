@@ -100,3 +100,27 @@
 - **外れた出力**: 白シャツがTシャツになった
 - **原因(推定)**: `white shirt` 単体はTシャツにもブレンドされやすい
 - **直し方**: ポジに `collared shirt` を併記し、ネガに `t-shirt` を入れる。自然文は `button-up collared shirt` と書く。`open shirt` は全開になりやすいので使わない。語彙は [vocab.md](vocab.md) の衣装節
+
+## カーディガンの肩落ちが効かず普通に着てしまう (2026-09-01)
+
+- **指示(日本語)**: オーバーサイズのカーディガンを前を開けたまま両肩から落とし、二の腕に引っかける(脱ぎはしない)
+- **使ったプロンプト**: ポジに `grey cardigan, open cardigan, off shoulder, bare shoulders, sleeves past wrists`。自然文で `worn open and pulled down off both shoulders, hanging around her upper arms with her hands still through the long sleeves`。ネガに `undressing, unworn cardigan`
+- **外れた出力**: 前は開いているが、肩に普通に羽織っただけ。肩・鎖骨は襟に隠れて出ない
+- **原因(推定)**: `off shoulder` は「オフショルダー設計の服」に強く紐づき、羽織りを下げる動作にはならない。下にシャツを着ていると `bare shoulders` の行き先がなくなる
+- **直し方**: 肩を見せたいなら**服自体をオフショルダー設計にする**(`off-shoulder shirt` 等)のが確実。羽織りを落とす方向なら `(off shoulder:1.6)` + `jacket on shoulders` を併記し、自然文でも「素肌の肩と鎖骨が見える」と結果を書く。両肩より**片肩だけ**の方が通りやすい
+
+## half-closed eyes が閉眼になる (2026-09-01)
+
+- **指示(日本語)**: 半開きの目でニヤついた表情
+- **使ったプロンプト**: `half-closed eyes, grin, fang, blush`
+- **外れた出力**: 目が完全に閉じた笑顔(>_< 系)になり、瞳が見えない
+- **原因(推定)**: `grin` / `fang` の笑顔と `half-closed eyes` が合成され、閉眼笑いの定番に寄る
+- **直し方**: ネガに `closed eyes` を必ず入れる。自然文で `her pink eyes stay open and visible` と書く。それでも閉じるなら `(half-closed eyes:1.3)` か `narrowed eyes` に置換
+
+## `front view` でも上から見下ろす構図になる (2026-09-03)
+
+- **指示(日本語)**: 白背景で、人物を真正面から全身表示する
+- **使ったプロンプト**: ポジに `front view, full body, symmetrical, centered`。自然文に `Perfectly front-facing`。実際のネガティブは品質・実写・背景抑制だけで、カメラ角度の否定は未投入
+- **外れた出力**: 身体は正面を向いたが、カメラが頭上にあり、頭と胸が大きく足が小さい見下ろし構図になった
+- **原因(推定)**: `front view` は人物の向きを指定するが、カメラの仰俯角は固定しない。縦長キャンバスの全身構図で遠近感が強まり、見下ろしへ寄った
+- **直し方**: ポジに `upright posture` を足し、自然文で `The camera is level and directly in front of her, with no upward or downward tilt and minimal perspective distortion.` と明示する。ネガに `from above, high-angle view, overhead view, bird's-eye view, looking up, leaning forward, foreshortening` を実際に投入する。修正後の効果は【未検証】
