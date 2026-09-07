@@ -62,7 +62,7 @@
 
 | 日本語 | 使うタグ | メモ | 確認日 |
 |---|---|---|---|
-| 下から見上げ | from below | 【未検証】 | |
+| 下から見上げ | from below | **単独では弱い(水平になる)**。自然文 `low angle` と併記して初めて効く。[composition.md](composition.md) | 2026-09-07 |
 | 上から見下ろし | from above | 【未検証】 | |
 | 斜め構図 | dutch angle | 【未検証】 | |
 | 顔アップ | close-up | 【未検証】 | |
@@ -71,10 +71,14 @@
 | 太ももから下は切る | cowboy shot | 靴・足元タグは外す。ネガに `shoes, high heels, feet`。【未検証】 | |
 | 全身 | full body | 【未検証】 | |
 | 横顔 | profile | 【未検証】 | |
-| 後ろ姿 | from behind | 【未検証】 | |
+| 後ろ姿 | from behind | 「相手の背中越し(OTS)」には使えない。横顔で並列になる。OTS は自然文 `over-the-shoulder shot from behind the man` | 2026-09-07 |
 | こっち目線 | looking at viewer | 【未検証】 | |
 | 視線外し | looking away | 【未検証】 | |
 | 水平な真正面カメラ | `front view, upright posture` + 自然文でカメラに上下の傾きがないと指定 | `front view` 単独は身体の向きだけで、見下ろし防止にならない。ネガに `from above, high-angle view, overhead view, bird's-eye view, looking up, leaning forward, foreshortening`。修正効果は未検証 | 2026-09-03 |
+| 2人が向き合って会話 | facing another, eye contact, talking | 「彼を見ている」の自然文は `looking at viewer` に均されて正面化する。タグで関係を固定。ネガに `looking at viewer` | 2026-09-07 |
+| 手前の人物をボカす / 被写界深度 | (タグにしない) | 自然文 `shallow depth of field`, `out of focus in the foreground`。タグ側に相当語がない | 2026-09-07 |
+| オーバーショルダー | (タグにしない) | 自然文 `Over-the-shoulder shot from behind the man`。手前に相手の頭と肩が大きく入る。遮蔽も誘発 | 2026-09-07 |
+| 困り汗 | sweatdrop | 顔の横の1滴。`sweat` は全身の汗 | 2026-09-07 |
 | 不揃いの漫画ページ | 各 Panel 先頭で位置を文章指定(`top full-width panel` 等) | `4koma` は均等な縦積みになる(2026-08-21)。書式は [manga-page.md](manga-page.md)。タグ羅列より Panel 文章 | 2026-08-22 |
 | 均等4コマ | `4koma` | 同じ大きさのコマが上から下(または2×2)。動的なページには使わない | 2026-08-21 |
 | フルカラー漫画 | `colored` | `shoujo manga style` / `shounen manga style` / `monochrome` / `greyscale` はモノクロ化するのでフルカラーではネガへ | 【未検証】 |

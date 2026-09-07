@@ -16,6 +16,9 @@
 - 漫画ページ(複数コマ) → `references/manga-page.md`。画風行 → Character one/two → Panel毎に位置と状況を文章で書く。通常のハイブリッド形式は使わない
 - キャラ名を指定されたとき → `characters/<名前>.md` を読む。1枚絵では固定タグ・既定衣装をそのまま使い、差分だけタグ行と自然文に足す。漫画ページでは固定タグ・既定衣装・既定自然文を Character ブロックの文章に展開し、各 Panel では同じ名前を使う
 - 画風・絵師タグ → `references/styles.md` / サンプラー・CFG等 → `references/settings.md`
+- 構図・カメラ(オーバーショルダー、アオリ、ボケ、正面化の対処) → `references/composition.md`。ショット種別・ボケは撮影用語の自然文、カメラ高さはタグ+自然文の二重指定
+- プロンプトで構図が出ないとき、参考画像・ラフから構図を固定する → `references/img2img.md`
+- 参考画像や短いシーン文から日本語の構図指示を作る前工程 → `prompts/`(このスキルの入力を作る側)
 - 色・光・表情・湯気でエロさを出す → `references/atmosphere.md`
 - 語彙のタグ化 → `references/vocab.md` / 失敗事例と対処 → `references/failures.md`
 - 形式の見本 → `examples/_templates/`、検証済み例と生成記録 → `examples/sfw/`

@@ -90,6 +90,9 @@ year 2025, newest, normal quality, score_5, highres, safe, 1girl, oomuro sakurak
 - 出したくない概念をポジティブ自然文へ書かない。`not gigantic`、`not elderly` のような否定は対象語を呼び込む可能性があるため、必要なら短いネガティブタグへ移す。
 - **キャラ名を出したら続けて外見を描写する**。複数キャラでは必須(名前だけだと特徴が混ざる)【公式】。
 - 複数キャラは「キャラごとに名前→外見」をまとめ、位置関係(left/right/behind等)を自然文で明示する【未検証】。
+- **撮影用語が通る**。ショット種別(`over-the-shoulder shot`, `medium close-up`)と被写界深度(`shallow depth of field`, `out of focus foreground`)は Danbooru タグより強く効く。カメラ高さだけはタグ(`from below`)+自然文(`low angle`)の二重指定が必要。検証は [composition.md](composition.md)【実生成・2026-09-07】。
+- **指示にない背景タグを足さない**。`simple background, gradient background, blurry background` は指示に無ければ入れない。室内描写と同居すると背景がブレンドして額や壁が消える【実生成・2026-09-07】。
+- **出力は必ずタグ行と自然文を分ける**。全文自然文にしない(タグで確定できる語彙が揺れる)。
 
 ## 長さ・NG構文
 

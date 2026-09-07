@@ -28,7 +28,9 @@
 
 - ClownShaker 等の特殊サンプラーは相性が悪い報告。標準 KSampler で良い【未検証】(https://diffusiondoodles.substack.com/p/anima-light-fast-and-slightly-unruly)。
 
-## img2img の denoise 目安【未検証】
+## img2img の denoise 目安
+
+構図固定の用途と元画像の種類別の使い分けは [img2img.md](img2img.md)。以下は外部記事の目安【未検証】。
 
 | 用途 | denoise |
 |---|---|

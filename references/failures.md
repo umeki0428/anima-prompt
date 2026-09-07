@@ -124,3 +124,26 @@
 - **外れた出力**: 身体は正面を向いたが、カメラが頭上にあり、頭と胸が大きく足が小さい見下ろし構図になった
 - **原因(推定)**: `front view` は人物の向きを指定するが、カメラの仰俯角は固定しない。縦長キャンバスの全身構図で遠近感が強まり、見下ろしへ寄った
 - **直し方**: ポジに `upright posture` を足し、自然文で `The camera is level and directly in front of her, with no upward or downward tilt and minimal perspective distortion.` と明示する。ネガに `from above, high-angle view, overhead view, bird's-eye view, looking up, leaning forward, foreshortening` を実際に投入する。修正後の効果は【未検証】
+## 画像→変換で指示にない背景タグが混入する (2026-09-07)
+
+- **指示(日本語)**: 漫画コマから変換した【構図指示】。「奥層=室内の壁、額装の絵、全層シャープ」
+- **使ったプロンプト**: スキルが `Beige to light gray gradient background, simple background, gradient background, blurry background` と `indoors, framed picture on the wall` を同居させて出力
+- **外れた出力**: 生成前に発見。矛盾するため背景がブレンドし、額や壁が消えるか灰グラデ化する
+- **原因(推定)**: 過去例(リオ下アングルの `simple background, gradient background`)の癖が、指示にない場面にも持ち込まれた
+- **直し方**: 指示に無い背景タグは足さない。[anima-rules.md](anima-rules.md) 自然文のルールに追記
+
+## 3層を無視して全文自然文で出力 (2026-09-07)
+
+- **指示(日本語)**: 同上
+- **使ったプロンプト**: タグ行なし、すべて自然文
+- **外れた出力**: 生成はできたが、`sweatdrop`, `facing another`, `half-lidded eyes` などタグで確定すべき語彙が自然文任せになった
+- **原因(推定)**: 【構図指示】が文章形式なので、スキルがそのまま英訳した
+- **直し方**: SKILL.md の3層は必須。自然文形式の入力でもタグ行を先に立てる。[anima-rules.md](anima-rules.md) に追記
+
+## 向き合う2人が正面向き(並列)に化ける (2026-09-07)
+
+- **指示(日本語)**: 男性の背中越しに、困っている女性を見る
+- **使ったプロンプト**: 自然文 `She looks at him` / `body facing slightly left`。タグは `1girl, 1boy` のみ
+- **外れた出力**: 女性の体と視線がカメラに向き、男性と並列に立つ正面構図
+- **原因(推定)**: 「彼を見ている」が生成時に `looking at viewer` に均された。学習データの正面・中央の引力に自然文の弱い指定が負けた
+- **直し方**: タグ `facing another, eye contact, talking` で関係を固定し、ネガに `looking at viewer`。カメラは撮影用語の自然文。検証済み → [composition.md](composition.md)、最終稿 [counter-ots-cinematic.md](../examples/sfw/counter-ots-cinematic.md)
