@@ -44,7 +44,7 @@
 | 四つん這い | all fours | 膝立ちに戻るなら `(all fours:2)`。ネガに `sitting, standing` | 【未検証】 |
 | 前かがみ | leaning forward | | 【未検証】 |
 | 前かがみで胸が垂れる | hanging breasts | `leaning forward` / `all fours` とセット。白タートルでは透け注意 | 【未検証】 |
-| 仰向けで胸が揺れる | bouncing breasts | 仰向けに `hanging breasts` は前かがみになる。すこし垂れは自然文 | 2026-09-09 |
+| 仰向けで胸が揺れる | bouncing breasts | 指示があるときだけ。揺れなしなら外してネガへ。仰向けに `hanging breasts` は前かがみになる | 2026-09-09 |
 | 後ろから抱える | hug from behind | 2人の位置関係の固定用。服の中の手までは保証しない | 2026-08-21 |
 | 舌を出す(あへがおなし) | tongue out, open mouth | ネガに `ahegao, rolling eyes` | 【未検証】 |
 | 舌キス | kissing, tongue out | 顔が必要。`faceless male` は外してネガへ。よだれは下の行 | 2026-09-04 |
