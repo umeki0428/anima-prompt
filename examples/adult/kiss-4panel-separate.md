@@ -6,11 +6,12 @@
 
 **組み立てメモ:**
 - 1コマ=1枚の簡潔なハイブリッド。`4koma` も Panel 文章も使わない。ネガに `comic, multiple panels, 4koma`。
-- リオの容姿はユーザー指定の固定タグだけ。自然文に髪・瞳・クリップを再掲しない。`characters/rio.md` の既定自然文は貼らない。
+- リオの容姿はユーザー指定の固定タグから `hairclip` を外す(指示)。ネガに `hairclip, hair ornament, millennium science school logo`。自然文に髪・瞳を再掲しない。`characters/rio.md` の既定自然文は貼らない。
 - 先生はユーザー指定どおり `sensei (blue archive the animation), faceless male, long bangs`。キスでも `faceless male` は外さない(指定)。ネガへは移さない。
 - 衣装指示なし。1〜2枚目(上半身)だけ既定のタートル＋ジャケット。スカート／タイツ／ヒールはフレーム外なので入れない。3〜4枚目は顔・口元なので衣装タグなし。
 - 2人の外見差はタグで先に分ける(リオ=very long black hair、先生=faceless + long bangs)。
-- 背景は参考どおり無地のオフホワイト。暗い部屋や紫照明は足さない。
+- 1枚目の背景は黒〜チャコールの夜グラデ(`simple background, gradient background, dark background` + 自然文)。色は自然文、人物光は `dim lighting, warm lighting`、ネガに `white background, purple lighting`。2〜4枚目は未指示のため白背景のまま。
+- 1枚目は身長差で男性が上から(`height difference` + `from below` / `low angle`)、右手は手前で大きく、いきなりキスの勢い、目を閉じて受け入れる驚き、よだれ。
 - よだれ・汗・湯気はタグ。とろけ顔は `half-closed eyes, open mouth, blush`。あへがおは指示がないのでネガへ。
 - 吹き出しの「…」は出さない(ネガに `text`)。
 - 1〜3は横顔キスなのでネガに `looking at viewer`。4だけ正面。
@@ -22,31 +23,31 @@
 ## 1枚目(最上段): 横顔のキス開始
 
 【構図指示】
-人数と配置: 2人。横顔のクローズアップ。女性が画面左半分、男性が画面右半分。顔が中央で接する。胸から上がフレーム。男性の頭の方がやや大きい。
-ポーズ: 男性は右から上体を前傾し、顔を下げて女性に覆い被さるようにキス。右手で女性の顎から左頬を包む。女性は顔を上に向け、左手を顔の近くまで上げている。
-表情・視線: 女性は目を閉じ、頬に赤み。男性の顔は出さない。視線は互いに相手。
-カメラ: ほぼ水平。真横からの横顔。クローズアップ。パース誇張なし。
-切り取り: 胸から下は画面外。頭頂はフレーム内。
-背景・小道具: 手前=なし。中層=二人の顔と肩。奥=無地のオフホワイト。ボケなし。
-光: 柔らかい均一な暖色。影は弱い。
-色・空気感: 暖色。赤面のピンク。親密。
-動き: 男性が覆い被さるキスの瞬間。
+人数と配置: 2人。横顔のクローズアップ。女性が画面左、男性が画面右。身長差があり男性の頭が一段高い。胸から上がフレーム。
+ポーズ: 男性は右上から覆い被さるように前傾し、まだ前に突っ込んでいる途中でキス。右手はカメラに一番近く、顔より手前で大きく、女性の顎〜頬を包む。女性は顔を上に向け、上体は引かず受けている。
+表情・視線: 女性は目を閉じている。眉がわずかに上がり、驚きが残るが口は合わせて受け入れている。頬に赤み。男性の顔は出さない。
+カメラ: わずかにアオリ(女性の目線より少し下)。真横。クローズアップ。手前の手は顔より大きく、軽いパース。
+切り取り: 胸から下は画面外。手前の手の手首から先はフレーム内。
+背景・小道具: 手前=男性の右手。中層=二人の顔と肩。奥=黒〜チャコールの夜グラデ。部屋も家具もなし。
+光: 暗い。人物だけ柔らかい暖色。背景は無彩色の黒。
+色・空気感: 夜。赤面。口元の濡れ。
+動き: いきなり距離を詰めた直後。上体がまだ前に進んでいる。
 不明瞭: コマ枠
 
-**推奨設定:** `1152×896`(横長)。`er_sde`、CFG 4〜5、30〜50ステップ。
+**推奨設定:** `1152×896`(横長)。`er_sde`、CFG 4〜5、30〜50ステップ。アオリが強すぎて顔だけになったら `from below` の重みは上げない。
 
 **ポジティブ:**
 
 ```
-masterpiece, best quality, explicit, newest, colored, anime coloring, 1girl, rio (blue archive), blue archive, very long hair, black hair, blunt bangs, hair behind ear, red eyes, ringed eyes, white pupils, hairclip, white turtleneck sweater, black jacket, 1boy, sensei (blue archive the animation), faceless male, long bangs, kissing, closed eyes, blush, profile, close-up, upper body, hand on another's face, facing another, simple background, white background, warm lighting
+masterpiece, best quality, explicit, newest, colored, anime coloring, 1girl, rio (blue archive), blue archive, very long hair, black hair, blunt bangs, hair behind ear, red eyes, ringed eyes, white pupils, white turtleneck sweater, black jacket, 1boy, sensei (blue archive the animation), faceless male, long bangs, height difference, kissing, saliva, saliva trail, drooling, closed eyes, blush, leaning forward, profile, close-up, upper body, from below, hand on another's face, facing another, simple background, gradient background, dark background, night, dim lighting, warm lighting
 
-Profile close-up at eye level. Sensei on the right leans down over Rio on the left. His right hand cups her jaw. Tight crop from the chest up.
+Low angle. Sensei is taller on the right and still lunging down from above into a sudden kiss. Rio on the left tilts her face up; a trace of surprise remains in her brows as she yields. His right hand is large in the foreground, closer to the camera than their faces, cupping her jaw. A thin saliva thread at their lips. Tight crop from the chest up. The background is a black-to-charcoal night gradient with nothing else in it.
 ```
 
 **ネガティブ:**
 
 ```
-worst quality, low quality, score_1, score_2, score_3, artist name, blurry, jpeg artifacts, chromatic aberration, looking at viewer, comic, multiple panels, 4koma, monochrome, greyscale, saliva trail, ahegao, scenery, indoor, furniture, black skirt, black pantyhose, black high heels, photorealistic, 3d, extra limbs, bad hands, watermark, signature, text, logo
+worst quality, low quality, score_1, score_2, score_3, artist name, blurry, jpeg artifacts, chromatic aberration, looking at viewer, hairclip, hair ornament, millennium science school logo, white background, purple lighting, purple background, comic, multiple panels, 4koma, monochrome, greyscale, ahegao, scenery, indoor, furniture, black skirt, black pantyhose, black high heels, photorealistic, 3d, extra limbs, bad hands, watermark, signature, text, logo
 ```
 
 ---
@@ -70,7 +71,7 @@ worst quality, low quality, score_1, score_2, score_3, artist name, blurry, jpeg
 **ポジティブ:**
 
 ```
-masterpiece, best quality, explicit, newest, colored, anime coloring, 1girl, rio (blue archive), blue archive, very long hair, black hair, blunt bangs, hair behind ear, red eyes, ringed eyes, white pupils, hairclip, white turtleneck sweater, black jacket, 1boy, sensei (blue archive the animation), faceless male, long bangs, kissing, saliva, saliva trail, sweat, blush, half-closed eyes, profile, close-up, hand on another's face, facing another, simple background, white background, warm lighting, steam, haze
+masterpiece, best quality, explicit, newest, colored, anime coloring, 1girl, rio (blue archive), blue archive, very long hair, black hair, blunt bangs, hair behind ear, red eyes, ringed eyes, white pupils, white turtleneck sweater, black jacket, 1boy, sensei (blue archive the animation), faceless male, long bangs, kissing, saliva, saliva trail, sweat, blush, half-closed eyes, profile, close-up, hand on another's face, facing another, simple background, white background, warm lighting, steam, haze
 
 Tighter profile close-up on their faces. Sensei on the right presses his hand to Rio's cheek and pulls her in. The kiss is wet, with a thin saliva thread at their lips. Soft warm light and a faint haze of steam.
 ```
@@ -78,7 +79,7 @@ Tighter profile close-up on their faces. Sensei on the right presses his hand to
 **ネガティブ:**
 
 ```
-worst quality, low quality, score_1, score_2, score_3, artist name, blurry, jpeg artifacts, chromatic aberration, looking at viewer, closed eyes, comic, multiple panels, 4koma, monochrome, greyscale, ahegao, scenery, indoor, furniture, black skirt, black pantyhose, black high heels, photorealistic, 3d, extra limbs, bad hands, watermark, signature, text, logo
+worst quality, low quality, score_1, score_2, score_3, artist name, blurry, jpeg artifacts, chromatic aberration, looking at viewer, closed eyes, hairclip, hair ornament, millennium science school logo, comic, multiple panels, 4koma, monochrome, greyscale, ahegao, scenery, indoor, furniture, black skirt, black pantyhose, black high heels, photorealistic, 3d, extra limbs, bad hands, watermark, signature, text, logo
 ```
 
 ---
@@ -110,7 +111,7 @@ Extreme close-up on their mouths only, cropped horizontally. Their lips have jus
 **ネガティブ:**
 
 ```
-worst quality, low quality, score_1, score_2, score_3, artist name, blurry, jpeg artifacts, chromatic aberration, looking at viewer, full body, upper body, comic, multiple panels, 4koma, monochrome, greyscale, ahegao, scenery, indoor, furniture, photorealistic, 3d, extra limbs, bad hands, watermark, signature, text, logo
+worst quality, low quality, score_1, score_2, score_3, artist name, blurry, jpeg artifacts, chromatic aberration, looking at viewer, full body, upper body, hairclip, hair ornament, millennium science school logo, comic, multiple panels, 4koma, monochrome, greyscale, ahegao, scenery, indoor, furniture, photorealistic, 3d, extra limbs, bad hands, watermark, signature, text, logo
 ```
 
 ---
@@ -134,7 +135,7 @@ worst quality, low quality, score_1, score_2, score_3, artist name, blurry, jpeg
 **ポジティブ:**
 
 ```
-masterpiece, best quality, explicit, newest, colored, anime coloring, 1girl, rio (blue archive), blue archive, very long hair, black hair, blunt bangs, hair behind ear, red eyes, ringed eyes, white pupils, hairclip, 1boy, sensei (blue archive the animation), faceless male, long bangs, looking at viewer, half-closed eyes, open mouth, blush, sweat, saliva, drooling, steam, haze, close-up, hands on another's face, simple background, white background, warm lighting
+masterpiece, best quality, explicit, newest, colored, anime coloring, 1girl, rio (blue archive), blue archive, very long hair, black hair, blunt bangs, hair behind ear, red eyes, ringed eyes, white pupils, 1boy, sensei (blue archive the animation), faceless male, long bangs, looking at viewer, half-closed eyes, open mouth, blush, sweat, saliva, drooling, steam, haze, close-up, hands on another's face, simple background, white background, warm lighting
 
 Frontal close-up of Rio's face only. Sensei's hands cup both her cheeks from the sides, thumbs on her cheeks. Her expression is melted and dazed, unfocused half-lidded eyes, a heavy blush, sweat, and a saliva drop on her lower lip. A faint haze of steam around her head. No speech bubble.
 ```
@@ -142,5 +143,5 @@ Frontal close-up of Rio's face only. Sensei's hands cup both her cheeks from the
 **ネガティブ:**
 
 ```
-worst quality, low quality, score_1, score_2, score_3, artist name, blurry, jpeg artifacts, chromatic aberration, closed eyes, ahegao, tongue out, comic, multiple panels, 4koma, monochrome, greyscale, scenery, indoor, furniture, photorealistic, 3d, extra limbs, bad hands, extra fingers, watermark, signature, text, logo
+worst quality, low quality, score_1, score_2, score_3, artist name, blurry, jpeg artifacts, chromatic aberration, closed eyes, ahegao, tongue out, hairclip, hair ornament, millennium science school logo, comic, multiple panels, 4koma, monochrome, greyscale, scenery, indoor, furniture, photorealistic, 3d, extra limbs, bad hands, extra fingers, watermark, signature, text, logo
 ```
