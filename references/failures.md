@@ -179,3 +179,11 @@
 - **外れた出力**: 上に乗っているのもリオ(スカート・タイツ・ヒールの下アングル)。床の人物もリオでカメラ目線。昼の玄関に家具と植木
 - **原因(推定)**: `from below` + リオ既定制服が「下から見た立ちリオ」の定番に引かれ、1boy がもう1人の女になった。長髪ハロ持ちを先に書くと混ざる。[vocab.md](vocab.md) の「2人の外見が混ざる」
 - **直し方**: 先頭で `1girl, 1boy`。`faceless male, long bangs` をリオの容姿より前に。ネガに `2girls, straddling, upskirt, looking at viewer, furniture, plant`。自然文で one man and one woman / 股の間から見上げない / 夜の玄関に扉だけで家具なし。見本は [rio-sensei-genkan-pin.md](../examples/adult/rio-sensei-genkan-pin.md)
+
+## 押し倒しが股下アオリ＋脚上げ逆さになる (2026-09-09)
+
+- **指示(日本語)**: 頭側の床から、男性がリオの上に覆いかぶさって押し倒しているところを見る
+- **使ったプロンプト**: 修正稿。`from below` + 自然文 `Low angle` + `not from between anyone's legs`
+- **外れた出力**: 男性が脚を開いて立つ。カメラが股の間。リオは頭が下で脚が天井方向に伸び、押し倒しになっていない
+- **原因(推定)**: Danbooru の `from below` は「立っている人を下から見る」。頭側床カメラとは別物。否定の自然文より定番構図が強い
+- **直し方**: ポジから `from below` を外しネガへ。男性は立つタグを使わず、同じ向きで上に寝て覆いかぶさる。脚は床に沿って扉へ(宙に上げない)。カメラは自然文だけ `ground-level at their heads, looking along the floor toward the closed door`。ネガに `from below, between legs, legs up, standing, spread legs, upside-down, open door`。見本は [rio-sensei-genkan-pin.md](../examples/adult/rio-sensei-genkan-pin.md)
