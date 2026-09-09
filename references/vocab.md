@@ -33,7 +33,7 @@
 | 日本語 | 使うタグ | メモ | 確認日 |
 |---|---|---|---|
 | とろけ顔 | half-closed eyes, open mouth, blush | 自然文で melted / dazed。あへがおは指示があるときだけ。詳細は [atmosphere.md](atmosphere.md) | 【未検証】 |
-| 仰向け開脚で腰が浮く | 自然文 her legs extend along the floor into the distance | 頭側カメラで hips on the floor を描かせると俯瞰か腰切れになる。`(on floor:1.8)` 禁止。ネガ `m legs, arched back, ass up, from above`。[failures.md](failures.md) | 2026-09-09 |
+| 仰向け開脚で腰が浮く | 頭側カメラをやめて `pov, from above` | 覆いかぶさりの頭側カメラでは脚が肩の後ろに回る。接地の言い換えでは直らない。[failures.md](failures.md) | 2026-09-09 |
 | 仰向けで横を向く | looking to the side | 顔だけ。体を横寝にしない。ネガに `looking at viewer` | 2026-09-09 |
 | 息が荒い | heavy breathing | | 【未検証】 |
 | 汗 | sweat | 肌の汗。服を濡らす指定は透けに繋がる | 【未検証】 |
@@ -69,7 +69,8 @@
 | 日本語 | 使うタグ | メモ | 確認日 |
 |---|---|---|---|
 | 下から見上げ | from below | **立ち／座り人物を下から見る定番。** 頭側の床から足方向を見る押し倒しには使わない。股の間から見上げ・脚を上げた逆さ構図に化ける(2026-09-09)。頭側カメラは自然文 `ground-level at their heads, looking along the floor toward the door`。高さの二重指定が必要なアオリ(立ち)だけタグ+`low angle`。[composition.md](composition.md) | 2026-09-09 |
-| 上から見下ろし | from above | 【未検証】 | |
+| 上から見下ろし | from above | カメラ高さはタグ `from above` + 自然文 `high angle`。頭側床の押し倒しには使わない | 2026-09-09 |
+| 男性目線の押し倒しPOV | pov, from above | `1boy` を付けると第三人称の全身になり腰が切れる。手は自然文。ネガ `1boy, from below`。[failures.md](failures.md) | 2026-09-09 |
 | 斜め構図 | dutch angle | 【未検証】 | |
 | 顔アップ | close-up | 【未検証】 | |
 | バストアップ | upper body | 【未検証】 | |

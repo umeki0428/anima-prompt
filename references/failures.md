@@ -202,4 +202,12 @@
 - **使ったプロンプト**: `(on floor:1.8)`、`spread legs` なし。自然文 hips rest on the floor / thighs lie open on the floor。`looking to the side`
 - **外れた出力**: 真上から見た床。男性が仰向けで下、女性が上。胴は正面、腰だけ別角度で途切れる。スカートが短いレザーに化ける
 - **原因(推定)**: 頭側カメラでは腰と床の接地を正面に描けない。接地を強制すると俯瞰か骨盤ねじれになる。`on back` が二人に付き、男性が下になる。`on floor` の重みが床俯瞰を勝たせる
-- **直し方**: 重み付き `on floor` と「腰を床に」をやめる。頭側カメラと「男性が上」に戻す。腰浮きは脚を奥へ伸ばす。`spread legs` / `pleated skirt` / `leaning forward` を戻す。ネガに `from above, girl on top`。横向きは顔の `looking to the side` だけ。見本は [rio-sensei-genkan-pin.md](../examples/adult/rio-sensei-genkan-pin.md)
+- **直し方(失敗)**: 頭側カメラに戻しても、男性の胴で腰が切れ脚が肩の後ろに回る。次項でPOVへ切替
+
+## 頭側床カメラの押し倒しで脚が肩の後ろに浮く (2026-09-09)
+
+- **指示(日本語)**: 頭側の床から男性が覆いかぶさる。腰は切らない。のち男性POVへ変更
+- **使ったプロンプト**: `1girl, 1boy` + `spread legs, pinned down, leaning forward`。自然文 ground-level at her head / he is on top / legs extend along the floor
+- **外れた出力**: 頭は下手前で当たるが、脚が男性の肩の後ろに現れ腰が途切れて浮く
+- **原因(推定)**: 頭側カメラでは男性の胴が女性の腰と同じ奥行きに重なる。脚は肩の向こう側に回され、床から浮いて見える。言い換えでは解けない
+- **直し方**: カメラを男性POVにする。`1girl, pov, from above` + 自然文 high angle from his eyes。`1boy` / 顔は出さず、手前に白シャツの手だけ。ネガに `1boy, from below`。見本は [rio-sensei-genkan-pin.md](../examples/adult/rio-sensei-genkan-pin.md)
