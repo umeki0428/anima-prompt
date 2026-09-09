@@ -45,6 +45,7 @@
 | 前かがみ | leaning forward | | 【未検証】 |
 | 前かがみで胸が垂れる | hanging breasts | `leaning forward` / `all fours` とセット。白タートルでは透け注意 | 【未検証】 |
 | 仰向けで胸が揺れる | bouncing breasts | 指示があるときだけ。揺れなしなら外してネガへ。仰向けに `hanging breasts` は前かがみになる | 2026-09-09 |
+| 露出した胸を揉む | groping, breast grab | 服の中の手は不可。肌の上だけ。`1boy` は付けず手は自然文。ネガ `grabbing own breasts`。胸フォーカスは `nipples` を残し `close-up` / `upper body` は顔に寄る | 2026-09-09 |
 | 後ろから抱える | hug from behind | 2人の位置関係の固定用。服の中の手までは保証しない | 2026-08-21 |
 | 舌を出す(あへがおなし) | tongue out, open mouth | ネガに `ahegao, rolling eyes` | 【未検証】 |
 | 舌キス | kissing, tongue out | 顔が必要。`faceless male` は外してネガへ。よだれは下の行 | 2026-09-04 |
