@@ -108,7 +108,7 @@
 | 暗い無彩色背景 | dark background | 無彩色の場面用。色付きグラデが欲しい場面では下の「色付きグラデ」 | 2026-08-21 |
 | パンツライン抑制 | (ネガ) panty lines, cameltoe, panties | ローアングル＋タイツで出やすい | 2026-08-21 |
 | 服の中の手 | **Anima単発では扱わない**(2026-08-22打ち切り) | `groping` / `breast grab` / `hands in clothes` は服の上。見えない手＋膨らみは構図崩壊。裾から入れる単発も失敗。inpaintのみ | 2026-08-22 |
-| 2人の外見が混ざる | 男性は短い茶髪など、相手と違う外見を**タグで先に書く** | 長髪ハロ持ちと `1boy` を並べると顔が混ざる。自然文で容姿を再掲しない | 2026-08-21 |
+| 2人の外見が混ざる | 男性の外見差(`faceless male` 等)を**タグで先に書く**。ネガに `2girls` | 長髪ハロ持ちと `1boy` を並べると顔が混ざる。`from below` + スカート既定は立ち女性の定番に引かれ、男がもう1人の女になる。自然文で容姿を再掲しない | 2026-09-09 |
 | 色付きグラデ背景 | `simple background, gradient background, dark background` | **色は場面で変える。** 色名は自然文。`purple background` タグは肌まで染めやすいので、弱いときだけ足す。人物光は背景色と分ける(紫グラデなら光は `warm lighting`、ネガ `purple lighting`)。指示に背景がないときは背景タグ自体を足さない([composition.md](composition.md)) | 2026-09-04 |
 | 暗いチャコールグラデ | `simple background, gradient background, dark background` | 無彩色の場面。自然文で dark charcoal gradient。ネガに `purple background` は、その場面で紫が不要なときだけ | 2026-08-21 |
 | ベッド面だけ(部屋なし) | on bed | 自然文で rumpled bed surface。ネガに `scenery, indoor, furniture, bedroom, headboard`。グリーンバックは切り抜き用で雰囲気とは別 | 2026-09-04 |

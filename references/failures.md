@@ -171,3 +171,11 @@
 - **外れた出力**: 女性の体と視線がカメラに向き、男性と並列に立つ正面構図
 - **原因(推定)**: 「彼を見ている」が生成時に `looking at viewer` に均された。学習データの正面・中央の引力に自然文の弱い指定が負けた
 - **直し方**: タグ `facing another, eye contact, talking` で関係を固定し、ネガに `looking at viewer`。カメラは撮影用語の自然文。検証済み → [composition.md](composition.md)、最終稿 [counter-ots-cinematic.md](../examples/sfw/counter-ots-cinematic.md)
+
+## 押し倒しが2人のリオになる (2026-09-09)
+
+- **指示(日本語)**: 夜の玄関。頭側の床から、男性がリオを押し倒しているところを見る
+- **使ったプロンプト**: リオの固定タグ＋既定制服が先、`1boy, sensei..., faceless male` が後ろ。`from below, lying, on back`。ネガに `2girls` なし
+- **外れた出力**: 上に乗っているのもリオ(スカート・タイツ・ヒールの下アングル)。床の人物もリオでカメラ目線。昼の玄関に家具と植木
+- **原因(推定)**: `from below` + リオ既定制服が「下から見た立ちリオ」の定番に引かれ、1boy がもう1人の女になった。長髪ハロ持ちを先に書くと混ざる。[vocab.md](vocab.md) の「2人の外見が混ざる」
+- **直し方**: 先頭で `1girl, 1boy`。`faceless male, long bangs` をリオの容姿より前に。ネガに `2girls, straddling, upskirt, looking at viewer, furniture, plant`。自然文で one man and one woman / 股の間から見上げない / 夜の玄関に扉だけで家具なし。見本は [rio-sensei-genkan-pin.md](../examples/adult/rio-sensei-genkan-pin.md)
