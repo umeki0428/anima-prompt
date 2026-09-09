@@ -194,4 +194,12 @@
 - **使ったプロンプト**: 1回目 `spread legs, pleated skirt, on floor` + 自然文 hips flush / no gap / not M-shape。ネガ `m legs, arched back`
 - **外れた出力**: 膝が立ったM字。スカートが腰で広がり、尻と床の間に隙間。1回目の直し後も再発
 - **原因(推定)**: `spread legs` + `pleated skirt` が膝立て開脚の定番。ポジ自然文の否定形(`no gap`, `not M-shape`)が浮きを呼ぶ。[anima-rules.md](anima-rules.md) の否定形禁止
-- **直し方**: `spread legs` と `pleated skirt` を外す。`black skirt` は残す。`(on floor:1.8)`。自然文は肯定だけ(hips rest on the floor / thighs lie open on the floor)。顔は `looking to the side`。ネガに `m legs, arched back, ass up, all fours, kneeling, looking at another`。見本は [rio-sensei-genkan-pin.md](../examples/adult/rio-sensei-genkan-pin.md)
+- **直し方(失敗)**: `spread legs` と `pleated skirt` を外し `(on floor:1.8)` + hips rest on the floor。次項で崩壊
+
+## 押し倒しが真上俯瞰で上下逆さ・腰が外れる (2026-09-09)
+
+- **指示(日本語)**: 頭側床カメラ。尻は床。女性は横を向く
+- **使ったプロンプト**: `(on floor:1.8)`、`spread legs` なし。自然文 hips rest on the floor / thighs lie open on the floor。`looking to the side`
+- **外れた出力**: 真上から見た床。男性が仰向けで下、女性が上。胴は正面、腰だけ別角度で途切れる。スカートが短いレザーに化ける
+- **原因(推定)**: 頭側カメラでは腰と床の接地を正面に描けない。接地を強制すると俯瞰か骨盤ねじれになる。`on back` が二人に付き、男性が下になる。`on floor` の重みが床俯瞰を勝たせる
+- **直し方**: 重み付き `on floor` と「腰を床に」をやめる。頭側カメラと「男性が上」に戻す。腰浮きは脚を奥へ伸ばす。`spread legs` / `pleated skirt` / `leaning forward` を戻す。ネガに `from above, girl on top`。横向きは顔の `looking to the side` だけ。見本は [rio-sensei-genkan-pin.md](../examples/adult/rio-sensei-genkan-pin.md)

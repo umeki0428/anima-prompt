@@ -56,7 +56,7 @@ Rio has thigh-length straight black hair with blunt bangs, one side tucked behin
 | 下アングル・上着を脱ぎかけ・太もも切り | [rio-jacket-from-below.md](../examples/_templates/rio-jacket-from-below.md) | ユーザー最終稿(2026-08-21)。`sensitive` |
 | ベッドで舌キス(ユウジ) | [rio-yuji-bed-kiss.md](../examples/adult/rio-yuji-bed-kiss.md) | ユーザー最終稿(2026-09-04)。`explicit`。別衣装 |
 | キス4コマを1コマ1枚(先生) | [kiss-4panel-separate.md](../examples/adult/kiss-4panel-separate.md) | 【未検証】。既定制服の襟元。先生は faceless。`explicit` 等は未指定のため未使用 |
-| 室内で押し倒し(先生) | [rio-sensei-genkan-pin.md](../examples/adult/rio-sensei-genkan-pin.md) | 腰浮き再発確認 2026-09-09。横向き＋`spread legs`外し稿は未再生成 |
+| 室内で押し倒し(先生) | [rio-sensei-genkan-pin.md](../examples/adult/rio-sensei-genkan-pin.md) | 腰浮き対策で真上俯瞰・上下逆さを確認 2026-09-09。頭側カメラ復帰稿は未再生成 |
 | 武装 / 臨戦 | [rio-armed.md](../examples/_templates/rio-armed.md) | 【未検証】立ち絵 |
 | 冬服 | [rio-winter.md](../examples/_templates/rio-winter.md) | 【未検証】立ち絵 |
 | クリスマスドレス | [rio-christmas-dress.md](../examples/_templates/rio-christmas-dress.md) | 【未検証】立ち絵 |
