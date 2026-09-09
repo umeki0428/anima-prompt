@@ -15,7 +15,7 @@ white turtleneck sweater, black jacket, id card, black skirt, pleated skirt, bla
 ## 任意タグ(指示があれば付ける)
 
 - 小物: tablet pc(よく持つ。指示があれば)
-- 画風: anime coloring(既定ON。別画風の指示があれば外す)
+- 画風: 指定がなければ付けない。`anime coloring` はユーザーが入れてほしいと言ったときだけ。[anima-rules.md](../references/anima-rules.md) の「入れないタグ」
 
 ## 公式衣装差分(指示されたら既定衣装を全部削除して、下の行に置き換える)
 
@@ -55,7 +55,7 @@ Rio has thigh-length straight black hair with blunt bangs, one side tucked behin
 |---|---|---|
 | 下アングル・上着を脱ぎかけ・太もも切り | [rio-jacket-from-below.md](../examples/_templates/rio-jacket-from-below.md) | ユーザー最終稿(2026-08-21)。`sensitive` |
 | ベッドで舌キス(ユウジ) | [rio-yuji-bed-kiss.md](../examples/adult/rio-yuji-bed-kiss.md) | ユーザー最終稿(2026-09-04)。`explicit`。別衣装 |
-| キス4コマを1コマ1枚(先生) | [kiss-4panel-separate.md](../examples/adult/kiss-4panel-separate.md) | 【未検証】。`explicit`。既定制服の襟元。先生は faceless |
+| キス4コマを1コマ1枚(先生) | [kiss-4panel-separate.md](../examples/adult/kiss-4panel-separate.md) | 【未検証】。既定制服の襟元。先生は faceless。`explicit` 等は未指定のため未使用 |
 | 武装 / 臨戦 | [rio-armed.md](../examples/_templates/rio-armed.md) | 【未検証】立ち絵 |
 | 冬服 | [rio-winter.md](../examples/_templates/rio-winter.md) | 【未検証】立ち絵 |
 | クリスマスドレス | [rio-christmas-dress.md](../examples/_templates/rio-christmas-dress.md) | 【未検証】立ち絵 |
@@ -69,7 +69,7 @@ Rio has thigh-length straight black hair with blunt bangs, one side tucked behin
 - `bright pupils` は `white pupils` と近いので固定には入れない。効きが弱いときだけ足す
 - `hair ornament` は `hairclip` の親タグ相当。固定は `hairclip` + `millennium science school logo`
 - 既定衣装と別衣装を混在させない(概念ブレンドで崩れる)
-- レーティング既定は `safe`。下アングル最終稿だけ `sensitive`(そのときネガに `sensitive` を入れない)
+- レーティング既定は接頭辞の `safe`。`explicit` / `sensitive` / `nsfw` はユーザーが入れてほしいと言ったときだけ。下アングル最終稿だけ当時の指示で `sensitive`(そのときネガに `sensitive` を入れない)
 - 太ももから下が見えない指示なら `black high heels` を外し `cowboy shot`。ネガに `shoes, high heels, feet`
 - 下アングル+undressing でスカートが消えるときは `(black skirt:1.8), (pleated skirt:1.8), miniskirt`
 - `purple background` はシーン全体を染める。暗い背景は `dark background` + 自然文で charcoal。語彙は [vocab.md](../references/vocab.md)、失敗は [failures.md](../references/failures.md)

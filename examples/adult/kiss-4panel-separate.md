@@ -15,6 +15,7 @@
 - よだれ・汗・湯気はタグ。とろけ顔は `half-closed eyes, open mouth, blush`。あへがおは指示がないのでネガへ。
 - 吹き出しの「…」は出さない(ネガに `text`)。
 - 1〜3は横顔キスなのでネガに `looking at viewer`。4だけ正面。
+- `explicit` / `newest` / `colored` / `anime coloring` は未指定。接頭辞は `masterpiece, best quality, score_7, safe` のみ。
 
 **状態:** 【未検証】(机上の変換。実生成後に結果を追記する)
 
@@ -39,7 +40,7 @@
 **スキル入力(日本語):** 後段の SKILL.md にこのブロックを貼る。容姿の固定タグはスキル側が足す。
 
 ```
-リオと先生で。先生はアニメ版センセイで、顔は出さない。前髪は長い。リオのヘアクリップは描かない。フルカラーの1枚絵。漫画のコマ割りにしない。
+リオと先生で。先生はアニメ版センセイで、顔は出さない。前髪は長い。リオのヘアクリップは描かない。1枚絵。漫画のコマ割りにしない。
 
 【構図指示】
 人数と配置: 2人。横顔のクローズアップ。女性が画面左、男性が画面右。身長差があり、男性の頭が一段高い。胸から上がフレーム。
@@ -57,7 +58,7 @@
 **ポジティブ:**
 
 ```
-masterpiece, best quality, explicit, newest, colored, anime coloring, 1girl, rio (blue archive), blue archive, very long hair, black hair, blunt bangs, hair behind ear, red eyes, ringed eyes, white pupils, white turtleneck sweater, black jacket, 1boy, sensei (blue archive the animation), faceless male, long bangs, height difference, kissing, saliva, saliva trail, drooling, closed eyes, blush, leaning forward, profile, close-up, upper body, from below, hand on another's face, facing another, simple background, gradient background, dark background, night, dim lighting, warm lighting
+masterpiece, best quality, score_7, safe, 1girl, rio (blue archive), blue archive, very long hair, black hair, blunt bangs, hair behind ear, red eyes, ringed eyes, white pupils, white turtleneck sweater, black jacket, 1boy, sensei (blue archive the animation), faceless male, long bangs, height difference, kissing, saliva, saliva trail, drooling, closed eyes, blush, leaning forward, profile, close-up, upper body, from below, hand on another's face, facing another, simple background, gradient background, dark background, night, dim lighting, warm lighting
 
 Low angle. Sensei is taller on the right and still lunging down from above into a sudden kiss. Rio on the left tilts her face up; a trace of surprise remains in her brows as she yields. His right hand is large in the foreground, closer to the camera than their faces, cupping her jaw. A thin saliva thread at their lips. Tight crop from the chest up. The background is a black-to-charcoal night gradient with nothing else in it.
 ```
@@ -89,7 +90,7 @@ worst quality, low quality, score_1, score_2, score_3, artist name, blurry, jpeg
 **ポジティブ:**
 
 ```
-masterpiece, best quality, explicit, newest, colored, anime coloring, 1girl, rio (blue archive), blue archive, very long hair, black hair, blunt bangs, hair behind ear, red eyes, ringed eyes, white pupils, white turtleneck sweater, black jacket, 1boy, sensei (blue archive the animation), faceless male, long bangs, kissing, saliva, saliva trail, sweat, blush, half-closed eyes, profile, close-up, hand on another's face, facing another, simple background, white background, warm lighting, steam, haze
+masterpiece, best quality, score_7, safe, 1girl, rio (blue archive), blue archive, very long hair, black hair, blunt bangs, hair behind ear, red eyes, ringed eyes, white pupils, white turtleneck sweater, black jacket, 1boy, sensei (blue archive the animation), faceless male, long bangs, kissing, saliva, saliva trail, sweat, blush, half-closed eyes, profile, close-up, hand on another's face, facing another, simple background, white background, warm lighting, steam, haze
 
 Tighter profile close-up on their faces. Sensei on the right presses his hand to Rio's cheek and pulls her in. The kiss is wet, with a thin saliva thread at their lips. Soft warm light and a faint haze of steam.
 ```
@@ -121,7 +122,7 @@ worst quality, low quality, score_1, score_2, score_3, artist name, blurry, jpeg
 **ポジティブ:**
 
 ```
-masterpiece, best quality, explicit, newest, colored, anime coloring, 1girl, rio (blue archive), blue archive, very long hair, black hair, 1boy, sensei (blue archive the animation), faceless male, long bangs, kissing, saliva, saliva trail, drooling, sweat, blush, extreme close-up, profile, steam, haze, simple background, white background, warm lighting
+masterpiece, best quality, score_7, safe, 1girl, rio (blue archive), blue archive, very long hair, black hair, 1boy, sensei (blue archive the animation), faceless male, long bangs, kissing, saliva, saliva trail, drooling, sweat, blush, extreme close-up, profile, steam, haze, simple background, white background, warm lighting
 
 Extreme close-up on their mouths only, cropped horizontally. Their lips have just parted, a thick saliva string stretching between them. Warm breath and steam around the mouths. Eyes and forehead stay out of frame.
 ```
@@ -153,7 +154,7 @@ worst quality, low quality, score_1, score_2, score_3, artist name, blurry, jpeg
 **ポジティブ:**
 
 ```
-masterpiece, best quality, explicit, newest, colored, anime coloring, 1girl, rio (blue archive), blue archive, very long hair, black hair, blunt bangs, hair behind ear, red eyes, ringed eyes, white pupils, 1boy, sensei (blue archive the animation), faceless male, long bangs, looking at viewer, half-closed eyes, open mouth, blush, sweat, saliva, drooling, steam, haze, close-up, hands on another's face, simple background, white background, warm lighting
+masterpiece, best quality, score_7, safe, 1girl, rio (blue archive), blue archive, very long hair, black hair, blunt bangs, hair behind ear, red eyes, ringed eyes, white pupils, 1boy, sensei (blue archive the animation), faceless male, long bangs, looking at viewer, half-closed eyes, open mouth, blush, sweat, saliva, drooling, steam, haze, close-up, hands on another's face, simple background, white background, warm lighting
 
 Frontal close-up of Rio's face only. Sensei's hands cup both her cheeks from the sides, thumbs on her cheeks. Her expression is melted and dazed, unfocused half-lidded eyes, a heavy blush, sweat, and a saliva drop on her lower lip. A faint haze of steam around her head. No speech bubble.
 ```

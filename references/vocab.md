@@ -85,7 +85,7 @@
 | 困り汗 | sweatdrop | 顔の横の1滴。`sweat` は全身の汗 | 2026-09-07 |
 | 不揃いの漫画ページ | 各 Panel 先頭で位置を文章指定(`top full-width panel` 等) | `4koma` は均等な縦積みになる(2026-08-21)。書式は [manga-page.md](manga-page.md)。タグ羅列より Panel 文章 | 2026-08-22 |
 | 均等4コマ | `4koma` | 同じ大きさのコマが上から下(または2×2)。動的なページには使わない | 2026-08-21 |
-| フルカラー漫画 | `colored` | `shoujo manga style` / `shounen manga style` / `monochrome` / `greyscale` はモノクロ化するのでフルカラーではネガへ | 【未検証】 |
+| フルカラー漫画 | `colored` | **ユーザーがフルカラー／`colored` を指定したときだけ。** `shoujo manga style` / `shounen manga style` / `monochrome` / `greyscale` はモノクロ化するので、指定されたフルカラーではネガへ | 【未検証】 |
 | 扉の隙間から見るPOV | pov, doorway, open door | 縦の扉とドア枠で切り取ることは自然文。`peeking` は目だけになりやすいので使わない | 【未検証】 |
 | 左下でインターホンを押す手 | (タグにしない) | `hands` を付けるとキャラ側に付く。自然文で bottom-left foreground, the viewer's hand presses a wall-mounted intercom | 【未検証】 |
 
