@@ -57,6 +57,7 @@ Rio has thigh-length straight black hair with blunt bangs, one side tucked behin
 | ベッドで舌キス(ユウジ) | [rio-yuji-bed-kiss.md](../examples/adult/rio-yuji-bed-kiss.md) | ユーザー最終稿(2026-09-04)。`explicit`。別衣装 |
 | キス4コマを1コマ1枚(先生) | [kiss-4panel-separate.md](../examples/adult/kiss-4panel-separate.md) | 【未検証】。既定制服の襟元。先生は faceless。`explicit` 等は未指定のため未使用 |
 | 室内で押し倒し(先生) | [rio-sensei-genkan-pin.md](../examples/adult/rio-sensei-genkan-pin.md) | POVが頭下・脚上になったのを確認 2026-09-09。顔上・足下稿は未再生成 |
+| ベッドでタートルをめくる | [rio-sweater-lift-bed.md](../examples/adult/rio-sweater-lift-bed.md) | 首で止まるのを報告 2026-09-09。手首まで・ブラなし稿は未再生成 |
 | 武装 / 臨戦 | [rio-armed.md](../examples/_templates/rio-armed.md) | 【未検証】立ち絵 |
 | 冬服 | [rio-winter.md](../examples/_templates/rio-winter.md) | 【未検証】立ち絵 |
 | クリスマスドレス | [rio-christmas-dress.md](../examples/_templates/rio-christmas-dress.md) | 【未検証】立ち絵 |

@@ -219,3 +219,11 @@
 - **外れた出力**: 頭が画面下、脚が画面上。手元は下端。腰は床から浮いて見える
 - **原因(推定)**: 手は頭の横なので、袖を画面下に置くと頭も下になる。頭側カメラの奥行きが残る。POVの視線をネガにしていた
 - **直し方**: 頭は画面の上、足は下。袖と手は画面の上前景。`looking at viewer`。ネガに `upside-down, inverted, looking to the side, from below`。見本は [rio-sensei-genkan-pin.md](../examples/adult/rio-sensei-genkan-pin.md)
+
+## タートルめくりが首で止まる (2026-09-09)
+
+- **指示(日本語)**: 服を手首まで全部持ち上げる。ブラなし。胸はすこし垂れて揺れる
+- **使ったプロンプト**: `white turtleneck sweater, undressing, clothes lift, sweater lift`。自然文 bunched around her arms and partially covering her face / pink bra fully visible
+- **外れた出力**: セーターが首元に残る。ブラが見える
+- **原因(推定)**: `white turtleneck sweater` は着衣の襟を首に描く。顔に布がかかる指定も襟を首へ戻す
+- **直し方**: リフトに重み。自然文は bunched at her wrists / neck and chest bare。`bare shoulders, bouncing breasts`。ブラは自然文から消しネガへ。`hanging breasts` は仰向けでは使わない。見本は [rio-sweater-lift-bed.md](../examples/adult/rio-sweater-lift-bed.md)

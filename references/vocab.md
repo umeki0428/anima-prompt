@@ -20,6 +20,7 @@
 | 日本語 | 使うタグ | メモ | 確認日 |
 |---|---|---|---|
 | 上着を脱いでいる途中 | `undressing, removing jacket` | 脱ぎ終わりは `unworn jacket`。肩に残るだけなら `jacket on shoulders`。【未検証】 | |
+| タートルを手首までめくる | `(clothes lift:1.8), (sweater lift:1.8), arms up, bare shoulders` | `white turtleneck sweater` は首に残りやすい。自然文は bunched at her wrists。ネガ `bra, fully clothed`。[failures.md](failures.md) | 2026-09-09 |
 | スカートを残す(下アングル) | `(black skirt:1.8), (pleated skirt:1.8), miniskirt` | 下アングル+undressing だとスカートが消える。自然文でも hem is visible / not removed と書く。重みは SDXLより高め(公式) | 2026-08-21 |
 | リオ武装/臨戦 | `rio (armed) (blue archive), official alternate costume, official alternate hairstyle, ponytail, black bodysuit, skin tight, headgear, black gloves, thigh holster` | エイリアス `battle` / `bodysuit`。既定制服は削除。例は [rio-armed.md](../examples/_templates/rio-armed.md) | 2026-08-21 |
 | リオ冬服 | `rio (winter) (blue archive), official alternate costume, black coat, coat, white turtleneck sweater, turtleneck, black gloves` | NPC立ち絵。投稿が少ない。例は [rio-winter.md](../examples/_templates/rio-winter.md) | 2026-08-21 |
@@ -43,6 +44,7 @@
 | 四つん這い | all fours | 膝立ちに戻るなら `(all fours:2)`。ネガに `sitting, standing` | 【未検証】 |
 | 前かがみ | leaning forward | | 【未検証】 |
 | 前かがみで胸が垂れる | hanging breasts | `leaning forward` / `all fours` とセット。白タートルでは透け注意 | 【未検証】 |
+| 仰向けで胸が揺れる | bouncing breasts | 仰向けに `hanging breasts` は前かがみになる。すこし垂れは自然文 | 2026-09-09 |
 | 後ろから抱える | hug from behind | 2人の位置関係の固定用。服の中の手までは保証しない | 2026-08-21 |
 | 舌を出す(あへがおなし) | tongue out, open mouth | ネガに `ahegao, rolling eyes` | 【未検証】 |
 | 舌キス | kissing, tongue out | 顔が必要。`faceless male` は外してネガへ。よだれは下の行 | 2026-09-04 |
