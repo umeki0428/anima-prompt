@@ -32,6 +32,20 @@
 不明瞭: なし
 ```
 
+**表情の差し替え:** タグ行の `surprised, embarrassed, blush, looking at viewer` だけ入れ替える。自然文は触らない。`blush` は残す。あへがおは足さない。半目系はネガの `closed eyes` を残す。
+
+| バリエーション | 差し替えタグ | その回だけネガへ足す |
+|---|---|---|
+| 驚き＋照れ（現行） | `surprised, embarrassed, blush, looking at viewer` | |
+| 口を開けた驚き | `surprised, open mouth, blush, looking at viewer` | `smile` |
+| 怒り混じりの照れ | `angry, embarrassed, furrowed brow, blush, looking at viewer` | `smile, open mouth` |
+| 困り汗 | `embarrassed, sweatdrop, furrowed brow, blush, looking at viewer` | |
+| 半目で睨む | `half-closed eyes, narrowed eyes, blush, looking at viewer` | |
+| 涙目 | `teary eyes, embarrassed, blush, looking at viewer` | |
+| とろけ | `half-closed eyes, open mouth, blush, looking at viewer` | `ahegao, tongue out` |
+| ぎこちない笑顔 | `awkward smile, embarrassed, blush, looking at viewer` | `grin` |
+| 横を見る | `embarrassed, blush, looking to the side` | `looking at viewer` |
+
 **推奨設定:** `896×1152`。`er_sde`、CFG 4〜5、30〜50ステップ。
 
 **ポジティブ:**
