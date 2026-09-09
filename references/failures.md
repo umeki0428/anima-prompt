@@ -187,3 +187,11 @@
 - **外れた出力**: 男性が脚を開いて立つ。カメラが股の間。リオは頭が下で脚が天井方向に伸び、押し倒しになっていない
 - **原因(推定)**: Danbooru の `from below` は「立っている人を下から見る」。頭側床カメラとは別物。否定の自然文より定番構図が強い
 - **直し方**: ポジから `from below` を外しネガへ。男性は立つタグを使わず、同じ向きで上に寝て覆いかぶさる。脚は床に沿って扉へ(宙に上げない)。カメラは自然文だけ `ground-level at their heads, looking along the floor toward the closed door`。ネガに `from below, between legs, legs up, standing, spread legs, upside-down, open door`。見本は [rio-sensei-genkan-pin.md](../examples/adult/rio-sensei-genkan-pin.md)
+
+## 仰向け開脚で腰と尻が床から浮く (2026-09-09)
+
+- **指示(日本語)**: 股を開いて男性の胴が太腿の間。尻は床につける
+- **使ったプロンプト**: `spread legs, black skirt, pleated skirt, lying, on back, on floor`。自然文に not in the air
+- **外れた出力**: 膝が立ったM字。スカートが腰で広がり、尻と床の間に隙間
+- **原因(推定)**: `spread legs` + `pleated skirt` が膝立て開脚の定番に寄る。プリーツが腰まわりで広がり、床との接地が見えない。スカートを消す問題ではなく、腰の接地が弱い
+- **直し方**: スカートは残す。自然文で hips and buttocks flush on the floor / skirt drapes onto the floor。ネガに `arched back, m legs, ass up, all fours, kneeling`。男性は膝立ちせず低く覆いかぶさる。見本は [rio-sensei-genkan-pin.md](../examples/adult/rio-sensei-genkan-pin.md)
