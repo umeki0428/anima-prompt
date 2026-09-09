@@ -226,4 +226,12 @@
 - **使ったプロンプト**: `white turtleneck sweater, undressing, clothes lift, sweater lift`。自然文 bunched around her arms and partially covering her face / pink bra fully visible
 - **外れた出力**: セーターが首元に残る。ブラが見える
 - **原因(推定)**: `white turtleneck sweater` は着衣の襟を首に描く。顔に布がかかる指定も襟を首へ戻す
-- **直し方**: リフトに重み。自然文は bunched at her wrists / neck and chest bare。`bare shoulders, bouncing breasts`。ブラは自然文から消しネガへ。`hanging breasts` は仰向けでは使わない。見本は [rio-sweater-lift-bed.md](../examples/adult/rio-sweater-lift-bed.md)
+- **直し方(失敗)**: リフト重みでも `clothes lift` が裾上げになり、胴にタートル／タンクトップが残った。次項
+
+## タートルめくりが着衣の裾上げになる (2026-09-09)
+
+- **指示(日本語)**: 服を胴から外す。スクールロゴは付けない
+- **使ったプロンプト**: `white turtleneck sweater, (clothes lift:1.8), (sweater lift:1.8), millennium science school logo`
+- **外れた出力**: 手首にセーター、胴は白いタートルタンクトップ。胸にミレニアム風ロゴと文字
+- **原因(推定)**: Danbooru の `clothes lift` は裾を上げて着衣のままへそを出す。着衣タグとスクールロゴが服のプリントになる
+- **直し方**: `clothes lift` / `sweater lift` / `white turtleneck sweater` / `millennium science school logo` を外す。`undressing, removing sweater, unworn sweater, topless`。ネガ `turtleneck, tank top, crop top, logo, print`。見本は [rio-sweater-lift-bed.md](../examples/adult/rio-sweater-lift-bed.md)

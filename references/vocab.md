@@ -20,7 +20,7 @@
 | 日本語 | 使うタグ | メモ | 確認日 |
 |---|---|---|---|
 | 上着を脱いでいる途中 | `undressing, removing jacket` | 脱ぎ終わりは `unworn jacket`。肩に残るだけなら `jacket on shoulders`。【未検証】 | |
-| タートルを手首までめくる | `(clothes lift:1.8), (sweater lift:1.8), arms up, bare shoulders` | `white turtleneck sweater` は首に残りやすい。自然文は bunched at her wrists。ネガ `bra, fully clothed`。[failures.md](failures.md) | 2026-09-09 |
+| タートルを手首までめくる | `undressing, removing sweater, unworn sweater, topless, arms up` | `clothes lift` / `sweater lift` は着衣の裾上げ。着衣の `white turtleneck sweater` も胴に残る。スクールロゴは付けない。ネガ `turtleneck, tank top, crop top, logo`。[failures.md](failures.md) | 2026-09-09 |
 | スカートを残す(下アングル) | `(black skirt:1.8), (pleated skirt:1.8), miniskirt` | 下アングル+undressing だとスカートが消える。自然文でも hem is visible / not removed と書く。重みは SDXLより高め(公式) | 2026-08-21 |
 | リオ武装/臨戦 | `rio (armed) (blue archive), official alternate costume, official alternate hairstyle, ponytail, black bodysuit, skin tight, headgear, black gloves, thigh holster` | エイリアス `battle` / `bodysuit`。既定制服は削除。例は [rio-armed.md](../examples/_templates/rio-armed.md) | 2026-08-21 |
 | リオ冬服 | `rio (winter) (blue archive), official alternate costume, black coat, coat, white turtleneck sweater, turtleneck, black gloves` | NPC立ち絵。投稿が少ない。例は [rio-winter.md](../examples/_templates/rio-winter.md) | 2026-08-21 |
