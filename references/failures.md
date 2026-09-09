@@ -190,8 +190,8 @@
 
 ## 仰向け開脚で腰と尻が床から浮く (2026-09-09)
 
-- **指示(日本語)**: 股を開いて男性の胴が太腿の間。尻は床につける
-- **使ったプロンプト**: `spread legs, black skirt, pleated skirt, lying, on back, on floor`。自然文に not in the air
-- **外れた出力**: 膝が立ったM字。スカートが腰で広がり、尻と床の間に隙間
-- **原因(推定)**: `spread legs` + `pleated skirt` が膝立て開脚の定番に寄る。プリーツが腰まわりで広がり、床との接地が見えない。スカートを消す問題ではなく、腰の接地が弱い
-- **直し方**: スカートは残す。自然文で hips and buttocks flush on the floor / skirt drapes onto the floor。ネガに `arched back, m legs, ass up, all fours, kneeling`。男性は膝立ちせず低く覆いかぶさる。見本は [rio-sensei-genkan-pin.md](../examples/adult/rio-sensei-genkan-pin.md)
+- **指示(日本語)**: 股を開いて男性の胴が太腿の間。尻は床につける。女性は横を向く
+- **使ったプロンプト**: 1回目 `spread legs, pleated skirt, on floor` + 自然文 hips flush / no gap / not M-shape。ネガ `m legs, arched back`
+- **外れた出力**: 膝が立ったM字。スカートが腰で広がり、尻と床の間に隙間。1回目の直し後も再発
+- **原因(推定)**: `spread legs` + `pleated skirt` が膝立て開脚の定番。ポジ自然文の否定形(`no gap`, `not M-shape`)が浮きを呼ぶ。[anima-rules.md](anima-rules.md) の否定形禁止
+- **直し方**: `spread legs` と `pleated skirt` を外す。`black skirt` は残す。`(on floor:1.8)`。自然文は肯定だけ(hips rest on the floor / thighs lie open on the floor)。顔は `looking to the side`。ネガに `m legs, arched back, ass up, all fours, kneeling, looking at another`。見本は [rio-sensei-genkan-pin.md](../examples/adult/rio-sensei-genkan-pin.md)

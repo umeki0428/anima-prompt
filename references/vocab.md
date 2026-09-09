@@ -33,7 +33,8 @@
 | 日本語 | 使うタグ | メモ | 確認日 |
 |---|---|---|---|
 | とろけ顔 | half-closed eyes, open mouth, blush | 自然文で melted / dazed。あへがおは指示があるときだけ。詳細は [atmosphere.md](atmosphere.md) | 【未検証】 |
-| 仰向け開脚で腰が浮く | (タグにしない) 自然文で hips and buttocks flush on the floor | `spread legs` + `pleated skirt` は膝立てM字になり、プリーツが腰で広がって尻が床から離れて見える。スカートは残す。ネガ `arched back, m legs, ass up, all fours, kneeling`。[failures.md](failures.md) | 2026-09-09 |
+| 仰向け開脚で腰が浮く | `(on floor:1.8)`。`spread legs` / `pleated skirt` は使わない | 自然文の flush / no gap では再発。肯定だけ hips rest on the floor。`black skirt` は残す。ネガ `arched back, m legs, ass up`。[failures.md](failures.md) | 2026-09-09 |
+| 仰向けで横を向く | looking to the side | `looking at another` は頭側カメラで正面顔になる。ネガに `looking at viewer, looking at another` | 2026-09-09 |
 | 息が荒い | heavy breathing | | 【未検証】 |
 | 汗 | sweat | 肌の汗。服を濡らす指定は透けに繋がる | 【未検証】 |
 | 下を見る(ローアングル) | looking down | `looking at viewer` と併用しがち | 【未検証】 |
