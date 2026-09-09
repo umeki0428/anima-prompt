@@ -74,7 +74,7 @@
 | 上から見下ろし | from above | カメラ高さはタグ `from above` + 自然文 `high angle`。頭側床の押し倒しには使わない | 2026-09-09 |
 | 男性目線の押し倒しPOV | pov, from above, looking at viewer | 頭は画面の上、足は下。袖は画面の上前景。袖を画面下に書くと頭下・脚上に戻る。ネガ `1boy, from below, upside-down`。[failures.md](failures.md) | 2026-09-09 |
 | 斜め構図 | dutch angle | 【未検証】 | |
-| 顔アップ | close-up | 【未検証】 | |
+| 顔アップ | close-up | 頭上ハイアングルと併用すると胸が消える。胸を出すなら外してネガへ | 2026-09-09 |
 | バストアップ | upper body | 【未検証】 | |
 | 太ももまで | cowboy shot | 【未検証】 | |
 | 太ももから下は切る | cowboy shot | 靴・足元タグは外す。ネガに `shoes, high heels, feet`。【未検証】 | |

@@ -235,3 +235,11 @@
 - **外れた出力**: 手首にセーター、胴は白いタートルタンクトップ。胸にミレニアム風ロゴと文字
 - **原因(推定)**: Danbooru の `clothes lift` は裾を上げて着衣のままへそを出す。着衣タグとスクールロゴが服のプリントになる
 - **直し方**: `clothes lift` / `sweater lift` / `white turtleneck sweater` / `millennium science school logo` を外す。`undressing, removing sweater, unworn sweater, topless`。ネガ `turtleneck, tank top, crop top, logo, print`。見本は [rio-sweater-lift-bed.md](../examples/adult/rio-sweater-lift-bed.md)
+
+## 頭上ハイアングルで胸が潰れて見えない (2026-09-09)
+
+- **指示(日本語)**: 胸を見せる。揺れはなし
+- **使ったプロンプト**: `from above, close-up, upper body`。自然文 Steep high-angle shot from above her head
+- **外れた出力**: 顔が画面の大半。胸は下端で上から潰れて形が読めない
+- **原因(推定)**: 頭の真上＋`close-up` は顔に寄る。急俯瞰では胸の正面が見えない
+- **直し方**: `close-up` を外しネガへ。カメラは胸の上から。自然文 her chest in the center of the frame。ネガ `close-up face only, portrait crop`。見本は [rio-sweater-lift-bed.md](../examples/adult/rio-sweater-lift-bed.md)
