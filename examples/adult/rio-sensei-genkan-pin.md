@@ -45,5 +45,5 @@ Low angle from the genkan floor at their heads, looking along their bodies towar
 **ネガティブ:**
 
 ```
-worst quality, low quality, score_1, score_2, score_3, artist name, blurry, jpeg artifacts, chromatic aberration, looking at viewer, standing, sitting, from behind, white background, simple background, gradient background, comic, multiple panels, 4koma, monochrome, greyscale, scenery, outdoors, photorealistic, 3d, extra limbs, bad hands, watermark, signature, text, logo
+worst quality, low quality, score_1, score_2, score_3, artist name, blurry, jpeg artifacts, chromatic aberration, looking at viewer, standing, sitting, white background, simple background, gradient background, comic, multiple panels, 4koma, monochrome, greyscale, scenery, outdoors, photorealistic, 3d, extra limbs, bad hands, watermark, signature, text, logo
 ```
