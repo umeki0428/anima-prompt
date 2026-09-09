@@ -210,4 +210,12 @@
 - **使ったプロンプト**: `1girl, 1boy` + `spread legs, pinned down, leaning forward`。自然文 ground-level at her head / he is on top / legs extend along the floor
 - **外れた出力**: 頭は下手前で当たるが、脚が男性の肩の後ろに現れ腰が途切れて浮く
 - **原因(推定)**: 頭側カメラでは男性の胴が女性の腰と同じ奥行きに重なる。脚は肩の向こう側に回され、床から浮いて見える。言い換えでは解けない
-- **直し方**: カメラを男性POVにする。`1girl, pov, from above` + 自然文 high angle from his eyes。`1boy` / 顔は出さず、手前に白シャツの手だけ。ネガに `1boy, from below`。見本は [rio-sensei-genkan-pin.md](../examples/adult/rio-sensei-genkan-pin.md)
+- **直し方(失敗)**: 自然文で sleeves at the bottom of the frame としたため、頭が下・脚が上のまま。次項
+
+## 男性POVが頭下・脚上の逆さになる (2026-09-09)
+
+- **指示(日本語)**: 男性目線のPOV。顔を見下ろす
+- **使ったプロンプト**: `pov, from above`。自然文 white shirt sleeves at the bottom of the frame / legs open toward the bottom。ネガに `looking at viewer`
+- **外れた出力**: 頭が画面下、脚が画面上。手元は下端。腰は床から浮いて見える
+- **原因(推定)**: 手は頭の横なので、袖を画面下に置くと頭も下になる。頭側カメラの奥行きが残る。POVの視線をネガにしていた
+- **直し方**: 頭は画面の上、足は下。袖と手は画面の上前景。`looking at viewer`。ネガに `upside-down, inverted, looking to the side, from below`。見本は [rio-sensei-genkan-pin.md](../examples/adult/rio-sensei-genkan-pin.md)

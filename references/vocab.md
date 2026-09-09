@@ -70,7 +70,7 @@
 |---|---|---|---|
 | 下から見上げ | from below | **立ち／座り人物を下から見る定番。** 頭側の床から足方向を見る押し倒しには使わない。股の間から見上げ・脚を上げた逆さ構図に化ける(2026-09-09)。頭側カメラは自然文 `ground-level at their heads, looking along the floor toward the door`。高さの二重指定が必要なアオリ(立ち)だけタグ+`low angle`。[composition.md](composition.md) | 2026-09-09 |
 | 上から見下ろし | from above | カメラ高さはタグ `from above` + 自然文 `high angle`。頭側床の押し倒しには使わない | 2026-09-09 |
-| 男性目線の押し倒しPOV | pov, from above | `1boy` を付けると第三人称の全身になり腰が切れる。手は自然文。ネガ `1boy, from below`。[failures.md](failures.md) | 2026-09-09 |
+| 男性目線の押し倒しPOV | pov, from above, looking at viewer | 頭は画面の上、足は下。袖は画面の上前景。袖を画面下に書くと頭下・脚上に戻る。ネガ `1boy, from below, upside-down`。[failures.md](failures.md) | 2026-09-09 |
 | 斜め構図 | dutch angle | 【未検証】 | |
 | 顔アップ | close-up | 【未検証】 | |
 | バストアップ | upper body | 【未検証】 | |
