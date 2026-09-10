@@ -220,6 +220,14 @@
 - **原因(推定)**: 手は頭の横なので、袖を画面下に置くと頭も下になる。頭側カメラの奥行きが残る。POVの視線をネガにしていた
 - **直し方**: 頭は画面の上、足は下。袖と手は画面の上前景。`looking at viewer`。ネガに `upside-down, inverted, looking to the side, from below`。見本は [rio-sensei-genkan-pin.md](../examples/adult/rio-sensei-genkan-pin.md)
 
+## 胸を下から掴むと母乳が出る (2026-09-10)
+
+- **指示(日本語)**: 後ろから胸を掴む。母乳は出さない
+- **使ったプロンプト**: 自然文 toward the nipples in a milking motion
+- **外れた出力**: 乳首から母乳のような液体
+- **原因(推定)**: `milking` は搾乳の学習に直結する。乳首方向へ絞る、という文も同じ
+- **直し方**: 自然文は cup / squeeze from below まで。`milking` を書かない。ネガ `lactation, milking, milk, breast milk`。見本は [rio-behind-kiss-groping-bed.md](../examples/adult/rio-behind-kiss-groping-bed.md)
+
 ## タートルめくりが首で止まる (2026-09-09)
 
 - **指示(日本語)**: 服を手首まで全部持ち上げる。ブラなし。胸はすこし垂れて揺れる
