@@ -60,6 +60,7 @@ Rio has thigh-length straight black hair with blunt bangs, one side tucked behin
 | ベッドでタートルをめくる | [rio-sweater-lift-bed.md](../examples/adult/rio-sweater-lift-bed.md) | 胸中央稿は未再生成。表情は差し替え表 |
 | ベッドで胸を揉む（胸フォーカス） | [rio-breast-groping-bed.md](../examples/adult/rio-breast-groping-bed.md) | 【未検証】。露出した胸の上。ロゴなし |
 | ベッドで後ろから揉みながらキス | [rio-behind-kiss-groping-bed.md](../examples/adult/rio-behind-kiss-groping-bed.md) | 母乳は milking 文が原因。ロゴなし |
+| モノクロ胸フォーカスで掴む | [rio-mono-breast-grab.md](../examples/adult/rio-mono-breast-grab.md) | 【未検証】。元稿の女性をリオに置換 |
 | 武装 / 臨戦 | [rio-armed.md](../examples/_templates/rio-armed.md) | 【未検証】立ち絵 |
 | 冬服 | [rio-winter.md](../examples/_templates/rio-winter.md) | 【未検証】立ち絵 |
 | クリスマスドレス | [rio-christmas-dress.md](../examples/_templates/rio-christmas-dress.md) | 【未検証】立ち絵 |
