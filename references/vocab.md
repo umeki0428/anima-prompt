@@ -53,6 +53,7 @@
 | 破れたタイツ越しの指 | torn pantyhose, white panties, wet panties | 自然文で index fingertip over the wet panties。服の中の手とは別(こちらは可)。ネガに `dildo, sex toy, intact pantyhose` | 2026-09-04 |
 | 左右の手が別動作 | (タグにしない) | 自然文で left / right。ネガに `two hands on breasts` | 2026-09-04 |
 | 疑似フェラ | penis / fellatio は使わない | `open mouth, tongue out` + `pov` で画面下に口。ネガに `penis, fellatio` | 【未検証】 |
+| フェラで口がへこむ | ネガ `hollow cheeks, sunken cheeks, sunken face` | ネガの `no mouth` は口自体を消してへこみの原因になるので外す。欲しいのは頬が膨らむ側 | 2026-09-11 |
 | 軽い赤面 | blush | 自然文で faint blush。照れなら `embarrassed` も足す。【未検証】 | |
 | 半目 | half-closed eyes | 自然文は half-lidded eyes。最終稿で使用 | 2026-08-21 |
 | 汗・湯気 | `sweat, steam, haze` | 顔の汗と空気中の湯気。最終稿で使用 | 2026-08-21 |

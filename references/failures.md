@@ -251,3 +251,11 @@
 - **外れた出力**: 顔が画面の大半。胸は下端で上から潰れて形が読めない
 - **原因(推定)**: 頭の真上＋`close-up` は顔に寄る。急俯瞰では胸の正面が見えない
 - **直し方**: `close-up` を外しネガへ。カメラは胸の上から。自然文 her chest in the center of the frame。ネガ `close-up face only, portrait crop`。見本は [rio-sweater-lift-bed.md](../examples/adult/rio-sweater-lift-bed.md)
+
+## フェラで口のまわりがへこむ (2026-09-11)
+
+- **指示(日本語)**: フェラの口のへこみをネガで止める
+- **使ったプロンプト**: ネガに `no mouth`
+- **外れた出力**: 口のまわりが陥没して見える
+- **原因(推定)**: `no mouth` が口を消そうとして凹む。吸引の学習で `hollow cheeks` が出る
+- **直し方**: ネガから `no mouth` を外す。ネガに `hollow cheeks, sunken cheeks, sunken face`。ポジ自然文は lips sealed around, cheeks slightly full
