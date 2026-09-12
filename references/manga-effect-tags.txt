@@ -1,0 +1,77 @@
+TAG REFERENCE (manga effects for Anima)
+Rules for using this list: effects the user asked for are mandatory. Beyond that, judge the scene and add what a manga artist would draw, using SCENE DEFAULTS below. Total 1 to 3 items per image. Prefer the "tag" column for the tag line; use the "phrase" column only inside the sentences. Everything not listed here stays out.
+VOICE RULE: if the woman's voice is audible (moaning, gasping, crying out, panting with a voice), the tag line must contain: japanese text, plus the clause "small handwritten moan lettering floats beside her mouth". Never spell the characters.
+Verified 2026-09-11: Anima cannot spell Japanese lettering (every kana request rendered as random kana). Latin-letter lettering renders. Screentone / monochrome words turn the picture black-and-white and are banned.
+
+== SCENE DEFAULTS (what to add when the user did not ask) ==
+愛撫 / 服の上から触る        sweatdrop, blush                         (voice? → japanese text)
+キス / 舌キス                heart, saliva                            (+ spoken heart if she is happy)
+脱がされる / 恥じらい         sweatdrop, blush                         quiet: 1 item
+フェラ / パイズリ / 手コキ    heart, sweat, saliva
+挿入 / 激しい動き             motion lines, sweat, japanese text       (voice is almost always audible)
+後背位 / 騎乗位               motion lines, sweat, heart
+絶頂                          trembling, heart, japanese text          (3 items)
+抵抗 / 嫌がる                 sweatdrop, trembling, tears              no hearts
+事後 / 余韻                   steam, sweat, half-closed eyes           1 to 2 items, no lines
+静かな見つめ合い              nothing, or one heart
+
+== 1. VOICE AND BREATH (draw as face and body, never as sound) ==
+喘ぎ / 声を漏らす      tag: open mouth, moaning        phrase: a soft moan escaping her lips
+抑えた声 / 我慢         tag: closed mouth, biting lip    phrase: holding back her voice
+息が荒い / はぁはぁ     tag: heavy breathing, panting    phrase: breathing hard, chest rising
+息をのむ / ひくっ       tag: gasping, surprised          phrase: a sharp gasp
+声が震える / 涙声       tag: trembling, tears            phrase: her voice trembling
+叫ぶ / 大声             tag: screaming, open mouth       phrase: crying out
+くぐもった声(口を塞がれ) tag: hand over own mouth         phrase: her voice muffled behind her hand
+
+== 2. LETTERING (描き文字) ==
+描き文字を日本語で       → draw NO text. Reserve empty space at the requested spot (the lettering is added later in vn-studio).
+描き文字を英字で         tag: sound effects               phrase: manga sound effect text "DOKI DOKI" in large bold hand-drawn letters
+吹き出しに擬音(英字)     tag: spoken sound effect, spiky speech bubble
+大きく / 強調            phrase: large dramatic lettering
+小さく / ささやき        phrase: small whispered lettering
+震えた文字              phrase: trembling handwritten lettering
+フチ付き太字            phrase: bold outlined lettering
+曲線に沿って            phrase: curved lettering following her body
+
+== 3. HEARTS AND MARKS ==
+ハート / ♡              tag: heart
+複数のハート / 浮かぶ    tag: heart                        phrase: small hearts floating around her head
+吹き出しの中の♡          tag: spoken heart
+目がハート              tag: heart-shaped pupils
+割れたハート            tag: broken heart
+音符                    tag: musical note
+！                      tag: spoken exclamation mark
+？                      tag: spoken question mark
+…                       tag: spoken ellipsis
+汗マーク(1つ)           tag: sweatdrop
+汗マーク(飛び散る)       tag: flying sweatdrops
+怒りマーク              tag: anger vein
+もやもや / 困惑          tag: squiggle
+恍惚 / とろけ           tag: half-closed eyes, blush, open mouth   phrase: dazed, melting expression
+気づき / ハッ            tag: notice lines
+
+== 4. LINES AND MOTION ==
+集中線                  tag: emphasis lines              phrase: emphasis lines radiating from her face
+スピード線              tag: speed lines
+流線 / 動線             tag: motion lines
+反復運動の線            tag: motion lines                phrase: short repeated motion lines around her hips
+衝撃線                  tag: emphasis lines              phrase: sharp impact lines at the point of contact
+震え / 振動             tag: trembling                   phrase: fine trembling lines along her thighs
+叫び線                  tag: shout lines
+残像                    tag: afterimage
+不安の縦線              tag: gloom (expression)          phrase: vertical gloom lines over her face
+
+== 5. SWEAT, STEAM, SPARKLE ==
+汗                      tag: sweat
+大量の汗                tag: sweat                       phrase: heavy sweat running down her skin
+湯気                    tag: steam
+熱気 / もや             tag: haze
+キラキラ                tag: sparkle
+光の粒                  tag: light particles
+柔らかい発光            phrase: soft bloom around the skin
+前景ぼかし              phrase: out of focus in the foreground
+
+== BANNED (turn the image monochrome or draw nothing) ==
+screentone, halftone, dark screentone, gradient screentone, black background lines, burst background, monochrome, greyscale,
+bed creaking, rustling clothes, slapping sounds, squelching, heartbeat, kiss sound, saliva sound (sounds cannot be drawn; ask for the visible thing instead: saliva, drooling, wet)

@@ -1,0 +1,1576 @@
+{
+  "id": "f7a250a1-53fb-496b-8c39-c60d9e764028",
+  "revision": 0,
+  "last_node_id": 111,
+  "last_link_id": 180,
+  "nodes": [
+    {
+      "id": 45,
+      "type": "CLIPLoader",
+      "pos": [
+        0,
+        150
+      ],
+      "size": [
+        307.59114583333337,
+        106
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            80,
+            81
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.11.0",
+        "Node name for S&R": "CLIPLoader",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65,
+        "models": [
+          {
+            "name": "qwen_3_06b_base.safetensors",
+            "url": "https://huggingface.co/circlestone-labs/Anima/resolve/main/split_files/text_encoders/qwen_3_06b_base.safetensors",
+            "directory": "text_encoders"
+          }
+        ]
+      },
+      "widgets_values": [
+        "qwen_3_06b_base.safetensors",
+        "stable_diffusion",
+        "default"
+      ]
+    },
+    {
+      "id": 19,
+      "type": "KSampler",
+      "pos": [
+        2590,
+        400
+      ],
+      "size": [
+        290,
+        430
+      ],
+      "flags": {},
+      "order": 22,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 89
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 39
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 40
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 177
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "slot_index": 0,
+          "links": [
+            10
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.40",
+        "Node name for S&R": "KSampler",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        318306196509438,
+        "randomize",
+        30,
+        4,
+        "er_sde",
+        "simple",
+        1
+      ]
+    },
+    {
+      "id": 11,
+      "type": "CLIPTextEncode",
+      "pos": [
+        2190,
+        620
+      ],
+      "size": [
+        274.3794921875,
+        192.91818662736205
+      ],
+      "flags": {},
+      "order": 20,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 80
+        },
+        {
+          "name": "text",
+          "type": "STRING",
+          "widget": {
+            "name": "text"
+          },
+          "link": 90
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            39
+          ]
+        }
+      ],
+      "title": "CLIP Text Encode (Positive Prompt)",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.65",
+        "Node name for S&R": "CLIPTextEncode",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        ""
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 8,
+      "type": "VAEDecode",
+      "pos": [
+        2960,
+        520
+      ],
+      "size": [
+        210,
+        46
+      ],
+      "flags": {},
+      "order": 23,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 10
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 11
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            82
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.40",
+        "Node name for S&R": "VAEDecode",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 79,
+      "type": "EmptyLatentImage",
+      "pos": [
+        340,
+        1770
+      ],
+      "size": [
+        307.59114583333337,
+        106
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": []
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.40",
+        "Node name for S&R": "EmptyLatentImage",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        1536,
+        1024,
+        1
+      ],
+      "title": "1536×1024 （プリセット）"
+    },
+    {
+      "id": 44,
+      "type": "UNETLoader",
+      "pos": [
+        0,
+        20
+      ],
+      "size": [
+        307.59114583333337,
+        82
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            79
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.11.0",
+        "Node name for S&R": "UNETLoader",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65,
+        "models": [
+          {
+            "name": "anima-preview.safetensors",
+            "url": "https://huggingface.co/circlestone-labs/Anima/resolve/main/split_files/diffusion_models/anima-preview.safetensors",
+            "directory": "diffusion_models"
+          }
+        ]
+      },
+      "widgets_values": [
+        "novaAnimeAM_v40.safetensors",
+        "default"
+      ]
+    },
+    {
+      "id": 99,
+      "type": "ShowText|pysssss",
+      "pos": [
+        1420,
+        870
+      ],
+      "size": [
+        330,
+        200
+      ],
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 155
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "shape": 6,
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "title": "OpenAI APIステータス",
+      "properties": {
+        "cnr_id": "comfyui-custom-scripts",
+        "ver": "1.2.5",
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 50,
+      "type": "Text Concatenate",
+      "pos": [
+        1810,
+        680
+      ],
+      "size": [
+        330,
+        150
+      ],
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text_a",
+          "shape": 7,
+          "type": "STRING",
+          "link": 83
+        },
+        {
+          "name": "text_b",
+          "shape": 7,
+          "type": "STRING",
+          "link": 156
+        },
+        {
+          "name": "text_c",
+          "shape": 7,
+          "type": "STRING",
+          "link": null
+        },
+        {
+          "name": "text_d",
+          "shape": 7,
+          "type": "STRING",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            90
+          ]
+        }
+      ],
+      "title": "プロンプト結合 (手動+翻訳)",
+      "properties": {
+        "cnr_id": "was-node-suite-comfyui",
+        "ver": "3.0.1",
+        "Node name for S&R": "Text Concatenate"
+      },
+      "widgets_values": [
+        ", ",
+        "true"
+      ]
+    },
+    {
+      "id": 15,
+      "type": "VAELoader",
+      "pos": [
+        0,
+        300
+      ],
+      "size": [
+        307.59114583333337,
+        58
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            11
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.40",
+        "Node name for S&R": "VAELoader",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65,
+        "models": [
+          {
+            "name": "qwen_image_vae.safetensors",
+            "url": "https://huggingface.co/circlestone-labs/Anima/resolve/main/split_files/vae/qwen_image_vae.safetensors",
+            "directory": "vae"
+          }
+        ]
+      },
+      "widgets_values": [
+        "qwen_image_vae.safetensors"
+      ]
+    },
+    {
+      "id": 46,
+      "type": "SaveImage",
+      "pos": [
+        3260,
+        390
+      ],
+      "size": [
+        462.89278874975344,
+        373.538664256685
+      ],
+      "flags": {},
+      "order": 24,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 82
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.11.1",
+        "Node name for S&R": "SaveImage",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        "anima/rio/image"
+      ]
+    },
+    {
+      "id": 28,
+      "type": "EmptyLatentImage",
+      "pos": [
+        0,
+        1450
+      ],
+      "size": [
+        307.59114583333337,
+        106
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": []
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.40",
+        "Node name for S&R": "EmptyLatentImage",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        1200,
+        896,
+        1
+      ],
+      "title": "1200×896 （プリセット）"
+    },
+    {
+      "id": 84,
+      "type": "EmptyLatentImage",
+      "pos": [
+        680,
+        1770
+      ],
+      "size": [
+        307.59114583333337,
+        106
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": []
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.40",
+        "Node name for S&R": "EmptyLatentImage",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        1024,
+        1024,
+        1
+      ],
+      "title": "1024×1024 （プリセット）"
+    },
+    {
+      "id": 98,
+      "type": "ShowText|pysssss",
+      "pos": [
+        1420,
+        630
+      ],
+      "size": [
+        330,
+        200
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 152
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "shape": 6,
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "title": "翻訳結果プレビュー",
+      "properties": {
+        "cnr_id": "comfyui-custom-scripts",
+        "ver": "1.2.5",
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 94,
+      "type": "EmptyLatentImage",
+      "pos": [
+        340,
+        1610
+      ],
+      "size": [
+        307.59114583333337,
+        106
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": []
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.40",
+        "Node name for S&R": "EmptyLatentImage",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        1024,
+        1536,
+        1
+      ],
+      "title": "1024×1536 （プリセット）"
+    },
+    {
+      "id": 104,
+      "type": "EmptyLatentImage",
+      "pos": [
+        680,
+        1610
+      ],
+      "size": [
+        307.59114583333337,
+        106
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": []
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.40",
+        "Node name for S&R": "EmptyLatentImage",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        864,
+        1536,
+        1
+      ],
+      "title": "864×1536 （プリセット）"
+    },
+    {
+      "id": 105,
+      "type": "EmptyLatentImage",
+      "pos": [
+        0,
+        1610
+      ],
+      "size": [
+        307.59114583333337,
+        106
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": []
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.40",
+        "Node name for S&R": "EmptyLatentImage",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        1152,
+        2048,
+        1
+      ],
+      "title": "1152×2048 （プリセット）"
+    },
+    {
+      "id": 106,
+      "type": "EmptyLatentImage",
+      "pos": [
+        340,
+        1450
+      ],
+      "size": [
+        307.59114583333337,
+        106
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": []
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.40",
+        "Node name for S&R": "EmptyLatentImage",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        1080,
+        1920,
+        1
+      ],
+      "title": "1080×1920 （プリセット）"
+    },
+    {
+      "id": 95,
+      "type": "EmptyLatentImage",
+      "pos": [
+        0,
+        1770
+      ],
+      "size": [
+        307.59114583333337,
+        106
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": []
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.40",
+        "Node name for S&R": "EmptyLatentImage",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        1216,
+        832,
+        1
+      ],
+      "title": "1216×832 （プリセット）"
+    },
+    {
+      "id": 101,
+      "type": "EmptyLatentImage",
+      "pos": [
+        680,
+        1450
+      ],
+      "size": [
+        307.59114583333337,
+        106
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            177
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.40",
+        "Node name for S&R": "EmptyLatentImage",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        832,
+        1216,
+        1
+      ],
+      "title": "832×1216 （使用中）"
+    },
+    {
+      "id": 51,
+      "type": "LoraLoaderModelOnly",
+      "pos": [
+        360,
+        20
+      ],
+      "size": [
+        300,
+        82
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 79
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            87
+          ]
+        }
+      ],
+      "title": "LoRA 1 (model only)",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.14.1",
+        "Node name for S&R": "LoraLoaderModelOnly"
+      },
+      "widgets_values": [
+        "Xipa_Anima.safetensors",
+        0.4
+      ]
+    },
+    {
+      "id": 53,
+      "type": "LoraLoaderModelOnly",
+      "pos": [
+        1040,
+        20
+      ],
+      "size": [
+        300,
+        82
+      ],
+      "flags": {},
+      "order": 21,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 88
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            89
+          ]
+        }
+      ],
+      "title": "LoRA 3 (model only)",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.14.1",
+        "Node name for S&R": "LoraLoaderModelOnly"
+      },
+      "widgets_values": [
+        "okita2.safetensors",
+        1
+      ]
+    },
+    {
+      "id": 52,
+      "type": "LoraLoaderModelOnly",
+      "pos": [
+        700,
+        20
+      ],
+      "size": [
+        300,
+        82
+      ],
+      "flags": {},
+      "order": 19,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 87
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            88
+          ]
+        }
+      ],
+      "title": "LoRA 2 (model only)",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.14.1",
+        "Node name for S&R": "LoraLoaderModelOnly"
+      },
+      "widgets_values": [
+        "wsosw.safetensors",
+        0.4
+      ]
+    },
+    {
+      "id": 12,
+      "type": "CLIPTextEncode",
+      "pos": [
+        2190,
+        930
+      ],
+      "size": [
+        296.74427099745094,
+        239.52365067968685
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 81
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            40
+          ]
+        }
+      ],
+      "title": "CLIP Text Encode (Negative Prompt)",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.65",
+        "Node name for S&R": "CLIPTextEncode",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65
+      },
+      "widgets_values": [
+        "worst quality, low quality, score_1, score_2, score_3, artist name, signature, watermark, photorealistic, 3d render, monochrome, greyscale, earrings, ear piercing, jewelry, glasses, ponytail, messy hair, no mouth, 2boys, multiple boys, extra people, third person,\n\n//背景\ndetailed background, complex background, cluttered background, scenery, furniture, crowd, background people,\n\n//唇\nrealistic lips, detailed lips, thick lips, plump lips, glossy lips, lipstick, lip gloss, pronounced cupid's bow, realistic mouth texture, strong lip highlights,\n\n//服\nbodypaint, painted clothes, vacuum-sealed clothing, clothes fused to skin, clothes between breasts, individual breast outline, navel through clothes,\n\n//その他\nlactation, milking, milk"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 49,
+      "type": "DF_DynamicPrompts_Text_Box",
+      "pos": [
+        1780,
+        930
+      ],
+      "size": [
+        340,
+        250
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            83
+          ]
+        }
+      ],
+      "title": "手動プロンプト (Manual)",
+      "properties": {
+        "cnr_id": "derfuu_comfyui_moddednodes",
+        "ver": "1.0.1",
+        "Node name for S&R": "DF_DynamicPrompts_Text_Box",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.5.2",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        ""
+      ]
+    },
+    {
+      "id": 97,
+      "type": "VRGDG_LLM_Multi",
+      "pos": [
+        850,
+        630
+      ],
+      "size": [
+        520,
+        400
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "api_key",
+          "type": "STRING",
+          "widget": {
+            "name": "api_key"
+          },
+          "link": null
+        },
+        {
+          "name": "provider",
+          "type": "COMBO",
+          "widget": {
+            "name": "provider"
+          },
+          "link": null
+        },
+        {
+          "name": "model",
+          "type": "COMBO",
+          "widget": {
+            "name": "model"
+          },
+          "link": null
+        },
+        {
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": 180
+        },
+        {
+          "name": "custom_model",
+          "type": "STRING",
+          "widget": {
+            "name": "custom_model"
+          },
+          "link": null
+        },
+        {
+          "name": "image1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "image2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "image3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "image4",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            152,
+            156
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "used_provider",
+          "type": "STRING",
+          "links": null,
+          "slot_index": 1
+        },
+        {
+          "name": "used_model",
+          "type": "STRING",
+          "links": null,
+          "slot_index": 2
+        },
+        {
+          "name": "status",
+          "type": "STRING",
+          "links": [
+            155
+          ],
+          "slot_index": 3
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": null,
+          "slot_index": 4
+        }
+      ],
+      "title": "日本語→Animaプロンプト (OpenAI / gpt-5-nano)",
+      "properties": {
+        "cnr_id": "comfyui-vrgamedevgirl",
+        "ver": "1.0.0",
+        "Node name for S&R": "VRGDG_LLM_Multi"
+      },
+      "widgets_values": [
+        "",
+        "openai",
+        "gpt-5-nano",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": 109,
+      "type": "DF_DynamicPrompts_Text_Box",
+      "pos": [
+        0,
+        875
+      ],
+      "size": [
+        420,
+        300
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 13,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            178
+          ]
+        }
+      ],
+      "title": "変換ルール（通常は変更不要）",
+      "properties": {
+        "Node name for S&R": "DF_DynamicPrompts_Text_Box"
+      },
+      "widgets_values": [
+        "You convert Japanese scene descriptions into English prompts for Anima, an anime image model that understands natural language. Output the English prompt only, nothing else.\n\nIMPORTANT — DO NOT OUTPUT COMPOSITION:\nDo NOT include any camera angle, framing, shot distance, or composition tags in your output. That means: never write \"from above\", \"from below\", \"from side\", \"pov\", \"close-up\", \"wide shot\", \"upper body\", \"full body\", \"foreground\", \"cut off by the frame\", \"depth of field\", or any similar camera/composition wording. The user controls composition separately. Your job is ONLY the subject, action, characters, clothing, expression, and setting.\n\nHOW TO THINK (follow this process):\n\n1. State what kind of moment this is, in one short clause.\nDescribe it as a moment from a story, not a pose. E.g. \"a moment of being cornered\", \"an intimate tense moment\", \"she is trapped and resisting\". This stops the result from looking like a catalogue character portrait. (Do NOT describe the camera — only the situation/mood.)\n\n2. Place each character one by one, with their action and their position RELATIVE TO EACH OTHER.\nDo NOT lump characters together as \"they\" or \"surrounded\". Write each one: who is behind whom, who holds what, what body part touches what. Describe spatial relationship between characters (behind / beside / on top of), but NOT the camera's position. E.g. \"the man stands behind her with his arms around her\", \"two goblins hold her arms\" — this is character placement, which is allowed; \"from behind the man\" would be a camera angle, which is NOT allowed.\n\n3. Handle clothing exactly as described — do not drift.\nIf the input says clothes are neat, write \"fully dressed, clothes not disheveled\" and do NOT add any undress tags. If the input says disheveled/open/pulled aside, write only that specific state (\"shirt unbuttoned and pulled aside\", \"bra pushed up\") and state what remains. If the input says underwear stays on and breasts are not shown, write \"wearing bra, breasts covered by bra\" and do NOT add \"breasts out\" or \"nipples\". Never invent or remove clothing the user did not mention.\n\n4. Add explicit-act anatomy only when an act is described.\nAn act word alone renders nothing, so add the body part it needs: fellatio→penis/oral, paizuri→penis/breasts, sex/vaginal→penis/sex, cunnilingus→pussy/oral, handjob→penis. If the input says penetration has NOT happened, write \"no penetration, not inserted yet\".\n\n5. Expression and gaze: pick clearly.\nOne main gaze (looking at viewer / looking up / looking away / glaring at him). Match the described emotion exactly — if she glares, write \"glaring, angry defiant expression\", do NOT soften it into \"aroused\".\n\n6. Background and lighting last.\nTranslate the setting plainly (night gas station → \"night, gas station at night, dark, night lighting\"). Only include background objects the input mentions; if the input says to remove something, do not include it.\n\nOUTPUT RULES:\n- Mix natural-language sentences (for mood, who-is-where relative to each other, body contact) with Danbooru tags (for discrete things: clothing items, expressions, fluids, acts). Both work in Anima.\n- Refer to characters by role (\"the girl\", \"the man\") unless the input gives a named character tag (e.g. \"miyamoto rei, highschool of the dead\") — keep those tags as-is.\n- Do NOT add hair color, eye color, body type, or clothing the user did not state; the user supplies appearance separately.\n- Do NOT add any camera angle, framing, or composition wording (see the rule above).\n- For monochrome manga, add: monochrome, manga style, screentone, ink lineart.\n- Keep it focused, not bloated. Output only the final prompt.\n\nCORE PRINCIPLE: each character placed relative to each other, mood stated as a story moment, clothing exactly as described, NO camera/composition. The user adds composition and appearance separately.\n\n=== ABSOLUTE OUTPUT RULE ===\nRespond with the final English prompt ONLY. No \"# Analysis\", no \"# Output\", no numbered steps, no commentary, no headings, and NO camera/composition wording. Just the prompt itself, nothing before or after."
+      ]
+    },
+    {
+      "id": 110,
+      "type": "DF_DynamicPrompts_Text_Box",
+      "pos": [
+        0,
+        630
+      ],
+      "size": [
+        420,
+        210
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            179
+          ]
+        }
+      ],
+      "title": "日本語入力（ここだけ書き換える）",
+      "properties": {
+        "Node name for S&R": "DF_DynamicPrompts_Text_Box"
+      },
+      "widgets_values": [
+        "ここに生成したい画像を日本語で入力してください。"
+      ]
+    },
+    {
+      "id": 111,
+      "type": "Text Concatenate",
+      "pos": [
+        470,
+        650
+      ],
+      "size": [
+        330,
+        170
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text_a",
+          "shape": 7,
+          "type": "STRING",
+          "link": 178
+        },
+        {
+          "name": "text_b",
+          "shape": 7,
+          "type": "STRING",
+          "link": 179
+        },
+        {
+          "name": "text_c",
+          "shape": 7,
+          "type": "STRING",
+          "link": null
+        },
+        {
+          "name": "text_d",
+          "shape": 7,
+          "type": "STRING",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            180
+          ]
+        }
+      ],
+      "title": "変換ルール＋日本語入力",
+      "properties": {
+        "Node name for S&R": "Text Concatenate"
+      },
+      "widgets_values": [
+        "\n\n--- 日本語入力 ---\n",
+        "false"
+      ]
+    }
+  ],
+  "links": [
+    [
+      10,
+      19,
+      0,
+      8,
+      0,
+      "LATENT"
+    ],
+    [
+      11,
+      15,
+      0,
+      8,
+      1,
+      "VAE"
+    ],
+    [
+      39,
+      11,
+      0,
+      19,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      40,
+      12,
+      0,
+      19,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      79,
+      44,
+      0,
+      51,
+      0,
+      "MODEL"
+    ],
+    [
+      80,
+      45,
+      0,
+      11,
+      0,
+      "CLIP"
+    ],
+    [
+      81,
+      45,
+      0,
+      12,
+      0,
+      "CLIP"
+    ],
+    [
+      82,
+      8,
+      0,
+      46,
+      0,
+      "IMAGE"
+    ],
+    [
+      83,
+      49,
+      0,
+      50,
+      0,
+      "STRING"
+    ],
+    [
+      87,
+      51,
+      0,
+      52,
+      0,
+      "MODEL"
+    ],
+    [
+      88,
+      52,
+      0,
+      53,
+      0,
+      "MODEL"
+    ],
+    [
+      89,
+      53,
+      0,
+      19,
+      0,
+      "MODEL"
+    ],
+    [
+      90,
+      50,
+      0,
+      11,
+      1,
+      "STRING"
+    ],
+    [
+      152,
+      97,
+      0,
+      98,
+      0,
+      "STRING"
+    ],
+    [
+      155,
+      97,
+      3,
+      99,
+      0,
+      "STRING"
+    ],
+    [
+      156,
+      97,
+      0,
+      50,
+      1,
+      "STRING"
+    ],
+    [
+      177,
+      101,
+      0,
+      19,
+      3,
+      "LATENT"
+    ],
+    [
+      178,
+      109,
+      0,
+      111,
+      0,
+      "STRING"
+    ],
+    [
+      179,
+      110,
+      0,
+      111,
+      1,
+      "STRING"
+    ],
+    [
+      180,
+      111,
+      0,
+      97,
+      3,
+      "STRING"
+    ]
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "title": "STEP 1 — モデルとLoRA",
+      "bounding": [
+        -40,
+        -40,
+        1400,
+        430
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 2,
+      "title": "STEP 2 — 日本語からプロンプト生成",
+      "bounding": [
+        -40,
+        560,
+        2190,
+        760
+      ],
+      "color": "#8b5e9e",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 3,
+      "title": "STEP 3 — エンコード・生成・保存",
+      "bounding": [
+        2150,
+        340,
+        1620,
+        900
+      ],
+      "color": "#5b8c5a",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 4,
+      "title": "画像サイズプリセット（使用する1つだけ接続）",
+      "bounding": [
+        -40,
+        1380,
+        1080,
+        580
+      ],
+      "color": "#9a7b4f",
+      "font_size": 24,
+      "flags": {}
+    }
+  ],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.7129364546269875,
+      "offset": [
+        621.8805823224986,
+        141.75576910860144
+      ]
+    },
+    "workflowRendererVersion": "LG",
+    "frontendVersion": "1.48.7",
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true
+  },
+  "version": 0.4
+}

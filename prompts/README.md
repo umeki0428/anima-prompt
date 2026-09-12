@@ -2,12 +2,14 @@
 
 Claude / ローカルLLM に貼って使う「前工程」のプロンプト。出力は最終的に SKILL.md の3層プロンプトか、ComfyUI の CLIPTextEncode に流す。
 
-| ファイル | 入力 | 出力 | 実行場所 | 状態 |
-|---|---|---|---|---|
-| [image-to-scene-ja.md](image-to-scene-ja.md) | 参考画像 | 日本語の構図指示【構図指示】 | Claude(チャット) | 実生成で確認 2026-09-07 |
-| [scene-to-composition-ja.md](scene-to-composition-ja.md) | 短いシーン文(1〜3文) | 日本語の構図指示 + 別案2つ | Claude(チャット/Code) | 【未検証】 |
-| [comfyui-scene-to-prompt.md](comfyui-scene-to-prompt.md) | 短いシーン文 | 英語プロンプト(タグ行+自然文) | ComfyUI の Ollama 等ノード | 【未検証】 |
-| [shot-list.md](shot-list.md) | シーン文(数文) | 漫画1ページ分のショットリスト | Claude | 【未検証】 |
+シーン文の書き方は [scene-input-rules.md](scene-input-rules.md)。
+
+| 呼び名 | ファイル | 入力 | 出力 | 実行場所 | 状態 |
+|---|---|---|---|---|---|
+| 画像から構図 | [image-to-scene-ja.md](image-to-scene-ja.md) | 参考画像 | 日本語の構図指示【構図指示】 | Claude(チャット) | 実生成で確認 2026-09-07 |
+| シーンから構図 | [scene-to-composition-ja.md](scene-to-composition-ja.md) | 短いシーン文(1〜3文) | 日本語の構図指示 + 別案2つ | Claude(チャット/Code) | 【未検証】 |
+| ComfyUI用 | [comfyui-scene-to-prompt.md](comfyui-scene-to-prompt.md) | 短いシーン文 | 英語プロンプト(タグ行+自然文) | ComfyUI の Ollama 等ノード | 【未検証】 |
+| ショットリスト | [shot-list.md](shot-list.md) | シーン文(数文) | 漫画1ページ分のショットリスト | Claude | 【未検証】 |
 
 ## つなぎ方
 
