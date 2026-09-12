@@ -22,7 +22,7 @@ Anima は Danbooru 形式のタグ、自然言語キャプション、その混�
 masterpiece, best quality, score_7, safe,
 ```
 
-**Anima-Aesthetic 用【公式】:** 品質タグは不要。`masterpiece, best quality` は残してもよいが、`score_*` はポジティブ・ネガティブとも使わないことが公式推奨。`safe, ` 等のレーティングタグは目的に合わせる。
+**Anima-Aesthetic 用【公式】:** 品質タグは不要。`masterpiece, best quality` は残してもよいが、`score_*` はポジティブ・ネガティブとも使わないことが公式推奨。レーティングはユーザーが指定したときだけ変え、なければ `safe` のまま。
 
 **Anima-Turbo 用【公式】:** プロンプト形式は同じ。CFG 1、8〜12ステップを基本にする。
 
@@ -44,6 +44,17 @@ worst quality, low quality, score_1, score_2, score_3, artist name, blurry, jpeg
 | 背景が寂しいときの逆用【未検証】 | ポジに背景描写がある場合、ネガに `simple background` |
 
 出典: https://huggingface.co/circlestone-labs/Anima
+
+### 入れないタグ(ユーザーが入れてほしいと言ったときだけ)
+
+接頭辞は上記の `masterpiece, best quality, score_7, safe` で止める。次は場面から推測して足さない。
+
+| タグ | よく足してしまう理由 | 付ける条件 |
+|---|---|---|
+| `explicit` / `nsfw` / `sensitive` | エロい指示だからレーティングを上げる | ユーザーがレーティングを指定したときだけ。`safe` を外したり差し替えたりしない |
+| `newest` | 新しい絵柄に寄せる | 「newest を入れて」「新しい絵柄で」などと明示されたときだけ |
+| `colored` | フルカラーだから | 「colored を入れて」「フルカラー漫画」などと明示されたときだけ |
+| `anime coloring` | キャラの任意タグが既定ONだった | 「anime coloring を入れて」「アニメ塗りで」などと明示されたときだけ |
 
 ネガティブは基本形に、**今回起きやすい失敗だけ**を追加する。画面に出る理由がない服、身体部位、構図を網羅的に禁止しない。意図的な腰上構図で `cropped`、意図的な上半身構図で `out of frame` のような包括的な否定を入れると、ポジティブと競合するため避ける。必要なら `cropped head` のように失敗を限定する。
 
@@ -70,7 +81,7 @@ worst quality, low quality, score_1, score_2, score_3, artist name, blurry, jpeg
 
 - **クオリティ(人力)**: `masterpiece, best quality, good quality, normal quality, low quality, worst quality`
 - **クオリティ(審美スコア)**: `score_9`(高)〜`score_1`(低)。人力/スコアは片方・両方・無しのいずれも可。
-- **年代**: `year 2025` 等の特定年、または `newest, recent, mid, early, old`。新しい絵柄なら `newest`。
+- **年代**: `year 2025` 等の特定年、または `newest, recent, mid, early, old`。`newest` はユーザーが入れてほしいと言ったときだけ。新しい絵柄だからと自動では付けない。
 - **メタ**: `highres, absurdres, anime screenshot, official art` 等。
 - **レーティング**: `safe, sensitive, nsfw, explicit`。
 - **絵師**: `@絵師名`(@必須)。詳細と効き方は [styles.md](styles.md)。
@@ -119,7 +130,7 @@ year 2025, newest, normal quality, score_5, highres, safe, 1girl, oomuro sakurak
 2. **外見・服装・表情・ポーズ・基本構図**を、重複しない最小限の Danbooru タグに変換([vocab.md](vocab.md) を参照)
 3. **服の重なり、空間関係、カメラ、厳密なフレーミング**など、タグだけでは曖昧な点だけを短い自然文で補足する。容姿はタグに既にあれば自然文に書かない。背景色は場面に合わせる(固定パレットにしない)。単純な1枚絵では自然文を省略してよい。エロさだけ足す光・色・表情・湯気は [atmosphere.md](atmosphere.md)。漫画ページは [manga-page.md](manga-page.md) の Character / Panel 文章にする(容姿は Character のみ)
 4. **画風指定**があれば前方に配置(`Studio Ghibli style` 等、または `@絵師名`。[styles.md](styles.md) 参照)
-5. 接頭辞と年代タグ(新しい絵柄なら `newest`)を付与。Aesthetic では `score_*` を外し、品質タグは省略または `masterpiece, best quality` だけにする
+5. 接頭辞は `masterpiece, best quality, score_7, safe` のみ。`newest` / `colored` / `anime coloring` / `explicit`(および言われていない `sensitive` / `nsfw`)は**足さない**。Aesthetic では `score_*` を外し、品質タグは省略または `masterpiece, best quality` だけにする
 6. ネガティブは基本形に、今回起きやすい失敗だけを追加する。ポジティブと競合しないか確認する
 7. 最後に重複監査を行う。同じ特徴がタグと自然文に二重指定されていたら、原則として自然文側を削る
 8. 1枚絵はタグ1行＋自然文0〜2文から始める。漫画ページは [manga-page.md](manga-page.md) の Character / Panel 文章を優先する

@@ -12,7 +12,7 @@ loose oversized tank top, wide armholes, black camisole longer than the tank, he
 
 ## 任意タグ(指示があれば付ける)
 
-- 画風: anime coloring(既定ON。別画風の指示があれば外す)
+- 画風: 指定がなければ付けない。`anime coloring` はユーザーが入れてほしいと言ったときだけ
 
 ## 注意
 

@@ -171,3 +171,91 @@
 - **外れた出力**: 女性の体と視線がカメラに向き、男性と並列に立つ正面構図
 - **原因(推定)**: 「彼を見ている」が生成時に `looking at viewer` に均された。学習データの正面・中央の引力に自然文の弱い指定が負けた
 - **直し方**: タグ `facing another, eye contact, talking` で関係を固定し、ネガに `looking at viewer`。カメラは撮影用語の自然文。検証済み → [composition.md](composition.md)、最終稿 [counter-ots-cinematic.md](../examples/sfw/counter-ots-cinematic.md)
+
+## 押し倒しが2人のリオになる (2026-09-09)
+
+- **指示(日本語)**: 夜の玄関。頭側の床から、男性がリオを押し倒しているところを見る
+- **使ったプロンプト**: リオの固定タグ＋既定制服が先、`1boy, sensei..., faceless male` が後ろ。`from below, lying, on back`。ネガに `2girls` なし
+- **外れた出力**: 上に乗っているのもリオ(スカート・タイツ・ヒールの下アングル)。床の人物もリオでカメラ目線。昼の玄関に家具と植木
+- **原因(推定)**: `from below` + リオ既定制服が「下から見た立ちリオ」の定番に引かれ、1boy がもう1人の女になった。長髪ハロ持ちを先に書くと混ざる。[vocab.md](vocab.md) の「2人の外見が混ざる」
+- **直し方**: 先頭で `1girl, 1boy`。`faceless male, long bangs` をリオの容姿より前に。ネガに `2girls, straddling, upskirt, looking at viewer, furniture, plant`。自然文で one man and one woman / 股の間から見上げない / 夜の玄関に扉だけで家具なし。見本は [rio-sensei-genkan-pin.md](../examples/adult/rio-sensei-genkan-pin.md)
+
+## 押し倒しが股下アオリ＋脚上げ逆さになる (2026-09-09)
+
+- **指示(日本語)**: 頭側の床から、男性がリオの上に覆いかぶさって押し倒しているところを見る
+- **使ったプロンプト**: 修正稿。`from below` + 自然文 `Low angle` + `not from between anyone's legs`
+- **外れた出力**: 男性が脚を開いて立つ。カメラが股の間。リオは頭が下で脚が天井方向に伸び、押し倒しになっていない
+- **原因(推定)**: Danbooru の `from below` は「立っている人を下から見る」。頭側床カメラとは別物。否定の自然文より定番構図が強い
+- **直し方**: ポジから `from below` を外しネガへ。男性は立つタグを使わず、同じ向きで上に寝て覆いかぶさる。脚は床に沿って扉へ(宙に上げない)。カメラは自然文だけ `ground-level at their heads, looking along the floor toward the closed door`。ネガに `from below, between legs, legs up, standing, spread legs, upside-down, open door`。見本は [rio-sensei-genkan-pin.md](../examples/adult/rio-sensei-genkan-pin.md)
+
+## 仰向け開脚で腰と尻が床から浮く (2026-09-09)
+
+- **指示(日本語)**: 股を開いて男性の胴が太腿の間。尻は床につける。女性は横を向く
+- **使ったプロンプト**: 1回目 `spread legs, pleated skirt, on floor` + 自然文 hips flush / no gap / not M-shape。ネガ `m legs, arched back`
+- **外れた出力**: 膝が立ったM字。スカートが腰で広がり、尻と床の間に隙間。1回目の直し後も再発
+- **原因(推定)**: `spread legs` + `pleated skirt` が膝立て開脚の定番。ポジ自然文の否定形(`no gap`, `not M-shape`)が浮きを呼ぶ。[anima-rules.md](anima-rules.md) の否定形禁止
+- **直し方(失敗)**: `spread legs` と `pleated skirt` を外し `(on floor:1.8)` + hips rest on the floor。次項で崩壊
+
+## 押し倒しが真上俯瞰で上下逆さ・腰が外れる (2026-09-09)
+
+- **指示(日本語)**: 頭側床カメラ。尻は床。女性は横を向く
+- **使ったプロンプト**: `(on floor:1.8)`、`spread legs` なし。自然文 hips rest on the floor / thighs lie open on the floor。`looking to the side`
+- **外れた出力**: 真上から見た床。男性が仰向けで下、女性が上。胴は正面、腰だけ別角度で途切れる。スカートが短いレザーに化ける
+- **原因(推定)**: 頭側カメラでは腰と床の接地を正面に描けない。接地を強制すると俯瞰か骨盤ねじれになる。`on back` が二人に付き、男性が下になる。`on floor` の重みが床俯瞰を勝たせる
+- **直し方(失敗)**: 頭側カメラに戻しても、男性の胴で腰が切れ脚が肩の後ろに回る。次項でPOVへ切替
+
+## 頭側床カメラの押し倒しで脚が肩の後ろに浮く (2026-09-09)
+
+- **指示(日本語)**: 頭側の床から男性が覆いかぶさる。腰は切らない。のち男性POVへ変更
+- **使ったプロンプト**: `1girl, 1boy` + `spread legs, pinned down, leaning forward`。自然文 ground-level at her head / he is on top / legs extend along the floor
+- **外れた出力**: 頭は下手前で当たるが、脚が男性の肩の後ろに現れ腰が途切れて浮く
+- **原因(推定)**: 頭側カメラでは男性の胴が女性の腰と同じ奥行きに重なる。脚は肩の向こう側に回され、床から浮いて見える。言い換えでは解けない
+- **直し方(失敗)**: 自然文で sleeves at the bottom of the frame としたため、頭が下・脚が上のまま。次項
+
+## 男性POVが頭下・脚上の逆さになる (2026-09-09)
+
+- **指示(日本語)**: 男性目線のPOV。顔を見下ろす
+- **使ったプロンプト**: `pov, from above`。自然文 white shirt sleeves at the bottom of the frame / legs open toward the bottom。ネガに `looking at viewer`
+- **外れた出力**: 頭が画面下、脚が画面上。手元は下端。腰は床から浮いて見える
+- **原因(推定)**: 手は頭の横なので、袖を画面下に置くと頭も下になる。頭側カメラの奥行きが残る。POVの視線をネガにしていた
+- **直し方**: 頭は画面の上、足は下。袖と手は画面の上前景。`looking at viewer`。ネガに `upside-down, inverted, looking to the side, from below`。見本は [rio-sensei-genkan-pin.md](../examples/adult/rio-sensei-genkan-pin.md)
+
+## 胸を下から掴むと母乳が出る (2026-09-10)
+
+- **指示(日本語)**: 後ろから胸を掴む。母乳は出さない
+- **使ったプロンプト**: 自然文 toward the nipples in a milking motion
+- **外れた出力**: 乳首から母乳のような液体
+- **原因(推定)**: `milking` は搾乳の学習に直結する。乳首方向へ絞る、という文も同じ
+- **直し方**: 自然文は cup / squeeze from below まで。`milking` を書かない。ネガ `lactation, milking, milk, breast milk`。見本は [rio-behind-kiss-groping-bed.md](../examples/adult/rio-behind-kiss-groping-bed.md)
+
+## タートルめくりが首で止まる (2026-09-09)
+
+- **指示(日本語)**: 服を手首まで全部持ち上げる。ブラなし。胸はすこし垂れて揺れる
+- **使ったプロンプト**: `white turtleneck sweater, undressing, clothes lift, sweater lift`。自然文 bunched around her arms and partially covering her face / pink bra fully visible
+- **外れた出力**: セーターが首元に残る。ブラが見える
+- **原因(推定)**: `white turtleneck sweater` は着衣の襟を首に描く。顔に布がかかる指定も襟を首へ戻す
+- **直し方(失敗)**: リフト重みでも `clothes lift` が裾上げになり、胴にタートル／タンクトップが残った。次項
+
+## タートルめくりが着衣の裾上げになる (2026-09-09)
+
+- **指示(日本語)**: 服を胴から外す。スクールロゴは付けない
+- **使ったプロンプト**: `white turtleneck sweater, (clothes lift:1.8), (sweater lift:1.8), millennium science school logo`
+- **外れた出力**: 手首にセーター、胴は白いタートルタンクトップ。胸にミレニアム風ロゴと文字
+- **原因(推定)**: Danbooru の `clothes lift` は裾を上げて着衣のままへそを出す。着衣タグとスクールロゴが服のプリントになる
+- **直し方**: `clothes lift` / `sweater lift` / `white turtleneck sweater` / `millennium science school logo` を外す。`undressing, removing sweater, unworn sweater, topless`。ネガ `turtleneck, tank top, crop top, logo, print`。見本は [rio-sweater-lift-bed.md](../examples/adult/rio-sweater-lift-bed.md)
+
+## 頭上ハイアングルで胸が潰れて見えない (2026-09-09)
+
+- **指示(日本語)**: 胸を見せる。揺れはなし
+- **使ったプロンプト**: `from above, close-up, upper body`。自然文 Steep high-angle shot from above her head
+- **外れた出力**: 顔が画面の大半。胸は下端で上から潰れて形が読めない
+- **原因(推定)**: 頭の真上＋`close-up` は顔に寄る。急俯瞰では胸の正面が見えない
+- **直し方**: `close-up` を外しネガへ。カメラは胸の上から。自然文 her chest in the center of the frame。ネガ `close-up face only, portrait crop`。見本は [rio-sweater-lift-bed.md](../examples/adult/rio-sweater-lift-bed.md)
+
+## フェラで口のまわりがへこむ (2026-09-11)
+
+- **指示(日本語)**: フェラの口のへこみをネガで止める
+- **使ったプロンプト**: ネガに `no mouth`
+- **外れた出力**: 口のまわりが陥没して見える
+- **原因(推定)**: `no mouth` が口を消そうとして凹む。吸引の学習で `hollow cheeks` が出る
+- **直し方**: ネガから `no mouth` を外す。ネガに `hollow cheeks, sunken cheeks, sunken face`。ポジ自然文は lips sealed around, cheeks slightly full

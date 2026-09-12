@@ -14,7 +14,7 @@ yellow headband, light blue t-shirt, bunny print, blue denim skirt, red backpack
 ## 任意タグ(指示があれば付ける)
 
 - 文字描写: u.s.a text, text under bunny, red text(LoRA学習由来。不要なら付けない)
-- 画風: anime coloring, anime screencap(既定ON。別画風の指示があれば外す)
+- 画風: 指定がなければ付けない。`anime coloring` / `anime screencap` はユーザーが入れてほしいと言ったときだけ
 
 ## 注意
 

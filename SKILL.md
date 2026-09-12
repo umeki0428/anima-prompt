@@ -11,6 +11,17 @@
 
 自然文が不要な単純な1枚絵は、固定ブロック＋タグ行だけでもよい。漫画ページは例外として `references/manga-page.md` の構成(画風 → Character → Panel文章)を使う。
 
+## 入れないタグ(指示があるときだけ)
+
+次は**ユーザーが入れてほしいと言ったときだけ**付ける。エロい場面・フルカラー・新しい絵柄でも、言われなければ足さない。接頭辞の `safe` を勝手に `explicit` へ差し替えない。
+
+- `explicit`(および言われていない `sensitive` / `nsfw`)
+- `newest`
+- `colored`
+- `anime coloring`
+
+詳細は [references/anima-rules.md](references/anima-rules.md) の「入れないタグ」。
+
 ## 容姿は一度だけ(再掲禁止)
 
 髪・瞳・ヘイロー・髪飾りなどの**アイデンティティは、プロンプト内で一度だけ書く**。自然文の先頭にも末尾にも繰り返さない。

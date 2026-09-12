@@ -35,9 +35,9 @@
 
 ## レーティング
 
-雰囲気だけで行為なしなら `safe` を外して **`sensitive`**。行為があるなら `nsfw` / `explicit`。`safe` のままだとエロ寄りの光と表情が弱まる。
+接頭辞の既定は `safe`。`sensitive` / `nsfw` / `explicit` は**ユーザーが入れてほしいと言ったときだけ**付ける。エロい指示でも勝手に `safe` を外したり差し替えたりしない。[anima-rules.md](anima-rules.md) の「入れないタグ」。
 
-ネガに `nsfw, explicit, sensitive` を入れると雰囲気ごと消える。エロ目的では入れない。
+ネガに `nsfw, explicit, sensitive` を入れると雰囲気ごと消える。エロ目的でネガへは入れない(ポジへ足すのも指示があるときだけ)。
 
 ## 光の方向(自然文が本命)
 
