@@ -20,7 +20,7 @@
 | 日本語 | 使うタグ | メモ | 確認日 |
 |---|---|---|---|
 | 上着を脱いでいる途中 | `undressing, removing jacket` | 脱ぎ終わりは `unworn jacket`。肩に残るだけなら `jacket on shoulders`。【未検証】 | |
-| 白いバスタオルを巻く | naked towel, white towel, bath towel | `nude` と同居させない。ネガ `nude, nipples, pussy`。`steaming body` は白タオルが透ける | 2026-09-12 |
+| 白いバスタオルを巻く | `(naked towel:1.5), (white towel:1.5), bath towel` | `wet` を付けると濡れた服として張り付く。折り目・たくし込みは自然文。ネガ `vacuum-sealed clothing, clothes fused to skin, wet clothes, see-through` | 2026-09-12 |
 | タートルを手首までめくる | `undressing, removing sweater, unworn sweater, topless, arms up` | `clothes lift` / `sweater lift` は着衣の裾上げ。着衣の `white turtleneck sweater` も胴に残る。スクールロゴは付けない。ネガ `turtleneck, tank top, crop top, logo`。[failures.md](failures.md) | 2026-09-09 |
 | スカートを残す(下アングル) | `(black skirt:1.8), (pleated skirt:1.8), miniskirt` | 下アングル+undressing だとスカートが消える。自然文でも hem is visible / not removed と書く。重みは SDXLより高め(公式) | 2026-08-21 |
 | リオ武装/臨戦 | `rio (armed) (blue archive), official alternate costume, official alternate hairstyle, ponytail, black bodysuit, skin tight, headgear, black gloves, thigh holster` | エイリアス `battle` / `bodysuit`。既定制服は削除。例は [rio-armed.md](../examples/_templates/rio-armed.md) | 2026-08-21 |
