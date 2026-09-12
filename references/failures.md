@@ -193,3 +193,20 @@
 - **外れた出力**: 男性が女性の手首をつかむ、男性の両手が女性の両手首を拘束する、手は止まらず太腿をつかむ、という反転が出た。修正前は画面下に男性の胴とネクタイも出た
 - **原因(推定)**: `wrist grab` は主語と目的語を持たないため、二人の手がある場面では所有が交換される。さらに「顔・手首・股間」の三つを一枚へ要求すると、手の接続より定番の拘束構図が優先される
 - **直し方**: 試作では、女性の手が男性の前腕へ触れている候補と次ページの静かな視線を連続させ、台詞で同意確認を補う。厳密に必要なら「止める手」と「許可する顔」を別ページへ分ける。手だけの因果を見せるページでは顔を捨て、画面内に両者の前腕を根元から入れて所有を可視化する
+
+
+## 俯瞰で人物を小さく指定したら男性が消えた (2026-09-13)
+
+- **指示(日本語)**: ホテルの部屋を天井の角から俯瞰、ベッドの2人は小さく
+- **使ったプロンプト**: タグ `1girl, 1boy, hetero, sex, from above, wide shot, full body` + 自然文 `the two people on it are small, occupying less than a quarter of the image`
+- **外れた出力**: 俯瞰と引きは出たが、ベッドの上は女性1人。男性が描かれない
+- **原因(推定)**: 小さい領域に2人を描ききれず、自然文の「小さく」が `1boy` より優先された
+- **直し方**: 大きさは「about a third」に緩め、自然文側にも `a man and a woman are having sex on the bed` と人数・行為を書く。人物の精細さは inpaint(crop&stitch)で別途稼ぐ。[composition.md](composition.md)
+
+## Qwen-Image-Edit に「効果線は残せ」と列挙したら集中線が描き足された (2026-09-12)
+
+- **指示(日本語)**: 漫画コマからセリフ・描き文字だけ消し、効果線は残す(Anima ではなく前処理の Qwen-Image-Edit-2511)
+- **使ったプロンプト**: `Remove only the written text... Do NOT remove or alter any drawn effects: keep all speed lines, focus lines, motion lines, trembling lines...`
+- **外れた出力**: 元画像に無い集中線が画面全面に描き足された
+- **原因(推定)**: Qwen-Edit は否定文をほぼ解釈せず、プロンプト中の名詞をそのまま描く。`sound effects` も「効果線全般」と解釈する
+- **直し方**: 消したいものだけ短く書く `Erase all Japanese text, written characters, and heart marks. Leave every other part of the image untouched.`。negative にも効果線の語を入れない。1px も変えたくない場合はマスク合成(`cleanup-text-qwen-masked`)。[tools.md](tools.md)

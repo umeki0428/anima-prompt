@@ -59,3 +59,28 @@ Danbooru の構図タグは「描かれた結果」に事後的に付くもの�
 - edmondyip「Mastering SDXL Prompts: Lens Perspective」(Animagine で焦点距離・アングルを同条件比較) https://edmondyip.substack.com/p/mastering-sdxl-prompts-1-advanced
 - 月ヶ瀬そら「構図・アングル・ポーズ系タグリスト(約900)」(NovelAI 検証、Danbooru 語彙) https://note.com/sora_tsukigase/n/n9500741037fd
 - 本当に漫画的な構図(強いパース・複数人の奥行き)は SDXL 系では ControlNet が定石。Anima は ControlNet 未整備のため、[img2img.md](img2img.md) の手段で代替する。
+
+
+## 俯瞰・引きの構図(2026-09-13 実生成)
+
+**「どれだけ引くか」「人物がどの大きさで写るか」はタグでは伝わらない。自然文でカメラ位置と被写体の大きさを書く。**
+
+nova v4、同 seed、ホテルの部屋で2人がベッドにいる場面で比較:
+
+| 書き方 | 結果 |
+|---|---|
+| タグのみ `from above, wide shot, full body` + 内容タグ | やや高い視点だが、ベッドが画面いっぱいで人物は大きいまま |
+| タグ + 自然文(下) | 天井の角からの俯瞰で部屋全体が入り、人物は小さい。参考画像とほぼ同じ構図 |
+| さらに構図LoRA 0.8 | ほぼ同じ。LoRA の寄与は小さい |
+
+効いた自然文(4要素: カメラ位置 / 主役の画面内位置 / 主役の大きさ / 画面に入るべき周辺物):
+
+```
+Bird's-eye view of the entire hotel room from a high corner of the ceiling. The bed is in the center of the frame and the two people on it are small, occupying about a third of the image. The whole bed, both nightstands with lamps, the sofa and the floor are visible. Camera far away, wide angle.
+```
+
+注意: 「4分の1以下」のように小さく書きすぎると、`1boy` を指定していても**男性が描かれず女性1人になる**。大きさは「3分の1程度」に留め、自然文側にも `a man and a woman are on the bed` と人数と行為を書く。ネガ `close-up, portrait` は寄り防止に効く。
+
+引いた構図で人物が粗くなる問題は、プロンプトではなく inpaint で解決する: 部屋だけ生成 → 人物の範囲をマスク → crop&stitch で 1024px に拡大して描画 → 貼り戻し(ComfyUI `room-add-characters-inpaint-anima`、[tools.md](tools.md))。同条件で通常 inpaint と比べ、ニーソの質感・汗・体の線まで出た。2人以上は1人ずつ、顔は2段階目で小さくマスクして描き直す。
+
+構図LoRA の検証結果(構図をタグから外してトリガーに束ねる方式)は lora リポジトリ `docs/構図LoRA_kouzu検証メモ.md`。結論は「トリガーは束ならず常時発動、多様な構図は最頻値に収束。俯瞰・引きは自然文で足りるので LoRA 化の優先度は低い」。

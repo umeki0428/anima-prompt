@@ -121,3 +121,19 @@
 | 羽織りを肩から落とす | `(off shoulder:1.6), jacket on shoulders, bare shoulders` | 素の `off shoulder` では普通に着てしまう。肩見せが目的なら服自体を `off-shoulder shirt` にする方が確実。片肩だけの方が通る。[failures.md](failures.md) | 2026-09-01 |
 | 半目＋笑顔 | `half-closed eyes` + ネガ `closed eyes` | `grin, fang` と併用すると閉眼笑いになる。自然文で eyes stay open と書く | 2026-09-01 |
 | Vtuber立ち絵 | `standing, arms at sides, full body, symmetrical, simple background, white background` | ネガに `cropped, out of frame, drop shadow, shadow, gradient background` | 2026-09-01 |
+
+
+## 追記(2026-09-12〜13) 漫画的な表情記号・俯瞰
+
+waiANIMA_v10 / nova v4、LoRA なしで実生成確認。表情記号はほぼ全部タグで出る。LoRA が要るのは「特定作家の崩し方(角ばった口の形など)」だけ。
+
+| 日本語 | 使うタグ | メモ | 確認日 |
+|---|---|---|---|
+| ぐるぐる目 | `ringed eyes, constricted pupils`(別系統 `@_@`) | `spiral eyes` は Danbooru 表記ではない。品質タグや綺麗系絵柄LoRAが記号表情を弱めるので、弱ければ `(ringed eyes:1.3)` | 2026-09-12 |
+| 顔の縦線の影・青ざめ | `shaded face, turn pale` | | 2026-09-12 |
+| 大量の汗・冷や汗 | `nervous sweating, heavy sweating, sweatdrop` | 汗の粒の描き方は作家次第(絵柄側) | 2026-09-12 |
+| 震え(体の周りの線も出る) | `trembling` | | 2026-09-12 |
+| 波線口 | `wavy mouth` | | 2026-09-12 |
+| 小さい▽口 | `triangle mouth` | 「困ってすぼめた口」。大きく開いた口とは別 | 2026-09-12 |
+| 大きく開いて舌が見える口 | `open mouth, tongue` | 口の輪郭が角ばる描き方は Danbooru に語彙がなく絵柄LoRAの領域 | 2026-09-12 |
+| 俯瞰・引きで部屋全体 | タグ `from above, wide shot, full body` **+ 自然文でカメラ位置と人物の大きさ** | タグだけでは引かない。[composition.md](composition.md) | 2026-09-13 |

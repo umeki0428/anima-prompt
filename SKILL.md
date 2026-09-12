@@ -30,6 +30,7 @@
 - 「画像から構図」「シーンから構図」「ショットリスト」と言われたら → `prompts/README.md` の呼び名表で該当ファイルを開き、そのプロンプトを実行する。出力の【構図指示】に続けて「〇〇で」とキャラ名があれば、そのままこのスキルで3層プロンプトまで作る。渡すシーン文の書き方は `prompts/scene-input-rules.md`
 - 色・光・表情・湯気でエロさを出す → `references/atmosphere.md`。**背景の配色は場面ごとに変える**(チャコール固定・紫回避固定にしない)
 - 語彙のタグ化 → `references/vocab.md` / 失敗事例と対処 → `references/failures.md`
+- 手元ツール(tagpick / シチュエーション帳 / 一括文字消し / ComfyUI ワークフロー一覧) → `references/tools.md`。俯瞰・引きと人物の精細化は `references/composition.md` の 2026-09-13 節
 - 形式の見本 → `examples/_templates/`、検証済み例と生成記録 → `examples/sfw/` / `examples/adult/`
 - `captions/` は参考画像の逆キャプション置き場(examples/ の素材)。生成記録は examples/ に保存する。
 
