@@ -28,6 +28,7 @@ tagpick の日本語訳は `C:\AI\studio-magami\sd-webui-prompt-dictionary\data\
 | `anima-style-dataset-gen` | SDXL + Dynamic Prompts(`wildcards/styleds/`)で学習素材を量産。着衣/NSFW 比率は `{6::…|4::…}` |
 | `room-style-match-anima` | 別モデル/写真の背景を depth LLLite 付き img2img で nova v4 の絵柄に揃える |
 | `room-add-characters-inpaint-anima` | マスク範囲を crop&stitch で 1024px に拡大して人物を描き足す。引きの構図で人物を精細にする手段 → [composition.md](composition.md) |
+| `redraw-panel-anytest-lllite-anima` | **白黒の漫画コマ・小さいスクショ・他人の絵を、自分の LoRA 構成で描き直す**。anytest LLLite v2 に参考画像を前処理なしで入れて txt2img(strength 0.8 / end 0.8)。表情・髪の流れ・汗・背景の配置まで残り、色と塗りは positive と LoRA で決まる。同じ白黒コマで img2img 0.7 は LoRA がマスコットやハロを生やし、lineart LLLite + Manga2Anime 前処理は小さいコマから線がほぼ取れず失敗(2026-09-14) |
 | `composition-copy-depth-lllite-anima` | **参考画像の構図(カメラ角度・配置・奥行き)だけを depth LLLite で写し取って txt2img**。色・絵柄は引き継がない(モノクロ漫画コマでも灰色が残らない)。strength 0.9 / end 0.75 が初期値、配置を厳密にするなら 1.2。2026-09-14 実生成確認 → [img2img.md](img2img.md) |
 
 ## Qwen-Image-Edit のプロンプト注意
