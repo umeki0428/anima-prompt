@@ -12,6 +12,7 @@ Anima には ControlNet 相当の **LLLite**(`models/model_patches/anima-lllite-
 - 参考画像のトーン・効果線・文字は depth を乱すので先に消す(`cleanup-text-qwen-masked` か `remove_text_batch.py`)
 - 参考と矛盾する姿勢タグ(参考が座りなのに `standing`)は形が壊れる。姿勢は参考に合わせ、変えたいのは人物・服・表情・場所に留める
 - 生成サイズは参考画像と同じ縦横比(GetImageSize → EmptyLatent、1.0MP)
+- **構図が無視される最大の原因はプロンプト**(2026-09-14、廊下で小さくしゃがむ引きの漫画コマで確認)。LLLite は ControlNet より弱く、プロンプトが寄りを指すと depth に勝つ。depth 画像は正しく人物と廊下の形が出ていたのに、tagpick 由来のタグ(`large breasts, nipples, grabbing own breast` + `speech bubble` + `outdoors` と `hallway` の混在)では人物が画面いっぱいになった。ネガの `detailed background, scenery, furniture` を外すだけでは直らず、**`wide shot, full body, from side` + 場所を参考に合わせる + 「人物は画面下中央に小さく」の自然文**にしたら strength 0.9 のまま廊下・ロッカー・右上の男まで参考どおりになった。strength 1.2 / end 1.0 は男の位置がさらに近づく程度
 
 img2img(下)は「色の塊も含めて残したい」「参考自体が Anima の生成物で微修正したい」ときに使う。
 
