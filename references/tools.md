@@ -28,6 +28,7 @@ tagpick の日本語訳は `C:\AI\studio-magami\sd-webui-prompt-dictionary\data\
 | `anima-style-dataset-gen` | SDXL + Dynamic Prompts(`wildcards/styleds/`)で学習素材を量産。着衣/NSFW 比率は `{6::…|4::…}` |
 | `room-style-match-anima` | 別モデル/写真の背景を depth LLLite 付き img2img で nova v4 の絵柄に揃える |
 | `room-add-characters-inpaint-anima` | マスク範囲を crop&stitch で 1024px に拡大して人物を描き足す。引きの構図で人物を精細にする手段 → [composition.md](composition.md) |
+| `composition-copy-depth-lllite-anima` | **参考画像の構図(カメラ角度・配置・奥行き)だけを depth LLLite で写し取って txt2img**。色・絵柄は引き継がない(モノクロ漫画コマでも灰色が残らない)。strength 0.9 / end 0.75 が初期値、配置を厳密にするなら 1.2。2026-09-14 実生成確認 → [img2img.md](img2img.md) |
 
 ## Qwen-Image-Edit のプロンプト注意
 

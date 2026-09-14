@@ -2,6 +2,19 @@
 
 プロンプトの抽選で構図が出ないとき、元画像で構図を固定する手段。「構図を良くする」のではなく「構図の抽選をやめて固定する」。生成設定は [settings.md](settings.md)、構図の考え方は [composition.md](composition.md)。
 
+## まず depth LLLite(構図だけ写す)【2026-09-14 実生成確認】
+
+Anima には ControlNet 相当の **LLLite**(`models/model_patches/anima-lllite-depth-1`)があり、img2img より先にこちらを検討する。ワークフローは `composition-copy-depth-lllite-anima`([tools.md](tools.md))。
+
+- 参考画像 → Depth Anything V2 で奥行き → `AnimaLLLiteApply` で UNet に掛け、**空のラテントから txt2img**(denoise 1.0)。色・線・絵柄は一切引き継がず、カメラ角度・人物と家具の配置・奥行きだけ写る
+- モノクロ漫画コマが参考でも灰色が残らない(img2img の弱点がない)。人物の性別や服はプロンプト次第(参考が女性でも `1boy` なら男になる)
+- 俯瞰の漫画コマ(ベッドの2人、天井角からの見下ろし)で LLLite なし / 0.6 / 0.9 / 1.2 を同 seed 比較: なしでも `from above` は出るが配置は別物。0.6 で男の位置とカメラが寄り、0.9 で人物配置・ランプ・ベッドの縁まで参考と一致、1.2 が最も厳密。**初期値 strength 0.9 / start 0 / end 0.75**。細部が参考に引きずられるなら end 0.6、配置がずれるなら strength 1.2
+- 参考画像のトーン・効果線・文字は depth を乱すので先に消す(`cleanup-text-qwen-masked` か `remove_text_batch.py`)
+- 参考と矛盾する姿勢タグ(参考が座りなのに `standing`)は形が壊れる。姿勢は参考に合わせ、変えたいのは人物・服・表情・場所に留める
+- 生成サイズは参考画像と同じ縦横比(GetImageSize → EmptyLatent、1.0MP)
+
+img2img(下)は「色の塊も含めて残したい」「参考自体が Anima の生成物で微修正したい」ときに使う。
+
 ## denoise の帯【実生成で一部確認 2026-09-07】
 
 | denoise | 残るもの | 用途 |
