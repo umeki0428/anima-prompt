@@ -81,6 +81,8 @@ Bird's-eye view of the entire hotel room from a high corner of the ceiling. The 
 
 注意: 「4分の1以下」のように小さく書きすぎると、`1boy` を指定していても**男性が描かれず女性1人になる**。大きさは「3分の1程度」に留め、自然文側にも `a man and a woman are on the bed` と人数と行為を書く。ネガ `close-up, portrait` は寄り防止に効く。
 
+追記(2026-09-14、nova v4、1人・寝室・座り、seed 2種): 引かない俯瞰(人物が大きい俯瞰)は、タグ `from above, full body` + **ネガ `from below, from side, close-up, portrait, sky, horizon, ceiling`** で6枚中6枚が俯瞰になった。場所固有の小物タグ(`pillow, nightstand, lamp, rug, slippers`)は部屋の情報は増えるが角度は変わらない。**小物ではなく場所を問わない手がかり**を自然文で書くと角度がさらに立つ(真上に近づく): `The ground plane fills most of the background and the horizon is out of frame. The top of her head and shoulders are visible and her body is foreshortened, with her shadow on the floor beneath her`。ただし立ちすぎると `sitting` が `lying` に化けるので、姿勢を守りたいときは手がかりを半分に減らす。tagpick の構図アセット「俯瞰・共通の手がかり」「俯瞰ネガ」に登録済み。なお WD14 は俯瞰画像でも `from above` を 0.2〜0.3 でしか出さず、`wide shot` はほぼ 0 なので、画像→プロンプトでは俯瞰が落ちる(tagpick 側で 0.15 から拾うよう変更)。参考画像の角度をそのまま使いたいときは depth LLLite([img2img.md](img2img.md)、`room-style-match-anima`)が最も確実。
+
 引いた構図で人物が粗くなる問題は、プロンプトではなく inpaint で解決する: 部屋だけ生成 → 人物の範囲をマスク → crop&stitch で 1024px に拡大して描画 → 貼り戻し(ComfyUI `room-add-characters-inpaint-anima`、[tools.md](tools.md))。同条件で通常 inpaint と比べ、ニーソの質感・汗・体の線まで出た。2人以上は1人ずつ、顔は2段階目で小さくマスクして描き直す。
 
 構図LoRA の検証結果(構図をタグから外してトリガーに束ねる方式)は lora リポジトリ `docs/構図LoRA_kouzu検証メモ.md`。結論は「トリガーは束ならず常時発動、多様な構図は最頻値に収束。俯瞰・引きは自然文で足りるので LoRA 化の優先度は低い」。
