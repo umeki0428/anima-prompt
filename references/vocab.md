@@ -120,6 +120,7 @@
 | 色付きグラデ背景 | `simple background, gradient background, dark background` | **色は場面で変える。** 色名は自然文。`purple background` タグは肌まで染めやすいので、弱いときだけ足す。人物光は背景色と分ける(紫グラデなら光は `warm lighting`、ネガ `purple lighting`)。指示に背景がないときは背景タグ自体を足さない([composition.md](composition.md)) | 2026-09-04 |
 | 暗いチャコールグラデ | `simple background, gradient background, dark background` | 無彩色の場面。自然文で dark charcoal gradient。ネガに `purple background` は、その場面で紫が不要なときだけ | 2026-08-21 |
 | ベッド面だけ(部屋なし) | on bed | 自然文で rumpled bed surface。ネガに `scenery, indoor, furniture, bedroom, headboard`。グリーンバックは切り抜き用で雰囲気とは別 | 2026-09-04 |
+| ラブホテルのベッド | love hotel, on bed, bed, dim lighting | ソファ・昼間リビングはネガ `couch, living room, day, curtains` | 2026-09-16 |
 | 暖色リム | `dim lighting, warm lighting, rim light, volumetric lighting` | 人物側の光。色付き背景と重ねるときは照明色タグを背景色と同じにしない | 2026-08-21 |
 
 ## 追記(2026-09-01)
