@@ -64,6 +64,7 @@ Rio has thigh-length straight black hair with blunt bangs, one side tucked behin
 | オフィス机で後ろから揉む | [rio-office-desk-groping.md](../examples/adult/rio-office-desk-groping.md) | 【未検証】。横構図・モノクロ。吹き出しなし |
 | 下から後ろセックス | [rio-behind-sex-from-below.md](../examples/adult/rio-behind-sex-from-below.md) | 【未検証】。女性をリオに置換。色黒顔なし男性 |
 | シャワーで白タオル | [rio-shower-towel.md](../examples/adult/rio-shower-towel.md) | タオル密着を報告 2026-09-12。折り目稿は未再生成 |
+| ロッカー部屋で浴衣男性を見る | [rio-locker-ots-yukata.md](../examples/adult/rio-locker-ots-yukata.md) | 【未検証】。後ろ姿OTS。顔なし・太め・年齢差 |
 | 武装 / 臨戦 | [rio-armed.md](../examples/_templates/rio-armed.md) | 【未検証】立ち絵 |
 | 冬服 | [rio-winter.md](../examples/_templates/rio-winter.md) | 【未検証】立ち絵 |
 | クリスマスドレス | [rio-christmas-dress.md](../examples/_templates/rio-christmas-dress.md) | 【未検証】立ち絵 |
