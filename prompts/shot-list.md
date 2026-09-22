@@ -1,6 +1,6 @@
 # ショットリスト変換(漫画1ページ分)
 
-用途: 複数コマを扱うとき、コマ間の一貫性(人物の左右、サイズの緩急)を先に決める。各行を scene-to-composition-ja または comfyui-scene-to-prompt に1行ずつ渡す。ページ生成そのものは [../references/manga-page.md](../references/manga-page.md)。
+用途: 複数コマを扱うとき、コマ間の一貫性(人物の左右、サイズの緩急)を先に決める。各行を to-comfy-ja に1行ずつ渡す。ページ生成そのものは [../references/manga-page.md](../references/manga-page.md)。
 状態: 【未検証】
 
 ```

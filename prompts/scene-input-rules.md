@@ -1,6 +1,6 @@
 # シーン文の書き方ルール
 
-`prompts/scene-to-composition-ja.md` / `prompts/comfyui-scene-to-prompt.md` に渡す日本語の書き方。
+`prompts/to-comfy-ja.md` に渡すシーン文の書き方。
 このシーン文の役割は「絵コンテ担当に判断材料を渡す」こと。構図は向こうが決めるので、こちらは状況と感情だけを書く。
 
 ## 型

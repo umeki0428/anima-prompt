@@ -1,3 +1,5 @@
+> **2026-09-23 保管（使わない）**: `prompts/to-comfy-ja.md` にまとめた。画像・シーン文から ComfyUI に貼る日本語を作るときは to-comfy-ja を使う。
+
 # ComfyUI 内 LLM ノード用:シーン→英語プロンプト
 
 用途: ComfyUI の Ollama 等の LLM ノードに system prompt として貼る。日本語の一文から、そのまま CLIPTextEncode に入る英語プロンプト(タグ行+自然文)を出す。

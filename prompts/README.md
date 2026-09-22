@@ -1,27 +1,29 @@
-# システムプロンプト集
+# prompts（Claude がチャットで使う前工程の手順書）
 
-Claude / ローカルLLM に貼って使う「前工程」のプロンプト。出力は最終的に SKILL.md の3層プロンプトか、ComfyUI の CLIPTextEncode に流す。
+ユーザーが画像やシーンを渡して「ComfyUI に貼る日本語」を作る作業は、**`to-comfy-ja.md` の 1 本だけ**を使う（2026-09-23 に整理）。
+ComfyUI の中で日本語を英語に訳す指示書は別の場所（`../system-prompts/*.txt`、ワークフローが自動で読む）。
 
-シーン文の書き方は [scene-input-rules.md](scene-input-rules.md)。
-
-| 呼び名 | ファイル | 入力 | 出力 | 実行場所 | 状態 |
-|---|---|---|---|---|---|
-| 画像から構図 | [image-to-scene-ja.md](image-to-scene-ja.md) | 参考画像 | 日本語の構図指示【構図指示】 | Claude(チャット) | 実生成で確認 2026-09-07 |
-| シーンから構図 | [scene-to-composition-ja.md](scene-to-composition-ja.md) | 短いシーン文(1〜3文) | 日本語の構図指示 + 別案2つ | Claude(チャット/Code) | 【未検証】 |
-| ComfyUI用 | [comfyui-scene-to-prompt.md](comfyui-scene-to-prompt.md) | 短いシーン文 | 英語プロンプト(タグ行+自然文) | ComfyUI の Ollama 等ノード | 【未検証】 |
-| ざっくり日本語から | [rough-ja-to-scene-and-prompt.md](rough-ja-to-scene-and-prompt.md) | ざっくりした日本語（＋英語欄・前のカット） | 日本語シーン 8 項目＋英語プロンプト＋ネガに足す語 | Claude(チャット) / ComfyUI の Claude ノード | 手作業版は実生成確認 2026-09-19、system prompt は【未検証】 |
-| ショットリスト | [shot-list.md](shot-list.md) | シーン文(数文) | 漫画1ページ分のショットリスト | Claude | 【未検証】 |
+| 呼び名 | ファイル | 入力 | 出力 | 状態 |
+|---|---|---|---|---|
+| **日本語にして**（画像から／シーンから） | [to-comfy-ja.md](to-comfy-ja.md) | 参考画像 または シーン文（＋キャラ名・ワークフロー・前のコマ） | 【ワークフロー】【手動プロンプト欄】【日本語】（ワークフローの形）【ネガに足す】【不明瞭】 | 2026-09-23 作成 |
+| ショットリスト | [shot-list.md](shot-list.md) | 1 ページ分のシーン（数文） | コマごとの一覧（サイズ・角度・主役・瞬間）。各行を to-comfy-ja に渡す | 【未検証】 |
+| （書き方の決まり） | [scene-input-rules.md](scene-input-rules.md) | — | シーン文の書き方 | — |
 
 ## つなぎ方
 
 ```
-参考画像 ──(image-to-scene-ja)──┐
-                                ├→ 【構図指示】 + 「〇〇で」 ──(SKILL.md)──→ 3層プロンプト → txt2img / img2img
-シーン一文 ─(scene-to-composition-ja)┘
-
-シーン一文 ─(comfyui-scene-to-prompt)→ Ollamaノード → String Concatenate(品質+キャラ固定+LLM出力) → CLIPTextEncode
+1 ページの話 ─(shot-list)→ コマの一覧 ─┐
+参考画像 ────────────────────────────┼─(to-comfy-ja)→ ワークフローに合わせた日本語 → ComfyUI の翻訳ノード（system-prompts）→ 生成
+シーン文 ────────────────────────────┘
 ```
 
-- キャラ差し替え前提なので、どのプロンプトも**キャラの同一性(髪・目・顔・体型・衣装)は書かない**。キャラは `characters/` から SKILL.md 側が足す。
-- 漫画コマを元にするときは吹き出し・効果音・コマ枠は「不明瞭:」に分離する(本文に混ぜない)。
-- 構図が正面に化けたときの対処は [../references/composition.md](../references/composition.md)。
+- 出口の形はワークフローで決まる: 1_通常生成／6_引きの構図＝8 項目、2_決めコマ＝2〜4 行、3_anytest＝構図なしの 2〜5 行。
+- キャラの同一性（髪・目・顔・体型・服の種類）は日本語に書かず、手動プロンプト欄に入れる。
+
+## 保管（`_archive/`、使わない）
+- `image-to-scene-ja.md`（画像 → 【構図指示】9 項目）
+- `scene-to-composition-ja.md`（シーン文 → 【構図指示】）
+- `rough-ja-to-scene-and-prompt.md`（ざっくり日本語 → 8 項目＋英語）
+- `comfyui-scene-to-prompt.md`（ComfyUI の Ollama ノード用。使っていなかった）
+
+入口がかぶり、出口の形（9 項目と 8 項目）がバラバラで、9 項目は ComfyUI にそのまま貼れなかったため、to-comfy-ja にまとめた。

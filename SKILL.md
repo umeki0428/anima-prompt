@@ -27,8 +27,8 @@
 - 画風・絵師タグ → `references/styles.md` / サンプラー・CFG等 → `references/settings.md`
 - 構図・カメラ(オーバーショルダー、アオリ、ボケ、正面化の対処) → `references/composition.md`。ショット種別・ボケは撮影用語の自然文、カメラ高さはタグ+自然文の二重指定
 - プロンプトで構図が出ないとき、参考画像・ラフから構図を固定する → `references/img2img.md`
-- **ざっくりした日本語で場面を言われたら**（「〜のシーンのプロンプト」「日本語と英語で」「続きのカット」）→ `prompts/rough-ja-to-scene-and-prompt.md` の手順で【日本語シーン】【英語プロンプト】【ネガに足す】の 3 ブロックを出す。姿勢は頭・目線・腕・脚を 1 つずつ、構図は必ず 1 つ、タグは同ファイルの対応表の実在語。性的な場面は成人キャラのみ
-- 「画像から構図」「シーンから構図」「ショットリスト」と言われたら → `prompts/README.md` の呼び名表で該当ファイルを開き、そのプロンプトを実行する。出力の【構図指示】に続けて「〇〇で」とキャラ名があれば、そのままこのスキルで3層プロンプトまで作る。渡すシーン文の書き方は `prompts/scene-input-rules.md`
+- **画像やシーンを渡されて「日本語にして」「ComfyUI 用の日本語」「構図を日本語で」と言われたら** → `prompts/to-comfy-ja.md` の手順で【ワークフロー】【手動プロンプト欄】【日本語】【ネガに足す】【不明瞭】を出す。日本語の形は使うワークフロー（1_通常生成／6_引きの構図＝8 項目、2_決めコマ＝2〜4 行、3_anytest＝構図なし）に合わせる。英語も頼まれたら同ファイルの「英語も欲しいと言われたら」に従う。性的な場面は成人キャラのみ（2026-09-23 に image-to-scene-ja / scene-to-composition-ja / rough-ja-to-scene-and-prompt をこれ 1 本にまとめた。旧ファイルは `prompts/_archive/`）
+- 「ショットリスト」「1 ページのコマ割り」と言われたら → `prompts/shot-list.md`。各コマはそのあと to-comfy-ja で日本語にする。シーン文の書き方は `prompts/scene-input-rules.md`
 - 色・光・表情・湯気でエロさを出す → `references/atmosphere.md`。**背景の配色は場面ごとに変える**(チャコール固定・紫回避固定にしない)
 - 語彙のタグ化 → `references/vocab.md` / 失敗事例と対処 → `references/failures.md`
 - 状況・シチュエーション(告白・祭り・直前直後・見つかる・覗き・NTR・拒絶・拘束・バレそうな場所) → `references/situations.md`。Danbooru に無い語(`date`, `peeping`, `jealousy` 等)は使わず、載っている実在タグに置き換える
