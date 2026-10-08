@@ -28,6 +28,12 @@ HOST = "https://image.novelai.net"   # api.novelai.net は 400 を返す（2026-
 MODEL = "nai-diffusion-5-full"        # V5 Full。V5 Curated は nai-diffusion-5-curated、V4.5 は nai-diffusion-4-5-full
 INPAINT_MODEL = "nai-diffusion-5-full-inpainting"
 
+# 品質タグとネガの初期セット。API では Web 版のように自動で足されないので、こちらで足す（2026-10-08 比較で目が丁寧・少し大人っぽくなった）。
+# Web 版の初期セット（UC Preset「強い」）から、コマ割りとぶつかる multiple views / negative space / blank page と halftone / screentone は外した
+QUALITY = ", very aesthetic, masterpiece, no text"
+UC_PRESET = ("lowres, artistic error, film grain, scan artifacts, worst quality, bad quality, jpeg artifacts, very displeasing, "
+             "chromatic aberration, dithering, logo, too many watermarks, @_@, mismatched pupils, glowing eyes, bad anatomy, ")
+
 
 def token():
     t = os.environ.get("NOVELAI_TOKEN")
@@ -70,13 +76,18 @@ def anlas():
     return d["fixedTrainingStepsLeft"] + d["purchasedTrainingSteps"]
 
 
-def generate(base, neg, chars, w, h, seed, dst, steps=28, scale=5.0, quality=True, uc_preset=0, extra=None, action="generate", model=None):
+def generate(base, neg, chars, w, h, seed, dst, steps=28, scale=5.0, quality=True, uc_preset=0, extra=None, action="generate", model=None,
+             sampler="k_euler", schedule="karras"):   # euler が標準（2026-10-08 ユーザー指定。線と陰影がくっきり）
     """chars: [(人物プロンプト, 人物ネガ, x, y)]。人物プロンプト 1 つがほぼ 1 コマになる（漫画ページの配置に使う）。
-    action: generate / img2img（extra に image, strength, noise）/ infill（model を ...-inpainting、extra に image, mask）"""
+    action: generate / img2img（extra に image, strength, noise）/ infill（model を ...-inpainting、extra に image, mask）
+    quality=True で base の末尾に QUALITY、neg の先頭に UC_PRESET を足す（False で素のまま）"""
+    if quality:
+        base = base.rstrip(", ") + QUALITY
+        neg = UC_PRESET + neg
     use_coords = bool(chars)
-    p = {"params_version": 3, "width": w, "height": h, "scale": scale, "sampler": "k_euler_ancestral", "steps": steps, "seed": seed,
+    p = {"params_version": 3, "width": w, "height": h, "scale": scale, "sampler": sampler, "steps": steps, "seed": seed,
          "n_samples": 1, "ucPreset": uc_preset, "qualityToggle": quality, "autoSmea": False, "dynamic_thresholding": False,
-         "controlnet_strength": 1, "legacy": False, "add_original_image": True, "cfg_rescale": 0, "noise_schedule": "karras",
+         "controlnet_strength": 1, "legacy": False, "add_original_image": True, "cfg_rescale": 0, "noise_schedule": schedule,
          "legacy_v3_extend": False, "skip_cfg_above_sigma": None, "use_coords": use_coords, "legacy_uc": False,
          "normalize_reference_strength_multiple": True, "negative_prompt": neg,
          "characterPrompts": [{"prompt": c, "uc": u, "center": {"x": x, "y": y}, "enabled": True} for c, u, x, y in chars],
