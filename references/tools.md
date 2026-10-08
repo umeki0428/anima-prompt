@@ -36,3 +36,12 @@ tagpick の日本語訳は `C:\AI\studio-magami\sd-webui-prompt-dictionary\data\
 - 否定文が苦手。「speed lines は残せ」と書くと**集中線が描き足される**。消したいものだけ短く書き、残すものは列挙しない(`Erase all Japanese text and heart marks. Leave every other part untouched.`)
 - `sound effects` は効果線と解釈される。文字を指すなら `sound effect lettering`
 - 名詞を書くとそれを描く。negative にも効果線系の語は入れない
+
+## NovelAI（2026-10-08）
+
+| ツール | 場所 | 用途 |
+|---|---|---|
+| **nai_api.py** | `novelai/` | NovelAI V5 の生成（人物の位置指定でコマ割りページ）・img2img・インペイント・Director Tools（declutter 文字消し / colorize / lineart / sketch / emotion）。トークンはユーザー環境変数 `NOVELAI_TOKEN` |
+| **panel_upscale.py** | `novelai/` | ページからコマを切り出し、約 3 倍で anytest＋img2img（キャラ LoRA）描き直し。クリスタに 1 コマずつ貼る用 |
+
+手順と分かったことは [novelai/README.md](../novelai/README.md)。
