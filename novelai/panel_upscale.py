@@ -213,6 +213,7 @@ def main():
     ap.add_argument("--only", help="描き直すコマの番号（例 1,3）")
     ap.add_argument("--char", default="haruka", help="キャラの固定タグ: " + " / ".join(CHARS) + " / または直接タグを書く")
     ap.add_argument("--add", default="", help="全コマに足すタグ")
+    ap.add_argument("--neg", default="", help="ネガに足すタグ")
     ap.add_argument("--color", action="store_true", help="カラー（既定は白黒）")
     ap.add_argument("--loras", default=LORAS, help='"名前:強さ,名前:強さ"')
     ap.add_argument("--scale", type=float, default=3.0)
@@ -240,7 +241,7 @@ def main():
     loras = [(n.strip(), float(s)) for n, s in (x.rsplit(":", 1) for x in a.loras.split(",") if x.strip())]
     char = CHARS.get(a.char, a.char)
     head = ("" if a.color else "monochrome, greyscale, ") + (char + ", " if char else "")
-    neg = NEG + (NEG_COLOR if a.color else NEG_MONO)
+    neg = NEG + (NEG_COLOR if a.color else NEG_MONO) + (", " + a.neg if a.neg else "")
     seeds = [int(s) for s in a.seeds.split(",")]
     log = []
     done = []
